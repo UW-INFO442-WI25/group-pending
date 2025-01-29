@@ -1,0 +1,643 @@
+{
+    "ingredients": [
+        {
+            "name": "Apple",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.25,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Banana",
+            "price": 0.50,
+            "discount": {
+                "amount": 0.10,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Orange",
+            "price": 1.20,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-03",
+                "valid_to": "2025-02-10"
+            }
+        },
+        {
+            "name": "Lemon",
+            "price": 0.80,
+            "discount": {
+                "amount": 0.15,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Lime",
+            "price": 0.75,
+            "discount": {
+                "amount": 0.15,
+                "valid_from": "2025-02-02",
+                "valid_to": "2025-02-08"
+            }
+        },
+        {
+            "name": "Grapes",
+            "price": 3.99,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Strawberries",
+            "price": 4.50,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-05",
+                "valid_to": "2025-02-12"
+            }
+        },
+        {
+            "name": "Blueberries",
+            "price": 3.99,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Raspberries",
+            "price": 4.99,
+            "discount": {
+                "amount": 0.60,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Pineapple",
+            "price": 2.99,
+            "discount": {
+                "amount": 0.40,
+                "valid_from": "2025-02-04",
+                "valid_to": "2025-02-11"
+            }
+        },
+        {
+            "name": "Mango",
+            "price": 1.75,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Peach",
+            "price": 1.80,
+            "discount": {
+                "amount": 0.30,
+                "valid_from": "2025-02-06",
+                "valid_to": "2025-02-13"
+            }
+        },
+        {
+            "name": "Plum",
+            "price": 1.60,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Pear",
+            "price": 1.40,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Watermelon",
+            "price": 5.99,
+            "discount": {
+                "amount": 1.00,
+                "valid_from": "2025-02-07",
+                "valid_to": "2025-02-14"
+            }
+        },
+        {
+            "name": "Cantaloupe",
+            "price": 3.99,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Avocado",
+            "price": 2.00,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-08",
+                "valid_to": "2025-02-15"
+            }
+        },
+        {
+            "name": "Tomato",
+            "price": 1.25,
+            "discount": {
+                "amount": 0.15,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Onion",
+            "price": 0.90,
+            "discount": {
+                "amount": 0.10,
+                "valid_from": "2025-02-09",
+                "valid_to": "2025-02-16"
+            }
+        },
+        {
+            "name": "Garlic",
+            "price": 1.20,
+            "discount": {
+                "amount": 0.15,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Carrot",
+            "price": 1.00,
+            "discount": {
+                "amount": 0.10,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Celery",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.25,
+                "valid_from": "2025-02-10",
+                "valid_to": "2025-02-17"
+            }
+        },
+        {
+            "name": "Cucumber",
+            "price": 1.10,
+            "discount": {
+                "amount": 0.15,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Bell Pepper",
+            "price": 1.75,
+            "discount": {
+                "amount": 0.30,
+                "valid_from": "2025-02-11",
+                "valid_to": "2025-02-18"
+            }
+        },
+        {
+            "name": "Jalapeño",
+            "price": 0.99,
+            "discount": {
+                "amount": 0.10,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Spinach",
+            "price": 2.99,
+            "discount": {
+                "amount": 0.30,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Kale",
+            "price": 2.75,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-12",
+                "valid_to": "2025-02-19"
+            }
+        },
+        {
+            "name": "Lettuce",
+            "price": 1.80,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Cabbage",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Zucchini",
+            "price": 1.60,
+            "discount": {
+                "amount": 0.30,
+                "valid_from": "2025-02-13",
+                "valid_to": "2025-02-20"
+            }
+        },
+        {
+            "name": "Eggplant",
+            "price": 2.10,
+            "discount": {
+                "amount": 0.25,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Mushrooms",
+            "price": 3.50,
+            "discount": {
+                "amount": 0.60,
+                "valid_from": "2025-02-14",
+                "valid_to": "2025-02-21"
+            }
+        },
+        {
+            "name": "Sweet Potato",
+            "price": 1.40,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Pumpkin",
+            "price": 3.99,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Milk",
+            "price": 3.99,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-05",
+                "valid_to": "2025-02-12"
+            }
+        },
+        {
+            "name": "Butter",
+            "price": 4.99,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Yogurt",
+            "price": 2.50,
+            "discount": {
+                "amount": 0.40,
+                "valid_from": "2025-02-15",
+                "valid_to": "2025-02-22"
+            }
+        },
+        {
+            "name": "Eggs",
+            "price": 2.99,
+            "discount": {
+                "amount": 0.30,
+                "valid_from": "2025-02-02",
+                "valid_to": "2025-02-09"
+            }
+        },
+        {
+            "name": "Chicken Breast",
+            "price": 7.99,
+            "discount": {
+                "amount": 1.00,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-08"
+            }
+        },
+        {
+            "name": "Salmon",
+            "price": 9.99,
+            "discount": {
+                "amount": 1.00,
+                "valid_from": "2025-02-01",
+                "valid_to": "2025-02-07"
+            }
+        },
+        {
+            "name": "Olive Oil",
+            "price": 5.99,
+            "discount": {
+                "amount": 1.50,
+                "valid_from": "2025-02-04",
+                "valid_to": "2025-02-11"
+            }
+        },
+        {
+            "name": "Honey",
+            "price": 4.79,
+            "discount": {
+                "amount": 0.75,
+                "valid_from": "2025-02-06",
+                "valid_to": "2025-02-13"
+            }
+        },
+        {
+            "name": "Peanut Butter",
+            "price": 3.99,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-07",
+                "valid_to": "2025-02-14"
+            }
+        },
+        {
+            "name": "Broccoli",
+            "price": 2.50,
+            "discount": {
+                "amount": 0.30,
+                "valid_from": "2025-02-15",
+                "valid_to": "2025-02-22"
+            }
+        },
+        {
+            "name": "Cauliflower",
+            "price": 2.75,
+            "discount": {
+                "amount": 0.35,
+                "valid_from": "2025-02-16",
+                "valid_to": "2025-02-23"
+            }
+        },
+        {
+            "name": "Potato",
+            "price": 1.20,
+            "discount": {
+                "amount": 0.15,
+                "valid_from": "2025-02-17",
+                "valid_to": "2025-02-24"
+            }
+        },
+        {
+            "name": "Sweet Corn",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-18",
+                "valid_to": "2025-02-25"
+            }
+        },
+        {
+            "name": "Green Beans",
+            "price": 2.00,
+            "discount": {
+                "amount": 0.25,
+                "valid_from": "2025-02-19",
+                "valid_to": "2025-02-26"
+            }
+        },
+        {
+            "name": "Asparagus",
+            "price": 3.50,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-02-20",
+                "valid_to": "2025-02-27"
+            }
+        },
+        {
+            "name": "Brussels Sprouts",
+            "price": 3.00,
+            "discount": {
+                "amount": 0.40,
+                "valid_from": "2025-02-21",
+                "valid_to": "2025-02-28"
+            }
+        },
+        {
+            "name": "Radish",
+            "price": 1.00,
+            "discount": {
+                "amount": 0.10,
+                "valid_from": "2025-02-22",
+                "valid_to": "2025-03-01"
+            }
+        },
+        {
+            "name": "Beetroot",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-23",
+                "valid_to": "2025-03-02"
+            }
+        },
+        {
+            "name": "Turnip",
+            "price": 1.30,
+            "discount": {
+                "amount": 0.15,
+                "valid_from": "2025-02-24",
+                "valid_to": "2025-03-03"
+            }
+        },
+        {
+            "name": "Parsnip",
+            "price": 1.40,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-25",
+                "valid_to": "2025-03-04"
+            }
+        },
+        {
+            "name": "Rutabaga",
+            "price": 1.60,
+            "discount": {
+                "amount": 0.25,
+                "valid_from": "2025-02-26",
+                "valid_to": "2025-03-05"
+            }
+        },
+        {
+            "name": "Garbanzo Beans",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-27",
+                "valid_to": "2025-03-06"
+            }
+        },
+        {
+            "name": "Black Beans",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-02-28",
+                "valid_to": "2025-03-07"
+            }
+        },
+        {
+            "name": "Kidney Beans",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-03-01",
+                "valid_to": "2025-03-08"
+            }
+        },
+        {
+            "name": "Lentils",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-03-02",
+                "valid_to": "2025-03-09"
+            }
+        },
+        {
+            "name": "Quinoa",
+            "price": 2.50,
+            "discount": {
+                "amount": 0.30,
+                "valid_from": "2025-03-03",
+                "valid_to": "2025-03-10"
+            }
+        },
+        {
+            "name": "Brown Rice",
+            "price": 1.50,
+            "discount": {
+                "amount": 0.20,
+                "valid_from": "2025-03-04",
+                "valid_to": "2025-03-11"
+            }
+        },
+        {
+            "name": "Ground Beef",
+            "price": 5.99,
+            "discount": {
+                "amount": 1.00,
+                "valid_from": "2025-03-05",
+                "valid_to": "2025-03-12"
+            }
+        },
+        {
+            "name": "Pork Chops",
+            "price": 6.99,
+            "discount": {
+                "amount": 1.20,
+                "valid_from": "2025-03-06",
+                "valid_to": "2025-03-13"
+            }
+        },
+        {
+            "name": "Turkey Breast",
+            "price": 7.50,
+            "discount": {
+                "amount": 1.50,
+                "valid_from": "2025-03-07",
+                "valid_to": "2025-03-14"
+            }
+        },
+        {
+            "name": "Tofu",
+            "price": 2.99,
+            "discount": {
+                "amount": 0.50,
+                "valid_from": "2025-03-08",
+                "valid_to": "2025-03-15"
+            }
+        },
+        {
+            "name": "Tempeh",
+            "price": 3.50,
+            "discount": {
+                "amount": 0.60,
+                "valid_from": "2025-03-09",
+                "valid_to": "2025-03-16"
+            }
+        },
+        {
+            "name": "Lamb Chops",
+            "price": 9.99,
+            "discount": {
+                "amount": 1.50,
+                "valid_from": "2025-03-10",
+                "valid_to": "2025-03-17"
+            }
+        },
+        {
+            "name": "Shrimp",
+            "price": 12.99,
+            "discount": {
+                "amount": 2.00,
+                "valid_from": "2025-03-11",
+                "valid_to": "2025-03-18"
+            }
+        },
+        {
+            "name": "Tilapia",
+            "price": 6.50,
+            "discount": {
+                "amount": 1.00,
+                "valid_from": "2025-03-12",
+                "valid_to": "2025-03-19"
+            }
+        },
+        {
+            "name": "Tuna",
+            "price": 8.99,
+            "discount": {
+                "amount": 1.50,
+                "valid_from": "2025-03-13",
+                "valid_to": "2025-03-20"
+            }
+        },
+        {
+            "name": "Bacon",
+            "price": 4.99,
+            "discount": {
+                "amount": 0.75,
+                "valid_from": "2025-03-14",
+                "valid_to": "2025-03-21"
+            }
+        }
+    ]
+}
