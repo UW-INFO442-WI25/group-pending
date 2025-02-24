@@ -1,0 +1,145 @@
+.meal-plan-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    background: #fde2e2;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    color: #ff6b6b;
+  }
+  
+  .header-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .meal-plan-title {
+    color: #27ae60;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .active-tab {
+    border-bottom: 2px solid green;
+    font-weight: bold;
+  }
+  
+  .filters {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 250px;
+  }
+  
+  .filters h3 {
+    margin-bottom: 10px;
+  }
+  
+  .filters ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filters ul li {
+    margin: 5px 0;
+  }
+  
+  .filters input {
+    margin-right: 5px;
+  }
+  
+  .cuisine-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .cuisine-options button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .meals-section {
+    margin-top: 20px;
+  }
+  
+  .meal-category {
+    margin-bottom: 20px;
+  }
+  
+  .meal-cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .meal-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .meal-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .meal-info {
+    margin-top: 10px;
+  }
+  
+  .calories {
+    background: #ff6b6b;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .footer-section h2,
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
