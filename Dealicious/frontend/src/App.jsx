@@ -41,69 +41,71 @@ function App() {
         ))}
       </div>
 
-      <div className="filters">
-        <h3>Nutrition Option</h3>
-        <ul>
-          {["Balanced Diet", "High-Protein", "Low-Carb", "Gluten Free", "High-Fiber", "Vegan", "Keto"].map((option) => (
-            <li key={option}>
-              <input
-                type="radio"
-                name="nutrition"
-                id={option}
-                value={option}
-                checked={nutritionOption === option}
-                onChange={(e) => setNutritionOption(e.target.value)}
-              />
-              <label htmlFor={option}>{option}</label>
-            </li>
-          ))}
-        </ul>
+      <div className="content">
+        <div className="filters">
+          <h3>Nutrition Option</h3>
+          <ul>
+            {["Balanced Diet", "High-Protein", "Low-Carb", "Gluten Free", "High-Fiber", "Vegan", "Keto"].map((option) => (
+              <li key={option}>
+                <input
+                  type="radio"
+                  name="nutrition"
+                  id={option}
+                  value={option}
+                  checked={nutritionOption === option}
+                  onChange={(e) => setNutritionOption(e.target.value)}
+                />
+                <label htmlFor={option}>{option}</label>
+              </li>
+            ))}
+          </ul>
 
-        <h3>Rating</h3>
-        <label>
-          <input
-            type="checkbox"
-            checked={rating}
-            onChange={(e) => setRating(e.target.checked)}
-          />
-          4.0 & up ⭐⭐⭐⭐
-        </label>
+          <h3>Rating</h3>
+          <label>
+            <input
+              type="checkbox"
+              checked={rating}
+              onChange={(e) => setRating(e.target.checked)}
+            />
+            4.0 & up ⭐⭐⭐⭐
+          </label>
 
-        <h3>Cuisine Option</h3>
-        <div className="cuisine-options">
-          {["Korean", "Japanese", "Thai", "Chinese", "Mexican", "Indian", "American", "Italian", "Mediterranean", "French", "Vietnamese", "Brazilian"].map(
-            (cuisine) => (
-              <button
-                key={cuisine}
-                className={cuisineOption === cuisine ? "active-cuisine" : ""}
-                onClick={() => setCuisineOption(cuisine)}
-              >
-                {cuisine}
-              </button>
-            )
-          )}
-        </div>
-      </div>
-
-      <div className="meals-section">
-        {["Breakfast", "Lunch", "Dinner"].map((mealType) => (
-          <div key={mealType} className="meal-category">
-            <h3>{mealType}</h3>
-            <div className="meal-cards">
-              {recipes.map((recipe, index) => (
-                <div key={index} className="meal-card">
-                  <img src={recipe.image} alt={recipe.title} />
-                  <div className="meal-info">
-                    <span className="calories">{"2"} kcal</span>
-                    <h4>{recipe.title}</h4>
-                    <p>⭐⭐⭐⭐ {recipe.spoonacularScore} ({recipe.aggregateLikes}+)</p>
-                    <span>⏳ {recipe.readyInMinutes} min</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <h3>Cuisine Option</h3>
+          <div className="cuisine-options">
+            {["Korean", "Japanese", "Thai", "Chinese", "Mexican", "Indian", "American", "Italian", "Mediterranean", "French", "Vietnamese", "Brazilian"].map(
+              (cuisine) => (
+                <button
+                  key={cuisine}
+                  className={cuisineOption === cuisine ? "active-cuisine" : ""}
+                  onClick={() => setCuisineOption(cuisine)}
+                >
+                  {cuisine}
+                </button>
+              )
+            )}
           </div>
-        ))}
+        </div>
+
+        <div className="meals-section">
+          {["Breakfast", "Lunch", "Dinner"].map((mealType) => (
+            <div key={mealType} className="meal-category">
+              <h3>{mealType}</h3>
+              <div className="meal-cards">
+                {recipes.map((recipe, index) => (
+                  <div key={index} className="meal-card">
+                    <img src={recipe.image} alt={recipe.title} />
+                    <div className="meal-info">
+                      <span className="calories">{2} kcal</span>
+                      <h4>{recipe.title}</h4>
+                      <p>⭐⭐⭐⭐ {recipe.spoonacularScore} ({recipe.aggregateLikes}+)</p>
+                      <span>⏳ {recipe.readyInMinutes} min</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <footer className="footer">
