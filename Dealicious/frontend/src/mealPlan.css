@@ -1131,7 +1131,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.my-meal-plan .salmon-poke-salad {
+.my-meal-plan .meal-card {
   color: var(--gray-scale-gray-700, #4d4d4d);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
