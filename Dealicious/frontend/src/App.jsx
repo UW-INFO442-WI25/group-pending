@@ -227,56 +227,20 @@ function App() {
             </div>
             <div className="line-48"></div>
             <div className="popular-tag">
-              <div className="heading3">
-                <div className="cuisine-option">Cuisine Option </div>
-                <img className="vector3" src="vector2.svg" />
-              </div>
-              <div className="tags">
-                <div className="frame-427318946">
-                  <div className="tag">
-                    <div className="korean">Korean </div>
-                  </div>
-                  <div className="tag2">
-                    <div className="japanese">Japanese </div>
-                  </div>
-                  <div className="tag">
-                    <div className="thai">Thai </div>
-                  </div>
-                </div>
-                <div className="frame-427318948">
-                  <div className="tag">
-                    <div className="american">American </div>
-                  </div>
-                  <div className="tag">
-                    <div className="italian">Italian </div>
-                  </div>
-                  <div className="tag">
-                    <div className="mediterranean">Mediterranean </div>
-                  </div>
-                </div>
-                <div className="frame-427318949">
-                  <div className="tag">
-                    <div className="french">French </div>
-                  </div>
-                  <div className="tag">
-                    <div className="vietnamese">Vietnamese </div>
-                  </div>
-                  <div className="tag">
-                    <div className="brazilian">Brazilian </div>
-                  </div>
-                </div>
-                <div className="frame-427318947">
-                  <div className="tag">
-                    <div className="chinese">Chinese </div>
-                  </div>
-                  <div className="tag">
-                    <div className="mexican">Mexican </div>
-                  </div>
-                  <div className="tag">
-                    <div className="indian">Indian </div>
-                  </div>
-                </div>
-              </div>
+            <h3>Cuisine Option</h3>
+            <div className="cuisine-options">
+              {["Korean", "Japanese", "Thai", "Chinese", "Mexican", "Indian", "American", "Italian", "Mediterranean", "French", "Vietnamese"].map(
+                (cuisine) => (
+                  <button
+                    key={cuisine}
+                    className={cuisineOption === cuisine ? "active-cuisine" : ""}
+                    onClick={() => setCuisineOption(cuisine)}
+                  >
+                    {cuisine}
+                  </button>
+                )
+              )}
+            </div>
             </div>
           </div>
           <div className="displaying">
