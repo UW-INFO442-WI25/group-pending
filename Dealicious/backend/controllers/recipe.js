@@ -9,7 +9,7 @@ const router = express.Router();
 const apiKey = process.env.SPOONACULAR_API_KEY;
 
 const getRecipes = asyncHandler(async (req, res) => {
-    const { nutrition, rating, cuisine, type } = req.query;
+    const { nutrition, rating, cuisine, type, minFiber, maxCarb, minProtein } = req.query;
 
     try {
         const response = await axios.get(`https://api.spoonacular.com/recipes/complexSearch`, {
@@ -19,7 +19,10 @@ const getRecipes = asyncHandler(async (req, res) => {
                 diet: nutrition,
                 cuisine: cuisine,
                 type: type,
-                sort: "random"
+                sort: "random",
+                minFiber: minFiber,
+                maxCarbs: maxCarb,
+                minProtein: minProtein
             }
         });
         res.json(response.data);

@@ -9,6 +9,41 @@ function App() {
   const [nutritionOption, setNutritionOption] = useState("");
   const [rating, setRating] = useState(false);
   const [cuisineOption, setCuisineOption] = useState("");
+  const [minFiber, setMinFiber] = useState(null);
+  const [maxCarb, setMaxCarb] = useState(null);
+  const [minProtein, setMinProtein] = useState(null);
+
+  const categories = [
+    "Gluten Free",
+    "High-Protein",
+    "Low-Carb",
+    "High-Fiber",
+    "Vegetarian",
+    "Vegan",
+    "Pescatarian",
+    "Keto",
+  ];
+
+    const specialParams = {
+      "High-Protein": { minProtein: 25 },
+      "Low-Carb": { maxCarb: 45 },
+      "High-Fiber": { minFiber: 12 },
+    };
+  
+
+    const handleSelection = (category) => {
+      if (specialParams[category]) {
+        setMinProtein(specialParams[category].minProtein || null);
+        setMaxCarb(specialParams[category].maxCarb || null);
+        setMinFiber(specialParams[category].minFiber || null);
+        setNutritionOption("");
+      } else {
+        setNutritionOption(category);
+        setMinProtein(null);
+        setMaxCarb(null);
+        setMinFiber(null);
+      }
+    };
 
   useEffect(() => {
     fetchRecipes();
@@ -19,7 +54,10 @@ function App() {
       nutrition: nutritionOption,
       rating: rating ? 4 : undefined,
       cuisine: cuisineOption,
-      type: "breakfast"
+      type: "breakfast",
+      maxCarbs: maxCarb,
+      minFiber: minFiber,
+      minProtein: minProtein
     };
 
     axios.get("/api/recipe", { params })
@@ -33,7 +71,10 @@ function App() {
         nutrition: nutritionOption,
         rating: rating ? 4 : undefined,
         cuisine: cuisineOption,
-        type: "main course"
+        type: "main course",
+        maxCarbs: maxCarb,
+        minFiber: minFiber,
+        minProtein: minProtein
       };
   
       axios.get("/api/recipe", { params })
@@ -133,44 +174,27 @@ function App() {
         <div className="main">
           <div className="filter">
             <div className="all-categories">
-              <div className="heading">
-                <div className="nutrition-option">Nutrition Option </div>
+              <div>
+              <div className="nutrition-option">Nutrition Option</div>
                 <img className="vector" src="vector0.svg" />
-              </div>
-              <div className="categories">
-                <div className="frame-151">
-                  <div className="balanced-diet">Balanced Diet </div>
-                </div>
-              </div>
-              <div className="categories2">
-                <div className="frame-151">
-                  <div className="high-protein">High-Protein </div>
-                </div>
-              </div>
-              <div className="categories2">
-                <div className="frame-151">
-                  <div className="low-carb">Low-Carb </div>
-                </div>
-              </div>
-              <div className="categories2">
-                <div className="frame-151">
-                  <div className="gluten-free">Gluten-Free </div>
-                </div>
-              </div>
-              <div className="categories2">
-                <div className="frame-151">
-                  <div className="high-fiber">High-Fiber </div>
-                </div>
-              </div>
-              <div className="categories2">
-                <div className="frame-151">
-                  <div className="vegan">Vegan </div>
-                </div>
-              </div>
-              <div className="categories3">
-                <div className="frame-151">
-                  <div className="keto">Keto </div>
-                </div>
+
+                {categories.map((category, index) => (
+                  <label key={index} className="category-option">
+                    <input
+                      type="radio"
+                      name="nutrition"
+                      value={category}
+                      checked={
+                        nutritionOption === category ||
+                        (minProtein && category === "High-Protein") ||
+                        (maxCarb && category === "Low-Carb") ||
+                        (minFiber && category === "High-Fiber")
+                      }
+                      onChange={() => handleSelection(category)}
+                    />
+                    <div className="category-text">{category}</div>
+                  </label>
+                ))}
               </div>
             </div>
             <div className="line-46"></div>
