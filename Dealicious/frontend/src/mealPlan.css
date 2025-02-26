@@ -1,191 +1,21 @@
-.my-meal-plan,
-.my-meal-plan * {
-  box-sizing: border-box;
-}
 .my-meal-plan {
-  background: #ffffff;
-  height: 2917px;
-  position: relative;
-  overflow: hidden;
+  background: #f8f8f8;
 }
-.my-meal-plan .footer {
-  background: #111116;
-  padding: 57px 83px 57px 83px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 1440px;
-  position: absolute;
-  left: 50%;
-  translate: -50%;
-  top: 2585px;
-}
-.my-meal-plan .frame-5944 {
-  display: flex;
-  flex-direction: row;
-  gap: 169px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .company-name {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 297px;
-  position: relative;
-}
-.my-meal-plan .dealicious {
-  color: #f5f5f5;
-  text-align: left;
-  font-family: "Thunder-BlackLc", sans-serif;
-  font-size: 40px;
-  line-height: 105.36%;
-  letter-spacing: 0.025em;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan
-  .we-help-college-students-build-healthy-eating-habits-while-staying-within-a-tight-budget-our-service-provides-personalized-weekly-meal-plans-tailored-to-their-nutritional-preferences-making-balanced-eating-both-accessible-and-affordable {
-  color: #b2b2b2;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  position: relative;
-  width: 295px;
-}
-.my-meal-plan .quick-link {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 117px;
-  position: relative;
-}
-.my-meal-plan .services {
+
+
+
+.more {
   color: #f2f2f2;
   text-align: left;
   font-family: "Poppins-Bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  position: relative;
+
   align-self: stretch;
 }
-.my-meal-plan .documentation {
-  color: #b3b3b3;
+.call-1-123456789 {
   text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .design {
-  color: #b3b3b3;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .themes {
-  color: #b3b3b3;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .illustrations {
-  color: #b3b3b3;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .company {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 109px;
-  position: relative;
-}
-.my-meal-plan .company2 {
-  color: #f2f2f2;
-  text-align: left;
-  font-family: "Poppins-Bold", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .about {
-  color: #b3b3b3;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .terms {
-  color: #b3b3b3;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .privacy-policy {
-  color: #b3b3b3;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .contact {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 258.36px;
-  position: relative;
-}
-.my-meal-plan .more {
-  color: #f2f2f2;
-  text-align: left;
-  font-family: "Poppins-Bold", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  position: relative;
-  align-self: stretch;
-}
-.my-meal-plan .call-1-123456789 {
-  text-align: left;
-  position: relative;
+
   align-self: stretch;
 }
 .call-1-123456789-span {
@@ -206,9 +36,9 @@
   font-size: 14px;
   font-weight: 400;
 }
-.my-meal-plan .email-dealicious-gmail-com {
+.email-dealicious-gmail-com {
   text-align: left;
-  position: relative;
+
   align-self: stretch;
 }
 .email-dealicious-gmail-com-span {
@@ -223,54 +53,34 @@
   font-size: 14px;
   font-weight: 400;
 }
-.my-meal-plan .content {
+.content {
+  padding-left: 56px;
   display: flex;
-  flex-direction: column;
-  gap: 63px;
+  flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 1388px;
-  position: absolute;
-  left: calc(50% - 668px);
-  top: 518px;
+  gap: 63px;
   overflow: hidden;
 }
-.my-meal-plan .current-status {
-  display: flex;
-  flex-direction: row;
-  gap: 26.58px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .low-carb-meal-plan {
-  color: #65c531;
-  text-align: left;
-  font-family: "SfProDisplay-Semibold", sans-serif;
-  font-size: 34.21050262451172px;
-  font-weight: 600;
-  position: relative;
-}
-.my-meal-plan .status-nav {
+
+.status-nav {
+  padding-right: 30px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
-  width: 1358px;
-  position: relative;
 }
-.my-meal-plan .frame-427319028 {
+.frame-427319028 {
   display: flex;
   flex-direction: row;
   gap: 15.32px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .frame-427319021 {
+.frame-427319021 {
   border-style: solid;
   border-color: #65c531;
   border-width: 0px 0px 3.4px 0px;
@@ -281,125 +91,16 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .day-1 {
+.day {
   color: #65c531;
   text-align: left;
   font-family: "SfProDisplay-Semibold", sans-serif;
-  font-size: 19.460641860961914px;
+  font-size: 24px;
   font-weight: 600;
-  position: relative;
 }
-.my-meal-plan .frame-427319022 {
-  padding: 17.02px;
-  display: flex;
-  flex-direction: row;
-  gap: 17.02px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .day-2 {
-  color: rgba(77, 77, 77, 0.6);
-  text-align: left;
-  font-family: "SfProDisplay-Semibold", sans-serif;
-  font-size: 19.460641860961914px;
-  font-weight: 600;
-  position: relative;
-}
-.my-meal-plan .frame-427319023 {
-  padding: 17.02px;
-  display: flex;
-  flex-direction: row;
-  gap: 17.02px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .day-3 {
-  color: rgba(77, 77, 77, 0.6);
-  text-align: left;
-  font-family: "SfProDisplay-Semibold", sans-serif;
-  font-size: 19.460641860961914px;
-  font-weight: 600;
-  position: relative;
-}
-.my-meal-plan .frame-427319024 {
-  padding: 17.02px;
-  display: flex;
-  flex-direction: row;
-  gap: 17.02px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .day-4 {
-  color: rgba(77, 77, 77, 0.6);
-  text-align: left;
-  font-family: "SfProDisplay-Semibold", sans-serif;
-  font-size: 19.460641860961914px;
-  font-weight: 600;
-  position: relative;
-}
-.my-meal-plan .frame-427319025 {
-  padding: 17.02px;
-  display: flex;
-  flex-direction: row;
-  gap: 17.02px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .day-5 {
-  color: rgba(77, 77, 77, 0.6);
-  text-align: left;
-  font-family: "SfProDisplay-Semibold", sans-serif;
-  font-size: 19.460641860961914px;
-  font-weight: 600;
-  position: relative;
-}
-.my-meal-plan .frame-427319026 {
-  padding: 17.02px;
-  display: flex;
-  flex-direction: row;
-  gap: 17.02px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .day-6 {
-  color: rgba(77, 77, 77, 0.6);
-  text-align: left;
-  font-family: "SfProDisplay-Semibold", sans-serif;
-  font-size: 19.460641860961914px;
-  font-weight: 600;
-  position: relative;
-}
-.my-meal-plan .frame-427319027 {
-  padding: 17.02px;
-  display: flex;
-  flex-direction: row;
-  gap: 17.02px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .day-7 {
-  color: rgba(77, 77, 77, 0.6);
-  text-align: left;
-  font-family: "SfProDisplay-Semibold", sans-serif;
-  font-size: 19.460641860961914px;
-  font-weight: 600;
-  position: relative;
-}
-.my-meal-plan .dropdown {
+
+.dropdown {
   border-radius: 29.18px;
   border-style: solid;
   border-color: #e6e6e6;
@@ -413,52 +114,68 @@
   flex-shrink: 0;
   width: 303.59px;
   height: 41.18px;
-  position: relative;
 }
-.my-meal-plan .icon-instance {
+.icon-instance {
   width: 19.15px !important;
   height: 19.15px !important;
 }
-.my-meal-plan .search {
+.search {
   color: rgba(77, 77, 77, 0.5);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 12.768205642700195px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
+
   width: 109.44px;
 }
-.my-meal-plan .main {
+.main {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 51px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .filter {
+.filter {
+  width: 320px;
   display: flex;
-  flex-direction: column;
-  gap: 0px;
+  flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 16px;
   flex-shrink: 0;
-  width: 311.53px;
-  position: relative;
 }
-.my-meal-plan .all-categories {
+.all-categories {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 0px;
+  flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 18px;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .heading {
+.OKfiBvftcs {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.category-option {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  gap: 12px;
+}
+.category-text {
+  font-size: 22px;
+}
+.heading {
   padding: 0px 0px 19.05px 0px;
   display: flex;
   flex-direction: row;
@@ -466,25 +183,22 @@
   justify-content: space-between;
   flex-shrink: 0;
   width: 297.12px;
-  position: relative;
 }
-.my-meal-plan .nutrition-option {
+.nutrition-option {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Medium", sans-serif;
-  font-size: 19.04624366760254px;
-  line-height: 150%;
-  font-weight: 500;
-  position: relative;
+  font-size: 28px;
+  font-weight: 900;
 }
-.my-meal-plan .vector {
+.vector {
   flex-shrink: 0;
   width: 11.43px;
   height: 5.71px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .categories {
+.categories {
   padding: 0px 0px 9.52px 0px;
   display: flex;
   flex-direction: row;
@@ -492,31 +206,28 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .radio-instance {
+.radio-instance {
   width: 19.05px !important;
   height: 19.05px !important;
 }
-.my-meal-plan .frame-151 {
+.frame-151 {
   display: flex;
   flex-direction: row;
   gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .balanced-diet {
+.balanced-diet {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 13.33237075805664px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .categories2 {
+.categories2 {
   padding: 9.52px 0px 9.52px 0px;
   display: flex;
   flex-direction: row;
@@ -524,140 +235,132 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .high-protein {
+.high-protein {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 13.33237075805664px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .low-carb {
+.low-carb {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 13.33237075805664px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .gluten-free {
+.gluten-free {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 13.33237075805664px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .high-fiber {
+.high-fiber {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 13.33237075805664px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .vegan {
+.vegan {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 13.33237075805664px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .categories3 {
-  padding: 9.52px 0px 24.76px 0px;
-  display: flex;
-  flex-direction: row;
-  gap: 7.62px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .keto {
-  color: var(--gray-scale-gray-900, #1a1a1a);
-  text-align: left;
-  font-family: "SfProDisplay-Regular", sans-serif;
-  font-size: 13.33237075805664px;
-  line-height: 150%;
-  font-weight: 400;
-  position: relative;
-}
-.my-meal-plan .line-46 {
-  margin-top: -0.95px;
-  border-style: solid;
-  border-color: var(--gray-scale-gray-100, #e6e6e6);
-  border-width: 0.95px 0 0 0;
-  flex-shrink: 0;
-  width: 297.12px;
-  height: 0px;
-  position: relative;
-}
-.my-meal-plan .line-47 {
-  margin-top: -0.95px;
-  border-style: solid;
-  border-color: var(--gray-scale-gray-100, #e6e6e6);
-  border-width: 0.95px 0 0 0;
-  flex-shrink: 0;
-  width: 297.12px;
-  height: 0px;
-  position: relative;
-}
-.my-meal-plan .heading2 {
-  background: var(--gray-scale-white, #ffffff);
-  padding: 19.05px 0px 19.05px 0px;
+.categories3 {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-shrink: 0;
-  width: 297.12px;
-  position: relative;
 }
-.my-meal-plan .rating {
+.keto {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
-  font-family: "SfProDisplay-Medium", sans-serif;
-  font-size: 19.04624366760254px;
+  font-family: "SfProDisplay-Regular", sans-serif;
+  font-size: 13.33237075805664px;
   line-height: 150%;
-  font-weight: 500;
-  position: relative;
+  font-weight: 400;
 }
-.my-meal-plan .vector2 {
+.line-47 {
+  border-style: solid;
+  border-color: var(--gray-scale-gray-100, #e6e6e6);
+  border-width: 0.95px 0 0 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.vector2 {
   flex-shrink: 0;
   width: 11.43px;
   height: 5.71px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .checkbox-instance {
+.checkbox-instance {
   width: 19.05px !important;
   height: 19.05px !important;
 }
-.my-meal-plan .rating2 {
+.rating2 {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 0px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .star-1 {
+.star-1 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.star-2 {
   flex-shrink: 0;
   width: 17.14px;
   height: 17.14px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group {
+
+.star-3 {
+  flex-shrink: 0;
+  width: 17.14px;
+  height: 17.14px;
+
+  overflow: hidden;
+}
+
+.star-4 {
+  flex-shrink: 0;
+  width: 17.14px;
+  height: 17.14px;
+
+  overflow: hidden;
+}
+.group {
+  width: 100%;
+  height: 100%;
+}
+.star-5 {
+  flex-shrink: 0;
+  width: 17.14px;
+  height: 17.14px;
+
+  overflow: hidden;
+}
+.group5 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -667,84 +370,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-2 {
-  flex-shrink: 0;
-  width: 17.14px;
-  height: 17.14px;
-  position: relative;
-  overflow: hidden;
-}
-.my-meal-plan .group2 {
-  width: 81.25%;
-  height: 78.12%;
-  position: absolute;
-  right: 9.38%;
-  left: 9.37%;
-  bottom: 12.5%;
-  top: 9.38%;
-  overflow: visible;
-}
-.my-meal-plan .star-3 {
-  flex-shrink: 0;
-  width: 17.14px;
-  height: 17.14px;
-  position: relative;
-  overflow: hidden;
-}
-.my-meal-plan .group3 {
-  width: 81.25%;
-  height: 78.12%;
-  position: absolute;
-  right: 9.38%;
-  left: 9.37%;
-  bottom: 12.5%;
-  top: 9.38%;
-  overflow: visible;
-}
-.my-meal-plan .star-4 {
-  flex-shrink: 0;
-  width: 17.14px;
-  height: 17.14px;
-  position: relative;
-  overflow: hidden;
-}
-.my-meal-plan .group4 {
-  width: 81.25%;
-  height: 78.12%;
-  position: absolute;
-  right: 9.38%;
-  left: 9.37%;
-  bottom: 12.5%;
-  top: 9.38%;
-  overflow: visible;
-}
-.my-meal-plan .star-5 {
-  flex-shrink: 0;
-  width: 17.14px;
-  height: 17.14px;
-  position: relative;
-  overflow: hidden;
-}
-.my-meal-plan .group5 {
-  width: 81.25%;
-  height: 78.12%;
-  position: absolute;
-  right: 9.38%;
-  left: 9.37%;
-  bottom: 12.5%;
-  top: 9.38%;
-  overflow: visible;
-}
-.my-meal-plan ._4-0-up {
+._4-0-up {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
-  font-size: 13.33237075805664px;
-  line-height: 150%;
+  font-size: 22px;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .line-48 {
+.line-48 {
   margin-top: -0.95px;
   border-style: solid;
   border-color: var(--gray-scale-gray-100, #e6e6e6);
@@ -752,19 +385,28 @@
   flex-shrink: 0;
   width: 297.12px;
   height: 0px;
-  position: relative;
 }
-.my-meal-plan .popular-tag {
-  padding: 0px 0px 24.76px 0px;
+.popular-tag {
   display: flex;
-  flex-direction: column;
-  gap: 0px;
+  flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
+  gap: 12px;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .heading3 {
+.cuisine-options {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.btn0 {
+  padding: 4px;
+  font-size: 22px;
+}
+.heading3 {
   padding: 19.05px 0px 19.05px 0px;
   display: flex;
   flex-direction: row;
@@ -772,32 +414,31 @@
   justify-content: space-between;
   flex-shrink: 0;
   width: 297.12px;
-  position: relative;
+
   box-shadow: 0px -0.95px 0px 0px rgba(229, 229, 229, 1);
 }
-.my-meal-plan .cuisine-option {
+.cuisine-option {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Medium", sans-serif;
   font-size: 19.04624366760254px;
   line-height: 150%;
   font-weight: 500;
-  position: relative;
 }
-.my-meal-plan .vector3 {
+.vector3 {
   flex-shrink: 0;
   width: 11.43px;
   height: 5.71px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .tags {
+.tags {
   flex-shrink: 0;
   width: 288.42px;
   height: 149.56px;
   position: static;
 }
-.my-meal-plan .frame-427318946 {
+.frame-427318946 {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -807,7 +448,7 @@
   left: 0px;
   top: 67.09px;
 }
-.my-meal-plan .tag {
+.tag {
   background: var(--gray-scale-gray-50, #f2f2f2);
   border-radius: 28.57px;
   padding: 5.71px 15.24px 5.71px 15.24px;
@@ -817,18 +458,16 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .korean {
+.korean {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .tag2 {
+.tag2 {
   background: #65c531;
   border-radius: 28.57px;
   padding: 5.71px 15.24px 5.71px 15.24px;
@@ -838,27 +477,24 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .japanese {
+.japanese {
   color: var(--gray-scale-white, #ffffff);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .thai {
+.thai {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .frame-427318948 {
+.frame-427318948 {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -868,34 +504,31 @@
   left: 0px;
   top: 145.18px;
 }
-.my-meal-plan .american {
+.american {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .italian {
+.italian {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .mediterranean {
+.mediterranean {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .frame-427318949 {
+.frame-427318949 {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -905,34 +538,31 @@
   left: 0px;
   top: 184.23px;
 }
-.my-meal-plan .french {
+.french {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .vietnamese {
+.vietnamese {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .brazilian {
+.brazilian {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .frame-427318947 {
+.frame-427318947 {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -942,51 +572,42 @@
   left: 0px;
   top: 106.14px;
 }
-.my-meal-plan .chinese {
+.chinese {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .mexican {
+.mexican {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .indian {
+.indian {
   color: var(--gray-scale-gray-900, #1a1a1a);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .displaying {
+.displaying {
+  width: 100%;
   flex-shrink: 0;
-  width: 1168.67px;
-  height: 1589px;
-  position: static;
 }
-.my-meal-plan .frame-427319049 {
+.frame-427319049 {
   display: flex;
   flex-direction: column;
   gap: 62.51px;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 1168.67px;
-  position: absolute;
-  left: 362.53px;
-  top: 0px;
 }
-.my-meal-plan .frame-427319048 {
+.frame-427319048 {
   display: flex;
   flex-direction: column;
   gap: 32.47px;
@@ -994,33 +615,29 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .frame-427319037 {
+.frame-427319037 {
   display: flex;
   flex-direction: row;
   gap: 21.58px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .rectangle-26 {
+.rectangle-26 {
   background: #65c531;
   flex-shrink: 0;
   width: 7.85px;
   height: 35.31px;
-  position: relative;
 }
-.my-meal-plan .breakfast {
+.breakfast {
   color: #1a1a1a;
   text-align: left;
   font-family: "SfProDisplay-Semibold", sans-serif;
   font-size: 27.77203941345215px;
   font-weight: 600;
-  position: relative;
 }
-.my-meal-plan .breakfast2 {
+.breakfast2 {
   display: flex;
   flex-direction: row;
   gap: 25.98px;
@@ -1029,9 +646,8 @@
   align-self: stretch;
   flex-shrink: 0;
   height: 420.21px;
-  position: relative;
 }
-.my-meal-plan .meal {
+.meal {
   background: var(--gray-scale-white, #ffffff);
   border-radius: 10.66px;
   border-style: solid;
@@ -1045,9 +661,8 @@
   justify-content: center;
   flex-shrink: 0;
   width: 332.03px;
-  position: relative;
 }
-.my-meal-plan .frame-427318924 {
+.frame-427318924 {
   background: #fbf3ed;
   border-radius: 0px 10.66px 10.66px 0px;
   padding: 5.33px;
@@ -1061,20 +676,20 @@
   left: 12.79px;
   top: 8.53px;
 }
-.my-meal-plan .icon {
+.icon {
   flex-shrink: 0;
   width: 14.93px;
   height: 20.55px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group-2 {
+.group-2 {
   flex-shrink: 0;
   width: 64px;
   height: 20px;
   position: static;
 }
-.my-meal-plan ._520-kcal {
+._520-kcal {
   color: rgba(51, 51, 51, 0.8);
   text-align: left;
   font-family: "SfProDisplay-Medium", sans-serif;
@@ -1084,7 +699,7 @@
   left: 27.72px;
   top: 5.6px;
 }
-.my-meal-plan .product-image {
+.product-image {
   padding: 5.07px;
   display: flex;
   flex-direction: column;
@@ -1093,25 +708,23 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .image {
+.image {
   flex-shrink: 0;
   width: 306.53px;
   height: 306.53px;
-  position: relative;
+
   object-fit: cover;
 }
-.my-meal-plan .frame-427319029 {
+.frame-427319029 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
   width: 300.37px;
-  position: relative;
 }
-.my-meal-plan .frame-427319020 {
+.frame-427319020 {
   display: flex;
   flex-direction: column;
   gap: 6.39px;
@@ -1119,9 +732,8 @@
   justify-content: flex-start;
   flex-shrink: 0;
   width: 136.42px;
-  position: relative;
 }
-.my-meal-plan .info {
+.info {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -1129,44 +741,40 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .meal-card {
+.meal-card {
   color: var(--gray-scale-gray-700, #4d4d4d);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 17.05304527282715px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
 
-.my-meal-plan .frame-427319019 {
+.frame-427319019 {
   display: flex;
   flex-direction: row;
   gap: 6.39px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .rating3 {
+.rating3 {
   display: flex;
   flex-direction: row;
   gap: 0px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .star-12 {
+.star-12 {
   flex-shrink: 0;
   width: 12.18px;
   height: 12.18px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group6 {
+.group6 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1176,14 +784,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-22 {
+.star-22 {
   flex-shrink: 0;
   width: 12.18px;
   height: 12.18px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group7 {
+.group7 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1193,14 +801,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-32 {
+.star-32 {
   flex-shrink: 0;
   width: 12.18px;
   height: 12.18px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group8 {
+.group8 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1210,14 +818,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-42 {
+.star-42 {
   flex-shrink: 0;
   width: 12.18px;
   height: 12.18px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group9 {
+.group9 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1227,14 +835,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-52 {
+.star-52 {
   flex-shrink: 0;
   width: 12.18px;
   height: 12.18px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group10 {
+.group10 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1244,15 +852,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan ._4-8-100 {
+._4-8-100 {
   color: rgba(51, 51, 51, 0.8);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 12.789782524108887px;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .frame-3 {
+.frame-3 {
   background: #fbf3ed;
   border-radius: 6.9px;
   padding: 3.45px;
@@ -1262,31 +869,29 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .vector4 {
+.vector4 {
   flex-shrink: 0;
   width: 12.41px;
   height: 14.48px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan ._12-m {
+._12-m {
   color: rgba(51, 51, 51, 0.8);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .add-to-cart {
+.add-to-cart {
   flex-shrink: 0;
   width: 51.19px;
   height: 49.87px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .meal2 {
+.meal2 {
   background: var(--gray-scale-white, #ffffff);
   border-radius: 8.12px;
   border-style: solid;
@@ -1300,9 +905,8 @@
   justify-content: flex-start;
   flex-shrink: 0;
   width: 252.9px;
-  position: relative;
 }
-.my-meal-plan .product-image2 {
+.product-image2 {
   padding: 3.87px;
   display: flex;
   flex-direction: column;
@@ -1311,25 +915,23 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .image2 {
+.image2 {
   flex-shrink: 0;
   width: 233.48px;
   height: 233.48px;
-  position: relative;
+
   object-fit: cover;
 }
-.my-meal-plan .frame-427319042 {
+.frame-427319042 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
   width: 237.05px;
-  position: relative;
 }
-.my-meal-plan .frame-4273190202 {
+.frame-4273190202 {
   display: flex;
   flex-direction: column;
   gap: 4.87px;
@@ -1337,34 +939,31 @@
   justify-content: flex-start;
   flex-shrink: 0;
   width: 103.91px;
-  position: relative;
 }
-.my-meal-plan .salmon-poke-salad2 {
+.salmon-poke-salad2 {
   color: var(--gray-scale-gray-700, #4d4d4d);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 17px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .frame-4273190192 {
+.frame-4273190192 {
   display: flex;
   flex-direction: row;
   gap: 4.87px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .star-13 {
+.star-13 {
   flex-shrink: 0;
   width: 9.28px;
   height: 9.28px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group11 {
+.group11 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1374,14 +973,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-23 {
+.star-23 {
   flex-shrink: 0;
   width: 9.28px;
   height: 9.28px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group12 {
+.group12 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1391,14 +990,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-33 {
+.star-33 {
   flex-shrink: 0;
   width: 9.28px;
   height: 9.28px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group13 {
+.group13 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1408,14 +1007,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-43 {
+.star-43 {
   flex-shrink: 0;
   width: 9.28px;
   height: 9.28px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group14 {
+.group14 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1425,14 +1024,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .star-53 {
+.star-53 {
   flex-shrink: 0;
   width: 9.28px;
   height: 9.28px;
-  position: relative;
+
   overflow: hidden;
 }
-.my-meal-plan .group15 {
+.group15 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1442,15 +1041,14 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan ._4-8-1002 {
+._4-8-1002 {
   color: rgba(51, 51, 51, 0.8);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .frame-32 {
+.frame-32 {
   background: #fbf3ed;
   border-radius: 5.25px;
   padding: 2.63px;
@@ -1460,20 +1058,19 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .vector5 {
+.vector5 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance {
+.add-to-cart-instance {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .frame-4273189242 {
+.frame-4273189242 {
   background: #fbf3ed;
   border-radius: 0px 8.12px 8.12px 0px;
   padding: 4.06px;
@@ -1487,20 +1084,20 @@
   left: 9.74px;
   top: 6.49px;
 }
-.my-meal-plan .icon2 {
+.icon2 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group-22 {
+.group-22 {
   flex-shrink: 0;
   width: 49px;
   height: 16px;
   position: static;
 }
-.my-meal-plan ._520-kcal2 {
+._520-kcal2 {
   color: rgba(51, 51, 51, 0.8);
   text-align: left;
   font-family: "SfProDisplay-Medium", sans-serif;
@@ -1510,14 +1107,14 @@
   left: 21.12px;
   top: 4.06px;
 }
-.my-meal-plan .icon3 {
+.icon3 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group16 {
+.group16 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1527,7 +1124,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group17 {
+.group17 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1537,7 +1134,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group18 {
+.group18 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1547,7 +1144,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group19 {
+.group19 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1557,7 +1154,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group20 {
+.group20 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1567,34 +1164,33 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector6 {
+.vector6 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance2 {
+.add-to-cart-instance2 {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .icon4 {
+.icon4 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .salmon-poke-salad3 {
+.salmon-poke-salad3 {
   color: var(--gray-scale-gray-700, #4d4d4d);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 12.988969802856445px;
   line-height: 150%;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .group21 {
+.group21 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1604,7 +1200,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group22 {
+.group22 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1614,7 +1210,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group23 {
+.group23 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1624,7 +1220,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group24 {
+.group24 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1634,7 +1230,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group25 {
+.group25 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1644,34 +1240,32 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan ._4-8-1003 {
+._4-8-1003 {
   color: rgba(51, 51, 51, 0.8);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 9.741727828979492px;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .vector7 {
+.vector7 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan ._12-m2 {
+._12-m2 {
   color: rgba(51, 51, 51, 0.8);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 8.404624938964844px;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .add-to-cart-instance3 {
+.add-to-cart-instance3 {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .frame-427319047 {
+.frame-427319047 {
   display: flex;
   flex-direction: column;
   gap: 32.47px;
@@ -1679,26 +1273,23 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .frame-427319038 {
+.frame-427319038 {
   display: flex;
   flex-direction: row;
   gap: 21.58px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .lunch {
+.lunch {
   color: #1a1a1a;
   text-align: left;
   font-family: "SfProDisplay-Semibold", sans-serif;
   font-size: 27.77203941345215px;
   font-weight: 600;
-  position: relative;
 }
-.my-meal-plan .lunch2 {
+.lunch2 {
   display: flex;
   flex-direction: row;
   gap: 25.98px;
@@ -1707,9 +1298,8 @@
   align-self: stretch;
   flex-shrink: 0;
   height: 420.21px;
-  position: relative;
 }
-.my-meal-plan .meal3 {
+.meal3 {
   background: var(--gray-scale-white, #ffffff);
   border-radius: 10.66px;
   border-style: solid;
@@ -1723,16 +1313,15 @@
   justify-content: flex-start;
   flex-shrink: 0;
   width: 332.03px;
-  position: relative;
 }
-.my-meal-plan .icon5 {
+.icon5 {
   flex-shrink: 0;
   width: 14.93px;
   height: 20.55px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group26 {
+.group26 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1742,7 +1331,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group27 {
+.group27 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1752,7 +1341,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group28 {
+.group28 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1762,7 +1351,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group29 {
+.group29 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1772,7 +1361,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group30 {
+.group30 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1782,33 +1371,32 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector8 {
+.vector8 {
   flex-shrink: 0;
   width: 12.41px;
   height: 14.48px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan ._12-m3 {
+._12-m3 {
   color: rgba(51, 51, 51, 0.8);
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
   font-size: 11.034318923950195px;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .add-to-cart-instance4 {
+.add-to-cart-instance4 {
   width: 41.56px !important;
   height: 40.48px !important;
 }
-.my-meal-plan .icon6 {
+.icon6 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group31 {
+.group31 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1818,7 +1406,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group32 {
+.group32 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1828,7 +1416,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group33 {
+.group33 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1838,7 +1426,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group34 {
+.group34 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1848,7 +1436,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group35 {
+.group35 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1858,25 +1446,25 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector9 {
+.vector9 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance5 {
+.add-to-cart-instance5 {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .icon7 {
+.icon7 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group36 {
+.group36 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1886,7 +1474,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group37 {
+.group37 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1896,7 +1484,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group38 {
+.group38 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1906,7 +1494,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group39 {
+.group39 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1916,7 +1504,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group40 {
+.group40 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1926,25 +1514,25 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector10 {
+.vector10 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance6 {
+.add-to-cart-instance6 {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .icon8 {
+.icon8 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group41 {
+.group41 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1954,7 +1542,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group42 {
+.group42 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1964,7 +1552,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group43 {
+.group43 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1974,7 +1562,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group44 {
+.group44 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1984,7 +1572,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group45 {
+.group45 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -1994,18 +1582,18 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector11 {
+.vector11 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance7 {
+.add-to-cart-instance7 {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .frame-427319046 {
+.frame-427319046 {
   display: flex;
   flex-direction: column;
   gap: 32.47px;
@@ -2013,24 +1601,22 @@
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .dinner {
+.dinner {
   color: #1a1a1a;
   text-align: left;
   font-family: "SfProDisplay-Semibold", sans-serif;
   font-size: 27.77203941345215px;
   font-weight: 600;
-  position: relative;
 }
-.my-meal-plan .icon9 {
+.icon9 {
   flex-shrink: 0;
   width: 14.93px;
   height: 20.55px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group46 {
+.group46 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2040,7 +1626,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group47 {
+.group47 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2050,7 +1636,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group48 {
+.group48 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2060,7 +1646,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group49 {
+.group49 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2070,7 +1656,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group50 {
+.group50 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2080,25 +1666,25 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector12 {
+.vector12 {
   flex-shrink: 0;
   width: 12.41px;
   height: 14.48px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance8 {
+.add-to-cart-instance8 {
   width: 41.56px !important;
   height: 40.48px !important;
 }
-.my-meal-plan .icon10 {
+.icon10 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group51 {
+.group51 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2108,7 +1694,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group52 {
+.group52 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2118,7 +1704,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group53 {
+.group53 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2128,7 +1714,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group54 {
+.group54 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2138,7 +1724,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group55 {
+.group55 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2148,25 +1734,25 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector13 {
+.vector13 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance9 {
+.add-to-cart-instance9 {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .icon11 {
+.icon11 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group56 {
+.group56 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2176,7 +1762,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group57 {
+.group57 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2186,7 +1772,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group58 {
+.group58 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2196,7 +1782,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group59 {
+.group59 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2206,7 +1792,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group60 {
+.group60 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2216,25 +1802,25 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector14 {
+.vector14 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance10 {
+.add-to-cart-instance10 {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .icon12 {
+.icon12 {
   flex-shrink: 0;
   width: 11.37px;
   height: 15.65px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .group61 {
+.group61 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2244,7 +1830,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group62 {
+.group62 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2254,7 +1840,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group63 {
+.group63 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2264,7 +1850,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group64 {
+.group64 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2274,7 +1860,7 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .group65 {
+.group65 {
   width: 81.25%;
   height: 78.12%;
   position: absolute;
@@ -2284,52 +1870,50 @@
   top: 9.38%;
   overflow: visible;
 }
-.my-meal-plan .vector15 {
+.vector15 {
   flex-shrink: 0;
   width: 9.46px;
   height: 11.03px;
-  position: relative;
+
   overflow: visible;
 }
-.my-meal-plan .add-to-cart-instance11 {
+.add-to-cart-instance11 {
   width: 29.58px !important;
   height: 28.81px !important;
 }
-.my-meal-plan .hero {
-  background: linear-gradient(
-    180deg,
-    rgba(248, 219, 214, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  padding: 0px 30px 0px 30px;
+.hero {
+  margin: 30px 30px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.hero1 {
+  height: 520px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  width: 1440px;
-  position: absolute;
-  left: 50%;
-  translate: -50%;
-  top: 108px;
+  grid-area: 1 / 1 / 2 / 2;
 }
-.my-meal-plan .right-meal-every-time {
-  color: #f6baae;
-  text-align: left;
-  font-family: "Thunder-BlackLc", sans-serif;
-  font-size: 136.25px;
-  line-height: 90%;
-  letter-spacing: 0.025em;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
+.umv49RURnC {
+  height: 100%;
 }
-.my-meal-plan .image3 {
+.hero2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: 1 / 2 / 2 / 3;
+}
+.image3 {
   flex-shrink: 0;
   width: 595.82px;
   height: 409.62px;
   position: static;
 }
-.my-meal-plan .highlight {
+.highlight {
   width: 542.75px;
   height: 338.86px;
   position: absolute;
@@ -2337,7 +1921,7 @@
   top: 41.89px;
   overflow: visible;
 }
-.my-meal-plan .shadow {
+.shadow {
   width: 595.82px;
   height: 397.52px;
   position: absolute;
@@ -2347,7 +1931,7 @@
   object-fit: cover;
   aspect-ratio: 595.82/397.52;
 }
-.my-meal-plan .image-7 {
+.image-7 {
   width: 595.82px;
   height: 397.52px;
   position: absolute;
@@ -2356,17 +1940,14 @@
   object-fit: cover;
   aspect-ratio: 595.82/397.52;
 }
-.my-meal-plan .navbar {
+.navbar {
+  padding: 56px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  width: 1384px;
-  position: absolute;
-  left: 28px;
-  top: 27px;
 }
-.my-meal-plan .dealicious2 {
+.dealicious2 {
   color: #292929;
   text-align: left;
   font-family: "Thunder-BlackLc", sans-serif;
@@ -2375,57 +1956,35 @@
   letter-spacing: 0.025em;
   font-weight: 400;
   text-transform: uppercase;
-  position: relative;
 }
-.my-meal-plan .frame-427318916 {
+.frame-427318916 {
   display: flex;
   flex-direction: row;
   gap: 39px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .frame-427318915 {
+.frame-427318915 {
   display: flex;
   flex-direction: row;
   gap: 50px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
-.my-meal-plan .home {
+.home {
   color: #292929;
   text-align: left;
   font-family: "SfProDisplay-Regular", sans-serif;
-  font-size: 15px;
-  line-height: 21.67px;
+  font-size: 24px;
   font-weight: 400;
-  position: relative;
 }
-.my-meal-plan .meal-plan {
-  color: #292929;
-  text-align: left;
-  font-family: "SfProDisplay-Regular", sans-serif;
-  font-size: 15px;
-  line-height: 21.67px;
-  font-weight: 400;
-  position: relative;
-}
-.my-meal-plan .grocery {
-  color: #292929;
-  text-align: left;
-  font-family: "SfProDisplay-Regular", sans-serif;
-  font-size: 15px;
-  line-height: 21.67px;
-  font-weight: 400;
-  position: relative;
-}
-.my-meal-plan .frame-1 {
+
+.log-in {
   border-radius: 25px;
   border-style: solid;
-  border-color: #292929;
+  border-color: #2ea45e;
   border-width: 1px;
   padding: 10px 40px 10px 40px;
   display: flex;
@@ -2434,16 +1993,199 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  position: relative;
-}
-.my-meal-plan .log-in {
-  color: #292929;
+  color: #2ea45e;
   text-align: left;
   font-family: "SfProDisplay-Semibold", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.checkbox0 {
+  width: 18px;
+  height: 18px;
+}
+
+.Cuu8Apn8Lg {
+  height: 240px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: #292929;
+}
+
+.gyfKLcTrZ4 {
+  font-size: 48px;
+}
+
+.LgL57SFu6z {
+  width: 60%;
+  height: 4px;
+  background-color: #2ea45e;
+}
+
+.BkEOXo0iLd {
+  width: 100%;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background: #111116;
+  padding: 57px 83px 57px 83px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.frame-5944 {
+  background: #111116;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 169px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.company-name {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 297px;
+}
+.dealicious {
+  color: #f5f5f5;
+  text-align: left;
+  font-family: "Thunder-BlackLc", sans-serif;
+  font-size: 40px;
+  line-height: 105.36%;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  align-self: stretch;
+}
+.my-meal-plan
+  .we-help-college-students-build-healthy-eating-habits-while-staying-within-a-tight-budget-our-service-provides-personalized-weekly-meal-plans-tailored-to-their-nutritional-preferences-making-balanced-eating-both-accessible-and-affordable {
+  color: #b2b2b2;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  width: 295px;
+}
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 117px;
+}
+.services {
+  color: #f2f2f2;
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+
+  align-self: stretch;
+}
+.documentation {
+  color: #b3b3b3;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  align-self: stretch;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 109px;
+}
+.company2 {
+  color: #f2f2f2;
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+
+  align-self: stretch;
+}
+.about {
+  color: #b3b3b3;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  align-self: stretch;
+}
+.terms {
+  color: #b3b3b3;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  align-self: stretch;
+}
+.privacy-policy {
+  color: #b3b3b3;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  align-self: stretch;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 258.36px;
+}
+.HmI5EtHwOB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.SgcpWhP8d0 {
+  color: white;
+  background-color: #2ea45e;
+  font-family: "SfProDisplay-Semibold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: "SfProDisplay-Semibold", sans-serif;
 }
