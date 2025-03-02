@@ -1,0 +1,50 @@
+.navbar {
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.logo {
+  width: 12rem;
+  height: 4.5rem;
+}
+
+.categories {
+  display: flex;
+  gap: 2rem;
+}
+
+.categories div {
+  font-family: "NunitoSans-Medium", sans-serif;
+  font-size: 1.3125rem;
+  color: #2a292b;
+  cursor: pointer;
+}
+
+.loginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 3.5rem;
+  border-radius: 50px;
+  border: 2px solid #249552;
+  color: #249552;
+  font-size: 1rem;
+  font-family: "NunitoSans-Medium", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.loginBtn:hover {
+  background: #249552;
+  color: white;
+}

@@ -1,0 +1,98 @@
+.footer {
+  width: 100%;
+  background: #2A292B;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footerContainer {
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 150px;
+}
+
+.socialMediaIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialMediaIcons img {
+  width: 40px;
+  height: 40px;
+}
+
+.footerCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quickLinks {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.quickLinks a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.quickLinks a:hover {
+  text-decoration: underline;
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.contactText {
+  color: white;
+  font-size: 16px;
+}
+
+.contactForm {
+  display: flex;
+  gap: 10px;
+}
+
+.emailInput {
+  padding: 10px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  width: 200px;
+}
+
+.contactButton {
+  padding: 10px 15px;
+  background: white;
+  color: #2A292B;
+  border: none;
+  cursor: pointer;
+}
+
+.contactButton:hover {
+  background: #ddd;
+}

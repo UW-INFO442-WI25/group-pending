@@ -1,3 +1,21 @@
+import React from "react";
+import Navbar from "../components/NavBar";
+import Footer from "../components/Footer";
+
+const MealPlanPage = () => {
+  return (
+    <div>
+      <Navbar />
+      <h1>Meal Plan</h1>
+      <p>Placeholderrrr</p>
+      <Footer />
+    </div>
+  );
+};
+
+export default MealPlanPage;
+
+
 // import { useEffect, useState } from "react";
 // import axios from "axios";
 // import "../style.css";
