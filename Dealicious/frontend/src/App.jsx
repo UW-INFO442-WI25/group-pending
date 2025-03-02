@@ -37,20 +37,30 @@ function App() {
       setMinProtein(specialParams[category].minProtein || null);
       setMaxCarb(specialParams[category].maxCarb || null);
       setMinFiber(specialParams[category].minFiber || null);
+      console.log(minFiber + " " + maxCarb + " " + minProtein);
       setNutritionOption("");
     } else {
       setNutritionOption(category);
       setMinProtein(null);
       setMaxCarb(null);
       setMinFiber(null);
+      console.log(minFiber + " " + maxCarb + " " + minProtein);
     }
+    // fetchRecipes("/api/recipe/update");
+    fetchRecipes("/api/recipe");
+  };
+
+  const handleCuisineOption = (cuisine) => {
+    setCuisineOption(cuisine);
+    // fetchRecipes("/api/recipe/update");
+    fetchRecipes("/api/recipe");
   };
 
   useEffect(() => {
-    fetchRecipes();
+    fetchRecipes("/api/recipe");
   }, [nutritionOption, rating, cuisineOption]);
 
-  const fetchRecipes = () => {
+  const fetchRecipes = (apiString) => {
     let params = {
       nutrition: nutritionOption,
       rating: rating ? 4 : undefined,
@@ -62,39 +72,77 @@ function App() {
     };
 
     axios
-      .get("/api/recipe", { params })
+      .get(apiString, { params })
       .then((response) => {
-        setBreakfastRecipes(response.data.results);
-        console.log(response.data.results);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
 
-    params = {
-      nutrition: nutritionOption,
-      rating: rating ? 4 : undefined,
-      cuisine: cuisineOption,
-      type: "main course",
-      maxCarbs: maxCarb,
-      minFiber: minFiber,
-      minProtein: minProtein,
-    };
+        console.log(response.data);
+        setBreakfastRecipes(response.data.breakfast);
+        setLunchRecipes(response.data.lunch);
+        setDinnerRecipes(response.data.dinner);
 
-    axios
-      .get("/api/recipe", { params })
-      .then((response) => {
-        setLunchRecipes(response.data.results);
-        console.log(response.data.results);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-
-    axios
-      .get("/api/recipe", { params })
-      .then((response) => {
-        setDinnerRecipes(response.data.results);
-        console.log(response.data.results);
       })
       .catch((error) => console.error("Error fetching data:", error));
   };
+
+  const RecipeCard = ({ recipe }) => {
+    console.log(recipe.analyzedInstructions?.[0]?.steps);
+    if (!recipe) return <p>Loading...</p>;
+  
+    return (
+      <div className="meal">
+        <div className="frame-427318924">
+          <div className="group-2">
+            <div className="_520-kcal">{recipe.nutrition?.nutrients[0]?.amount} kcal</div>
+          </div>
+        </div>
+  
+        <div className="product-image">
+          <img className="image" src={recipe.image} alt={recipe.title} />
+        </div>
+        <div className="frame-427319020">
+          <div className="info">
+            <div className="meal-card">{recipe.title}</div>
+          </div>
+
+          <div className="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              {recipe.analyzedInstructions?.[0]?.steps?.map((steps) => (
+                <li key={steps.step}>{steps.step}</li>
+              ))}
+            </ol>
+          </div>
+
+          <div className="ingredients">
+            <h3>Ingredients</h3>
+            <p>
+              {[
+                ...new Set(
+                  recipe.analyzedInstructions?.[0]?.steps?.flatMap((step) =>
+                    step.ingredients.map((ingredient) => ingredient.name)
+                  )
+                ),
+              ].join(', ')}
+            </p>
+          </div>
+
+          <div className="nutrition">
+            <h3>Nutrition</h3>
+            <ul>
+              {recipe.nutrition?.nutrients?.map((nutrient) => (
+                <li key={nutrient.name}>{nutrient.name +": " +nutrient.amount +""+nutrient.unit}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="frame-3">
+            <div className="_12-m">{recipe.readyInMinutes} min</div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+  
 
   return (
     <div className={"my-meal-plan "}>
@@ -132,7 +180,7 @@ function App() {
           </div>
         </div>
       </div>
-      <h1 className="Cuu8Apn8Lg">YOUR WEEKIY MEAL PLAN</h1>
+      <h1 className="Cuu8Apn8Lg">YOUR WEEKLY MEAL PLAN</h1>
       <div className="content">
         <div className="status-nav">
           <div className="frame-427319028">
@@ -157,9 +205,6 @@ function App() {
             <div className="frame-427319021">
               <div className="day">Day 7 </div>
             </div>
-          </div>
-          <div className="dropdown">
-            <div className="search">Search </div>
           </div>
         </div>
         <div className="main">
@@ -235,7 +280,7 @@ function App() {
                   <button
                     key={cuisine}
                     className="btn0"
-                    onClick={() => setCuisineOption(cuisine)}
+                    onClick={() => handleCuisineOption(cuisine)}
                   >
                     {cuisine}
                   </button>
@@ -244,418 +289,15 @@ function App() {
             </div>
           </div>
           <div className="displaying">
-            <div className="frame-427319049">
-              <div className="frame-427319048">
-                <div className="frame-427319037">
-                  <div className="rectangle-26"></div>
-                  <div className="breakfast">Breakfast </div>
-                </div>
-                <div className="breakfast2">
-                  {breakfastRecipes.map((recipe, index) => (
-                    <div className={index === 0 ? "meal" : "meal2"} key={index}>
-                      <div
-                        className={
-                          index === 0 ? "frame-427318924" : "frame-4273189242"
-                        }
-                      >
-                        <img
-                          className={index === 0 ? "icon" : "icon2"}
-                          src={index === 0 ? "icon1.svg" : "icon2.svg"}
-                        />
-                        <div className={index === 0 ? "group-2" : "group-22"}>
-                          <div
-                            className={index === 0 ? "_520-kcal" : "_520-kcal2"}
-                          >
-                            520 kcal{" "}
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className={
-                          index === 0 ? "product-image" : "product-image2"
-                        }
-                      >
-                        <img
-                          className={index === 0 ? "image" : "image2"}
-                          src={recipe.image}
-                        />
-                      </div>
-                      <div
-                        className={
-                          index === 0 ? "frame-427319029" : "frame-427319042"
-                        }
-                      >
-                        <div
-                          className={
-                            index === 0 ? "frame-427319020" : "frame-4273190202"
-                          }
-                        >
-                          <div className="info">
-                            <div
-                              className={
-                                index === 0 ? "meal-card" : "meal-card2"
-                              }
-                            >
-                              {recipe.title}
-                            </div>
-                          </div>
-                          <div
-                            className={
-                              index === 0
-                                ? "frame-427319019"
-                                : "frame-4273190192"
-                            }
-                          >
-                            <div className="rating3">
-                              <div
-                                className={index === 0 ? "star-12" : "star-13"}
-                              >
-                                <img
-                                  className={index === 0 ? "group6" : "group11"}
-                                  src={
-                                    index === 0 ? "group5.svg" : "group10.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-22" : "star-23"}
-                              >
-                                <img
-                                  className={index === 0 ? "group7" : "group12"}
-                                  src={
-                                    index === 0 ? "group6.svg" : "group11.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-32" : "star-33"}
-                              >
-                                <img
-                                  className={index === 0 ? "group8" : "group13"}
-                                  src={
-                                    index === 0 ? "group7.svg" : "group12.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-42" : "star-43"}
-                              >
-                                <img
-                                  className={index === 0 ? "group9" : "group14"}
-                                  src={
-                                    index === 0 ? "group8.svg" : "group13.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-52" : "star-53"}
-                              >
-                                <img
-                                  className={
-                                    index === 0 ? "group10" : "group15"
-                                  }
-                                  src={
-                                    index === 0 ? "group9.svg" : "group14.svg"
-                                  }
-                                />
-                              </div>
-                            </div>
-                            <div
-                              className={index === 0 ? "_4-8-100" : "_4-8-1002"}
-                            >
-                              4.8 (100+){" "}
-                            </div>
-                          </div>
-                          <div className={index === 0 ? "frame-3" : "frame-32"}>
-                            <img
-                              className={index === 0 ? "vector4" : "vector5"}
-                              src={index === 0 ? "vector3.svg" : "vector4.svg"}
-                            />
-                            <div className="_12-m">12 m </div>
-                          </div>
-                        </div>
-                        {index === 0 && (
-                          <img className="add-to-cart" src="add-to-cart0.svg" />
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="frame-427319047">
-                <div className="frame-427319038">
-                  <div className="rectangle-26"></div>
-                  <div className="lunch">Lunch </div>
-                </div>
-                <div className="lunch2">
-                  {lunchRecipes.map((recipe, index) => (
-                    <div className={index === 0 ? "meal" : "meal2"} key={index}>
-                      <div
-                        className={
-                          index === 0 ? "frame-427318924" : "frame-4273189242"
-                        }
-                      >
-                        <img
-                          className={index === 0 ? "icon" : "icon2"}
-                          src={index === 0 ? "icon1.svg" : "icon2.svg"}
-                        />
-                        <div className={index === 0 ? "group-2" : "group-22"}>
-                          <div
-                            className={index === 0 ? "_520-kcal" : "_520-kcal2"}
-                          >
-                            520 kcal{" "}
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className={
-                          index === 0 ? "product-image" : "product-image2"
-                        }
-                      >
-                        <img
-                          className={index === 0 ? "image" : "image2"}
-                          src={recipe.image}
-                        />
-                      </div>
-                      <div
-                        className={
-                          index === 0 ? "frame-427319029" : "frame-427319042"
-                        }
-                      >
-                        <div
-                          className={
-                            index === 0 ? "frame-427319020" : "frame-4273190202"
-                          }
-                        >
-                          <div className="info">
-                            <div
-                              className={
-                                index === 0 ? "meal-card" : "meal-card2"
-                              }
-                            >
-                              {recipe.title}
-                            </div>
-                          </div>
-                          <div
-                            className={
-                              index === 0
-                                ? "frame-427319019"
-                                : "frame-4273190192"
-                            }
-                          >
-                            <div className="rating3">
-                              <div
-                                className={index === 0 ? "star-12" : "star-13"}
-                              >
-                                <img
-                                  className={index === 0 ? "group6" : "group11"}
-                                  src={
-                                    index === 0 ? "group5.svg" : "group10.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-22" : "star-23"}
-                              >
-                                <img
-                                  className={index === 0 ? "group7" : "group12"}
-                                  src={
-                                    index === 0 ? "group6.svg" : "group11.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-32" : "star-33"}
-                              >
-                                <img
-                                  className={index === 0 ? "group8" : "group13"}
-                                  src={
-                                    index === 0 ? "group7.svg" : "group12.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-42" : "star-43"}
-                              >
-                                <img
-                                  className={index === 0 ? "group9" : "group14"}
-                                  src={
-                                    index === 0 ? "group8.svg" : "group13.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-52" : "star-53"}
-                              >
-                                <img
-                                  className={
-                                    index === 0 ? "group10" : "group15"
-                                  }
-                                  src={
-                                    index === 0 ? "group9.svg" : "group14.svg"
-                                  }
-                                />
-                              </div>
-                            </div>
-                            <div
-                              className={index === 0 ? "_4-8-100" : "_4-8-1002"}
-                            >
-                              4.8 (100+){" "}
-                            </div>
-                          </div>
-                          <div className={index === 0 ? "frame-3" : "frame-32"}>
-                            <img
-                              className={index === 0 ? "vector4" : "vector5"}
-                              src={index === 0 ? "vector3.svg" : "vector4.svg"}
-                            />
-                            <div className="_12-m">12 m </div>
-                          </div>
-                        </div>
-                        {index === 0 && (
-                          <img className="add-to-cart" src="add-to-cart0.svg" />
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="frame-427319046">
-                <div className="frame-427319038">
-                  <div className="rectangle-26"></div>
-                  <div className="dinner">Dinner </div>
-                </div>
-                <div className="lunch2">
-                  {dinnerRecipes.map((recipe, index) => (
-                    <div className={index === 0 ? "meal" : "meal2"} key={index}>
-                      <div
-                        className={
-                          index === 0 ? "frame-427318924" : "frame-4273189242"
-                        }
-                      >
-                        <img
-                          className={index === 0 ? "icon" : "icon2"}
-                          src={index === 0 ? "icon1.svg" : "icon2.svg"}
-                        />
-                        <div className={index === 0 ? "group-2" : "group-22"}>
-                          <div
-                            className={index === 0 ? "_520-kcal" : "_520-kcal2"}
-                          >
-                            520 kcal{" "}
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className={
-                          index === 0 ? "product-image" : "product-image2"
-                        }
-                      >
-                        <img
-                          className={index === 0 ? "image" : "image2"}
-                          src={recipe.image}
-                        />
-                      </div>
-                      <div
-                        className={
-                          index === 0 ? "frame-427319029" : "frame-427319042"
-                        }
-                      >
-                        <div
-                          className={
-                            index === 0 ? "frame-427319020" : "frame-4273190202"
-                          }
-                        >
-                          <div className="info">
-                            <div
-                              className={
-                                index === 0 ? "meal-card" : "meal-card2"
-                              }
-                            >
-                              {recipe.title}
-                            </div>
-                          </div>
-                          <div
-                            className={
-                              index === 0
-                                ? "frame-427319019"
-                                : "frame-4273190192"
-                            }
-                          >
-                            <div className="rating3">
-                              <div
-                                className={index === 0 ? "star-12" : "star-13"}
-                              >
-                                <img
-                                  className={index === 0 ? "group6" : "group11"}
-                                  src={
-                                    index === 0 ? "group5.svg" : "group10.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-22" : "star-23"}
-                              >
-                                <img
-                                  className={index === 0 ? "group7" : "group12"}
-                                  src={
-                                    index === 0 ? "group6.svg" : "group11.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-32" : "star-33"}
-                              >
-                                <img
-                                  className={index === 0 ? "group8" : "group13"}
-                                  src={
-                                    index === 0 ? "group7.svg" : "group12.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-42" : "star-43"}
-                              >
-                                <img
-                                  className={index === 0 ? "group9" : "group14"}
-                                  src={
-                                    index === 0 ? "group8.svg" : "group13.svg"
-                                  }
-                                />
-                              </div>
-                              <div
-                                className={index === 0 ? "star-52" : "star-53"}
-                              >
-                                <img
-                                  className={
-                                    index === 0 ? "group10" : "group15"
-                                  }
-                                  src={
-                                    index === 0 ? "group9.svg" : "group14.svg"
-                                  }
-                                />
-                              </div>
-                            </div>
-                            <div
-                              className={index === 0 ? "_4-8-100" : "_4-8-1002"}
-                            >
-                              4.8 (100+){" "}
-                            </div>
-                          </div>
-                          <div className={index === 0 ? "frame-3" : "frame-32"}>
-                            <img
-                              className={index === 0 ? "vector4" : "vector5"}
-                              src={index === 0 ? "vector3.svg" : "vector4.svg"}
-                            />
-                            <div className="_12-m">12 m </div>
-                          </div>
-                        </div>
-                        {index === 0 && (
-                          <img className="add-to-cart" src="add-to-cart0.svg" />
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div>
+              <h2>Breakfast</h2>
+              <RecipeCard recipe={breakfastRecipes} />
+
+              <h2>Lunch</h2>
+              <RecipeCard recipe={lunchRecipes} />
+
+              <h2>Dinner</h2>
+              <RecipeCard recipe={dinnerRecipes} />
             </div>
           </div>
         </div>

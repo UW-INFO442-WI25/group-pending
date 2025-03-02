@@ -647,92 +647,6 @@
   flex-shrink: 0;
   height: 420.21px;
 }
-.meal {
-  background: var(--gray-scale-white, #ffffff);
-  border-radius: 10.66px;
-  border-style: solid;
-  border-color: var(--gray-scale-gray-100, #e6e6e6);
-  border-width: 1.01px;
-  padding: 8.12px 7.46px 8.12px 7.46px;
-  display: flex;
-  flex-direction: column;
-  gap: 11.72px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 332.03px;
-}
-.frame-427318924 {
-  background: #fbf3ed;
-  border-radius: 0px 10.66px 10.66px 0px;
-  padding: 5.33px;
-  display: flex;
-  flex-direction: row;
-  gap: 7.46px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: absolute;
-  left: 12.79px;
-  top: 8.53px;
-}
-.icon {
-  flex-shrink: 0;
-  width: 14.93px;
-  height: 20.55px;
-
-  overflow: visible;
-}
-.group-2 {
-  flex-shrink: 0;
-  width: 64px;
-  height: 20px;
-  position: static;
-}
-._520-kcal {
-  color: rgba(51, 51, 51, 0.8);
-  text-align: left;
-  font-family: "SfProDisplay-Medium", sans-serif;
-  font-size: 17.05304527282715px;
-  font-weight: 500;
-  position: absolute;
-  left: 27.72px;
-  top: 5.6px;
-}
-.product-image {
-  padding: 5.07px;
-  display: flex;
-  flex-direction: column;
-  gap: 10.15px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-}
-.image {
-  flex-shrink: 0;
-  width: 306.53px;
-  height: 306.53px;
-
-  object-fit: cover;
-}
-.frame-427319029 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  width: 300.37px;
-}
-.frame-427319020 {
-  display: flex;
-  flex-direction: column;
-  gap: 6.39px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 136.42px;
-}
 .info {
   display: flex;
   flex-direction: column;
@@ -859,69 +773,12 @@
   font-size: 12.789782524108887px;
   font-weight: 400;
 }
-.frame-3 {
-  background: #fbf3ed;
-  border-radius: 6.9px;
-  padding: 3.45px;
-  display: flex;
-  flex-direction: row;
-  gap: 4.83px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-}
-.vector4 {
-  flex-shrink: 0;
-  width: 12.41px;
-  height: 14.48px;
-
-  overflow: visible;
-}
-._12-m {
-  color: rgba(51, 51, 51, 0.8);
-  text-align: left;
-  font-family: "SfProDisplay-Regular", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-}
 .add-to-cart {
   flex-shrink: 0;
   width: 51.19px;
   height: 49.87px;
 
   overflow: visible;
-}
-.meal2 {
-  background: var(--gray-scale-white, #ffffff);
-  border-radius: 8.12px;
-  border-style: solid;
-  border-color: var(--gray-scale-gray-100, #e6e6e6);
-  border-width: 0.77px;
-  padding: 5.68px;
-  display: flex;
-  flex-direction: column;
-  gap: 8.93px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 252.9px;
-}
-.product-image2 {
-  padding: 3.87px;
-  display: flex;
-  flex-direction: column;
-  gap: 7.73px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-}
-.image2 {
-  flex-shrink: 0;
-  width: 233.48px;
-  height: 233.48px;
-
-  object-fit: cover;
 }
 .frame-427319042 {
   display: flex;
@@ -1298,21 +1155,6 @@
   align-self: stretch;
   flex-shrink: 0;
   height: 420.21px;
-}
-.meal3 {
-  background: var(--gray-scale-white, #ffffff);
-  border-radius: 10.66px;
-  border-style: solid;
-  border-color: var(--gray-scale-gray-100, #e6e6e6);
-  border-width: 1.01px;
-  padding: 8.12px 7.46px 8.12px 7.46px;
-  display: flex;
-  flex-direction: column;
-  gap: 11.72px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 332.03px;
 }
 .icon5 {
   flex-shrink: 0;
@@ -2189,3 +2031,146 @@
   flex-shrink: 0;
   font-family: "SfProDisplay-Semibold", sans-serif;
 }
+
+/*****************************************************************************/
+
+
+/* Container for the meal card */
+.meal {
+  background: var(--gray-scale-white, #ffffff);
+  border-radius: 10.66px;
+  border-style: solid;
+  border-color: var(--gray-scale-gray-100, #e6e6e6);
+  border-width: 1.01px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px auto;
+  overflow-x: hidden;
+}
+
+/* Left Section for Image and kcal info */
+.left {
+  flex: 1;  /* Left section takes up 1/3 of the space */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100%;  /* Make the image take the full width of its container */
+  height: auto;
+  border-radius: 8px;  /* Round the corners of the image */
+}
+
+.frame-427318924 {
+  background: #fbf3ed;
+  border-radius: 0px 10.66px 10.66px 0px;
+  padding: 5.33px;
+  display: flex;
+  flex-direction: row;
+  gap: 7.46px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+._520-kcal {
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Right Section for title, ingredients, instructions, and nutrition */
+.right {
+  flex: 2;  /* Right section takes up 2/3 of the space */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.frame-427319020 {
+  display: flex;
+  flex-direction: column;
+  gap: 6.39px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 136.42px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.meal-card {
+  font-family: "SfProDisplay-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray-scale-gray-700, #4d4d4d);
+  margin-bottom: 10px;
+}
+
+.ingredients, .instructions, .nutrition {
+  margin-top: 10px;
+}
+
+.instructions {
+  text-wrap: pretty;
+}
+
+.ingredients h3, .instructions h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.ingredients ul, .instructions ol {
+  margin-left: 20px;
+}
+
+/* Make instructions scrollable */
+.instructions {
+  max-height: 200px;  /* Adjust the max height as needed */
+  overflow-y: auto;   /* Allows vertical scrolling */
+  padding-right: 10px;  /* Adds some space for the scrollbar */
+}
+
+.instructions ol {
+  padding-right: 20px;  /* Ensures content doesn't touch the scrollbar */
+}
+
+.frame-3 {
+  background: #fbf3ed;
+  border-radius: 6.9px;
+  padding: 3.45px;
+  display: flex;
+  flex-direction: row;
+  gap: 4.83px;
+  align-items: center;
+}
+
+._12-m {
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+ol {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+ol li, .ingredients p {
+  max-width: 600px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+

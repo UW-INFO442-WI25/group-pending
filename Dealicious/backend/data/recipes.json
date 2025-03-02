@@ -1,0 +1,577 @@
+{
+  "breakfast": {
+    "id": 638917,
+    "image": "https://img.spoonacular.com/recipes/638917-312x231.jpg",
+    "imageType": "jpg",
+    "title": "Chocolate Chip Coconut Muffins",
+    "readyInMinutes": 45,
+    "servings": 12,
+    "sourceUrl": "https://www.foodista.com/recipe/SM62VQWH/chocolate-chip-coconut-muffins",
+    "vegetarian": false,
+    "vegan": false,
+    "glutenFree": true,
+    "dairyFree": true,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": false,
+    "sustainable": false,
+    "lowFodmap": true,
+    "weightWatcherSmartPoints": 11,
+    "gaps": "no",
+    "preparationMinutes": null,
+    "cookingMinutes": null,
+    "aggregateLikes": 10,
+    "healthScore": 0,
+    "creditsText": "foodista.com",
+    "license": null,
+    "sourceName": "foodista.com",
+    "pricePerServing": 71.37,
+    "summary": "The recipe Chocolate Chip Coconut Muffins can be made <b>in roughly 45 minutes</b>. This gluten free, dairy free, and fodmap friendly recipe serves 12 and costs <b>71 cents per serving</b>. This breakfast has <b>263 calories</b>, <b>5g of protein</b>, and <b>11g of fat</b> per serving. A few people made this recipe, and 10 would say it hit the spot. It is brought to you by Foodista. A mixture of sucanat, coconut flakes, almond milk, and a handful of other ingredients are all it takes to make this recipe so scrumptious. All things considered, we decided this recipe <b>deserves a spoonacular score of 29%</b>. This score is not so great. If you like this recipe, you might also like recipes such as <a href=\"https://spoonacular.com/recipes/chocolate-chip-muffins-with-coconut-streusel-53777\">Chocolate Chip Muffins With Coconut Streusel</a>, <a href=\"https://spoonacular.com/recipes/banana-chocolate-chip-coconut-muffins-626620\">Banana Chocolate Chip Coconut Muffins</a>, and <a href=\"https://spoonacular.com/recipes/vegan-chocolate-chip-coconut-muffins-1410845\">Vegan Chocolate Chip Coconut Muffins</a>.",
+    "cuisines": [],
+    "dishTypes": [
+      "morning meal",
+      "brunch",
+      "breakfast"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free",
+      "fodmap friendly"
+    ],
+    "occasions": [],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "Go to my blog for the full instructions: http://gourmandelle.com/chocolate-chip-coconut-muffins/",
+            "ingredients": [
+              {
+                "id": 19081,
+                "name": "chocolate",
+                "localizedName": "chocolate",
+                "image": "milk-chocolate.jpg"
+              },
+              {
+                "id": 12104,
+                "name": "coconut",
+                "localizedName": "coconut",
+                "image": "https://spoonacular.com/cdn/ingredients_100x100/coconut.jpg"
+              }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "spoonacularScore": 14.570844650268555,
+    "spoonacularSourceUrl": "https://spoonacular.com/chocolate-chip-coconut-muffins-638917",
+    "nutrition": {
+      "nutrients": [
+        {
+          "name": "Protein",
+          "amount": 4.99609,
+          "unit": "g"
+        },
+        {
+          "name": "Carbohydrates",
+          "amount": 32.443,
+          "unit": "g"
+        },
+        {
+          "name": "Fiber",
+          "amount": 4.10136,
+          "unit": "g"
+        }
+      ]
+    }
+  },
+  "lunch": {
+    "id": 649002,
+    "image": "https://img.spoonacular.com/recipes/649002-312x231.jpg",
+    "imageType": "jpg",
+    "title": "Kogi Kimchi Quesadillas",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "sourceUrl": "https://www.foodista.com/recipe/X2JJGL4T/kogi-kimchi-quesadillas",
+    "vegetarian": false,
+    "vegan": false,
+    "glutenFree": false,
+    "dairyFree": false,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": false,
+    "sustainable": false,
+    "lowFodmap": false,
+    "weightWatcherSmartPoints": 29,
+    "gaps": "no",
+    "preparationMinutes": null,
+    "cookingMinutes": null,
+    "aggregateLikes": 1,
+    "healthScore": 25,
+    "creditsText": "foodista.com",
+    "license": null,
+    "sourceName": "foodista.com",
+    "pricePerServing": 260.12,
+    "summary": "Kogi Kimchi Quesadillas requires roughly <b>45 minutes</b> from start to finish. For <b>$2.6 per serving</b>, you get a hor d'oeuvre that serves 4. One serving contains <b>898 calories</b>, <b>36g of protein</b>, and <b>51g of fat</b>. 1 person has tried and liked this recipe. This recipe from Foodista requires tender cut beef, green onions, flour tortillas, and garlic powder. It is a <b>budget friendly</b> recipe for fans of Mexican food. All things considered, we decided this recipe <b>deserves a spoonacular score of 62%</b>. This score is solid. Similar recipes are <a href=\"https://spoonacular.com/recipes/kimchi-quesadillas-248265\">Kimchi Quesadillas</a>, <a href=\"https://spoonacular.com/recipes/kimchi-and-avocado-quesadillas-21515\">Kimchi and Avocado Quesadillas</a>, and <a href=\"https://spoonacular.com/recipes/dinner-tonight-kimchi-quesadillas-11787\">Dinner Tonight: Kimchi Quesadillas</a>.",
+    "cuisines": [
+      "Mexican"
+    ],
+    "dishTypes": [
+      "fingerfood",
+      "antipasti",
+      "lunch",
+      "main course",
+      "starter",
+      "snack",
+      "appetizer",
+      "main dish",
+      "antipasto",
+      "hor d'oeuvre",
+      "dinner"
+    ],
+    "diets": [],
+    "occasions": [],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "In a skillet or non-stick frying pan, melt the 2 tbsp butter and add the chopped kimchi, cook over medium heat until caramelized and slightly charred.",
+            "ingredients": [
+              {
+                "id": 1001,
+                "name": "butter",
+                "localizedName": "butter",
+                "image": "butter-sliced.jpg"
+              },
+              {
+                "id": 98860,
+                "name": "kimchi",
+                "localizedName": "kimchi",
+                "image": "kimchi.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "step": "Remove any excess liquid and set aside. Seasoning with garlic powder is recommended.",
+            "ingredients": [
+              {
+                "id": 1022020,
+                "name": "garlic powder",
+                "localizedName": "garlic powder",
+                "image": "garlic-powder.png"
+              },
+              {
+                "id": 1042027,
+                "name": "seasoning",
+                "localizedName": "seasoning",
+                "image": "seasoning.png"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 3,
+            "step": "In the same pan, saute the thin slices of beef on medium heat until browned.",
+            "ingredients": [
+              {
+                "id": 23572,
+                "name": "beef",
+                "localizedName": "beef",
+                "image": "beef-cubes-raw.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "step": "Add salt and pepper for seasoning.",
+            "ingredients": [
+              {
+                "id": 1102047,
+                "name": "salt and pepper",
+                "localizedName": "salt and pepper",
+                "image": "salt-and-pepper.jpg"
+              },
+              {
+                "id": 1042027,
+                "name": "seasoning",
+                "localizedName": "seasoning",
+                "image": "seasoning.png"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "Remove any excess liquid and set aside.",
+            "ingredients": [],
+            "equipment": []
+          },
+          {
+            "number": 6,
+            "step": "On large pan or griddle, heat over medium heat.",
+            "ingredients": [],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "step": "Brush 1 tsp vegetable or olive oil on pan and coat evenly.",
+            "ingredients": [
+              {
+                "id": 4053,
+                "name": "olive oil",
+                "localizedName": "olive oil",
+                "image": "olive-oil.jpg"
+              },
+              {
+                "id": 11583,
+                "name": "vegetable",
+                "localizedName": "vegetable",
+                "image": "mixed-vegetables.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              }
+            ]
+          },
+          {
+            "number": 8,
+            "step": "Place 1 tortilla on pan and spread ingredients according to preference. Make sure to leave an inch from the edges clear and top with another tortilla. Slightly press down with hand to compress the quesadilla.",
+            "ingredients": [
+              {
+                "id": 18364,
+                "name": "tortilla",
+                "localizedName": "tortilla",
+                "image": "flour-tortilla.jpg"
+              },
+              {
+                "id": 0,
+                "name": "spread",
+                "localizedName": "spread",
+                "image": ""
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              }
+            ]
+          },
+          {
+            "number": 9,
+            "step": "Drizzle some oil on the top tortilla and brush evenly to coat.",
+            "ingredients": [
+              {
+                "id": 18364,
+                "name": "tortilla",
+                "localizedName": "tortilla",
+                "image": "flour-tortilla.jpg"
+              },
+              {
+                "id": 4582,
+                "name": "cooking oil",
+                "localizedName": "cooking oil",
+                "image": "vegetable-oil.jpg"
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 10,
+            "step": "Heat the quesadilla until browned on the bottom, flip carefully and continue cooking until browned and blistered on both sides. When finished, carefully transfer to a cutting board and let cool for a few minutes.",
+            "ingredients": [],
+            "equipment": [
+              {
+                "id": 404716,
+                "name": "cutting board",
+                "localizedName": "cutting board",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/cutting-board.jpg"
+              }
+            ]
+          },
+          {
+            "number": 11,
+            "step": "Cut into 4 equal pieces and transfer to serving plate. Repeat with remaining ingredients to make 4 quesadillas.",
+            "ingredients": [],
+            "equipment": []
+          },
+          {
+            "number": 12,
+            "step": "Mixing and matching ingredients to your liking is encouraged. ^^",
+            "ingredients": [],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "spoonacularScore": 71.5816879272461,
+    "spoonacularSourceUrl": "https://spoonacular.com/kogi-kimchi-quesadillas-649002",
+    "nutrition": {
+      "nutrients": [
+        {
+          "name": "Protein",
+          "amount": 36.0796,
+          "unit": "g"
+        },
+        {
+          "name": "Carbohydrates",
+          "amount": 67.4327,
+          "unit": "g"
+        },
+        {
+          "name": "Fiber",
+          "amount": 6.57675,
+          "unit": "g"
+        }
+      ]
+    }
+  },
+  "dinner": {
+    "id": 716364,
+    "image": "https://img.spoonacular.com/recipes/716364-312x231.jpg",
+    "imageType": "jpg",
+    "title": "Rice and Peas with Coconut Curry Mackerel",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "sourceUrl": "https://www.afrolems.com/2014/10/31/rice-and-peas-with-coconut-curry-mackerel/",
+    "vegetarian": false,
+    "vegan": false,
+    "glutenFree": true,
+    "dairyFree": true,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": false,
+    "sustainable": false,
+    "lowFodmap": false,
+    "weightWatcherSmartPoints": 22,
+    "gaps": "no",
+    "preparationMinutes": null,
+    "cookingMinutes": null,
+    "aggregateLikes": 26,
+    "healthScore": 52,
+    "creditsText": "afrolems.com",
+    "license": null,
+    "sourceName": "afrolems.com",
+    "pricePerServing": 243.53,
+    "summary": "Rice and Peas with Coconut Curry Mackerel could be just the <b>gluten free and dairy free</b> recipe you've been looking for. For <b>$2.44 per serving</b>, you get a main course that serves 4. One serving contains <b>625 calories</b>, <b>31g of protein</b>, and <b>34g of fat</b>. This recipe from Afrolems has 26 fans. From preparation to the plate, this recipe takes around <b>45 minutes</b>. If you have coconut milk, corn starch, garlic, and a few other ingredients on hand, you can make it. A couple people really liked this Indian dish. All things considered, we decided this recipe <b>deserves a spoonacular score of 94%</b>. This score is super. Similar recipes are <a href=\"https://spoonacular.com/recipes/rice-and-peas-with-coconut-curry-mackerel-1585999\">Rice and Peas with Coconut Curry Mackerel</a>, <a href=\"https://spoonacular.com/recipes/coconut-chicken-curry-with-snow-peas-and-rice-1213727\">Coconut Chicken Curry with Snow Peas and Rice</a>, and <a href=\"https://spoonacular.com/recipes/black-eyed-peas-curry-with-coconut-lobia-curry-600742\">Black Eyed Peas Curry (With Coconut) (Lobia Curry)</a>.",
+    "cuisines": [
+      "Indian",
+      "Asian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "diets": [
+      "gluten free",
+      "dairy free"
+    ],
+    "occasions": [],
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "Pour 1 cup of coconut milk in a pot with 1 seasoning cube and allow to boil for a minute.",
+            "ingredients": [
+              {
+                "id": 0,
+                "name": "seasoning cube",
+                "localizedName": "seasoning cube",
+                "image": "stock-cube.jpg"
+              },
+              {
+                "id": 12118,
+                "name": "coconut milk",
+                "localizedName": "coconut milk",
+                "image": "coconut-milk.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404752,
+                "name": "pot",
+                "localizedName": "pot",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "step": "Pour in your rice and peas in the boiling coconut milk and pour 2 cups of water and leave to boil till the rice and peas are soft on low heat.In a separate pot, season and bring the mackerel to boil in the rest of the coconut milk, curry powder and some water.Toss in the chopped onion, scotch bonnet peppers and garlic and allow to simmer on medium heat.Once the fish is cooked, add the corn starch to thicken the sauce and allow to simmer for 4 minutes on low heat.",
+            "ingredients": [
+              {
+                "id": 12118,
+                "name": "coconut milk",
+                "localizedName": "coconut milk",
+                "image": "coconut-milk.png"
+              },
+              {
+                "id": 2015,
+                "name": "curry powder",
+                "localizedName": "curry powder",
+                "image": "curry-powder.jpg"
+              },
+              {
+                "id": 20027,
+                "name": "corn starch",
+                "localizedName": "corn starch",
+                "image": "white-powder.jpg"
+              },
+              {
+                "id": 15050,
+                "name": "mackerel",
+                "localizedName": "mackerel",
+                "image": "mackerel-fresh.jpg"
+              },
+              {
+                "id": 10111333,
+                "name": "peppers",
+                "localizedName": "peppers",
+                "image": "green-pepper.jpg"
+              },
+              {
+                "id": 11215,
+                "name": "garlic",
+                "localizedName": "garlic",
+                "image": "garlic.png"
+              },
+              {
+                "id": 10014052,
+                "name": "scotch whiskey",
+                "localizedName": "scotch whiskey",
+                "image": "whiskey-bottle.jpg"
+              },
+              {
+                "id": 11282,
+                "name": "onion",
+                "localizedName": "onion",
+                "image": "brown-onion.png"
+              },
+              {
+                "id": 0,
+                "name": "sauce",
+                "localizedName": "sauce",
+                "image": ""
+              },
+              {
+                "id": 14412,
+                "name": "water",
+                "localizedName": "water",
+                "image": "water.png"
+              },
+              {
+                "id": 10115261,
+                "name": "fish",
+                "localizedName": "fish",
+                "image": "fish-fillet.jpg"
+              },
+              {
+                "id": 11304,
+                "name": "peas",
+                "localizedName": "peas",
+                "image": "peas.jpg"
+              },
+              {
+                "id": 20444,
+                "name": "rice",
+                "localizedName": "rice",
+                "image": "uncooked-white-rice.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404752,
+                "name": "pot",
+                "localizedName": "pot",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
+              }
+            ],
+            "length": {
+              "number": 4,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 3,
+            "step": "Serve with the rice and peas",
+            "ingredients": [
+              {
+                "id": 11304,
+                "name": "peas",
+                "localizedName": "peas",
+                "image": "peas.jpg"
+              },
+              {
+                "id": 20444,
+                "name": "rice",
+                "localizedName": "rice",
+                "image": "uncooked-white-rice.png"
+              }
+            ],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "spoonacularScore": 94.8360595703125,
+    "spoonacularSourceUrl": "https://spoonacular.com/rice-and-peas-with-coconut-curry-mackerel-716364",
+    "nutrition": {
+      "nutrients": [
+        {
+          "name": "Protein",
+          "amount": 30.9799,
+          "unit": "g"
+        },
+        {
+          "name": "Carbohydrates",
+          "amount": 47.3631,
+          "unit": "g"
+        },
+        {
+          "name": "Fiber",
+          "amount": 3.6145,
+          "unit": "g"
+        }
+      ]
+    }
+  }
+}
