@@ -1,98 +1,115 @@
 .footer {
   width: 100%;
   background: #2A292B;
-  padding: 60px 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin: 0;
 }
 
 .footerContainer {
-  width: 90%;
-  max-width: 1440px;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  gap: 80px;
+  padding: 40px 40px;
 }
 
 .footerLeft {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   align-items: flex-start;
+  width: 298px;
 }
 
 .logo {
-  width: 150px;
+  width: 192px;
+  height: 72px;
 }
 
 .socialMediaIcons {
   display: flex;
-  gap: 15px;
+  gap: 24px;
 }
 
 .socialMediaIcons img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 .footerCenter {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
 }
 
 .quickLinks {
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
+  color: #ffffff;
+  font-family: 'NunitoSans-Bold', sans-serif;
+  font-size: 21px;
+  line-height: 103.33%;
+  letter-spacing: 0.11px;
+  font-weight: 700;
 }
 
-.quickLinks a {
-  color: white;
+.footerLink {
+  color: #BCBBBE;
   text-decoration: none;
-  margin-right: 20px;
+  font-family: 'NunitoSans-Regular', sans-serif;
   font-size: 16px;
-}
-
-.quickLinks a:hover {
-  text-decoration: underline;
+  line-height: 106.33%;
+  letter-spacing: 0.2px;
+  display: block;
+  margin-bottom: 24px;
 }
 
 .footerRight {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
+  gap: 25px;
+  width: 340px;
 }
 
 .contactText {
-  color: white;
-  font-size: 16px;
+  color: #ffffff;
+  font-family: 'NunitoSans-Bold', sans-serif;
+  font-size: 21px;
+  line-height: 103.33%;
+  letter-spacing: 0.11px;
+  font-weight: 700;
 }
 
 .contactForm {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .emailInput {
-  padding: 10px;
-  border: 1px solid white;
+  border: 0.88px solid #BCBBBE;
+  padding: 9px 13px;
   background: transparent;
-  color: white;
-  width: 200px;
+  color: #DCDCDC;
+  width: 252.25px;
+  height: 47.46px;
+  font-family: 'NunitoSans-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 112.33%;
+  letter-spacing: 0.2px;
 }
 
 .contactButton {
-  padding: 10px 15px;
-  background: white;
-  color: #2A292B;
+  background: #ffffff;
+  border-radius: 4.39px;
+  width: 126.57px;
+  height: 49.22px;
   border: none;
   cursor: pointer;
-}
-
-.contactButton:hover {
-  background: #ddd;
+  color: #2A292B;
+  font-family: 'NunitoSans-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 111%;
+  letter-spacing: 0.27px;
 }

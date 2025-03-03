@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 .landing,
 .landing * {
   box-sizing: border-box;
@@ -73,6 +75,19 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #2A292B;
+}
+.component-05:hover {
+  background-color: #249552;
+  border-color: #249552;
+  color: white;
+}
+.component-05:hover .text-324,
+.component-05:hover .vector path {
+  color: white;
+  fill: white;
 }
 .text-324 {
   color: #2a292b;
@@ -94,8 +109,8 @@
 .hero-title {
   color: #2a292b;
   text-align: center;
-  font-family: "BlackHanSans-Regular", sans-serif;
-  font-size: 5.625rem;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 90px;
   line-height: 120%;
   font-weight: 400;
   position: absolute;
@@ -337,6 +352,7 @@
 }
 
 .component-01 {
+  z-index: 2;
   align-self: flex-end;
   border: 1.26px solid #FFFFFF;
   border-radius: 75px;
@@ -349,11 +365,12 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   margin-top: auto;
+  transition: all 0.3s ease;
 }
 
-/* Optional: if you need hover effect */
 .component-01:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
 }
 
 .text-303 {
@@ -580,9 +597,7 @@
 }
 .property-1-default {
   border-radius: 4.720625rem;
-  border-style: solid;
-  border-color: #2a292b;
-  border-width: 0.07875rem;
+  border: 1.26px solid #D72E2B;
   padding: 0.9375rem;
   display: flex;
   flex-direction: row;
@@ -591,9 +606,21 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #D72E2B;
+}
+.property-1-default:hover {
+  background-color: #D72E2B;
+  color: white;
+}
+.property-1-default:hover .text-312,
+.property-1-default:hover .vector3 path {
+  color: white;
+  fill: white;
 }
 .text-312 {
-  color: #2a292b;
+  color: #D72E2B;
   text-align: left;
   font-family: "NunitoSans-Medium", sans-serif;
   font-size: 1rem;
@@ -608,6 +635,12 @@
   height: 1.16625rem;
   position: relative;
   overflow: visible;
+}
+.vector3 path {
+  fill: #D72E2B;
+}
+.property-1-default .arrow-path {
+  fill: #D72E2B;
 }
 .landing-container-03 {
   display: flex;
@@ -708,6 +741,12 @@
   width: 10rem;
   position: relative;
   margin-top: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.component-02:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
 }
 .text-317 {
   color: #ffffff;
@@ -764,6 +803,18 @@
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  overflow: hidden;
+}
+.review-slider {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+.review-slide {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
 }
 .component-03 {
   border-radius: 45.359375rem;
@@ -775,6 +826,16 @@
   height: 3.269375rem;
   position: relative;
   box-shadow: 0rem 0.081875rem 0.16375rem 0rem rgba(10, 13, 20, 0.03);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #2A292B;
+}
+.component-03:hover {
+  border-color: #249552;
+  color: #249552;
+}
+.component-03:hover .arrow path {
+  fill: #249552;
 }
 .arrow {
   width: 1.634375rem;
@@ -809,34 +870,29 @@
 .review-sub-title {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
   align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
+  gap: 8px;
 }
 .text-319 {
-  color: #454448;
-  text-align: left;
+  color: #2A292B;
+  text-align: center;
   font-family: "NunitoSans-Bold", sans-serif;
-  font-size: 1.3125rem;
-  line-height: 150%;
+  font-size: 21px;
+  line-height: 103.33%;
+  letter-spacing: 0.11px;
   font-weight: 700;
-  position: relative;
 }
 .text-320 {
-  color: #2a292b;
+  color: #454448;
   text-align: center;
-  font-family: "NunitoSans-Medium", sans-serif;
-  font-size: 1.75rem;
-  line-height: 101.67%;
-  letter-spacing: 0.001875rem;
-  font-weight: 500;
-  position: relative;
+  font-family: "NunitoSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 106.33%;
+  letter-spacing: 0.2px;
+  font-weight: 400;
 }
 .text-321 {
-  color: #454448;
+  color: #2a292b;
   text-align: left;
   font-family: "NunitoSans-Regular", sans-serif;
   font-size: 1.3125rem;
@@ -856,6 +912,16 @@
   height: 3.269375rem;
   position: relative;
   box-shadow: 0rem 0.081875rem 0.16375rem 0rem rgba(10, 13, 20, 0.03);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #2A292B;
+}
+.component-04:hover {
+  border-color: #249552;
+  color: #249552;
+}
+.component-04:hover .arrow2 path {
+  fill: #249552;
 }
 .arrow2 {
   width: 1.634375rem;
@@ -866,4 +932,78 @@
   translate: 0 -50%;
   transform: translate(-1.634375rem, 0rem);
   overflow: visible;
+}
+.hidden {
+  display: none;
+}
+.active {
+  display: flex;
+}
+
+/* Base arrow styles */
+.vector svg path,
+.vector2 svg path,
+.vector3 svg path,
+.vector4 svg path,
+.arrow svg path,
+.arrow2 svg path {
+  fill: currentColor;
+  transition: all 0.3s ease;
+}
+
+/* Login button (component-05) */
+.component-05 {
+  /* ... existing styles ... */
+  color: #2A292B;
+}
+
+.component-05:hover {
+  background-color: #249552;
+  border-color: #249552;
+  color: white;
+}
+
+.component-05:hover .vector svg path {
+  fill: white;
+}
+
+/* Clip coupon button */
+.property-1-default {
+  /* ... existing styles ... */
+  color: #D72E2B;
+}
+
+.property-1-default .vector3 svg path {
+  fill: #D72E2B;
+}
+
+.property-1-default:hover {
+  background-color: #D72E2B;
+  color: white;
+}
+
+.property-1-default:hover .vector3 svg path {
+  fill: white;
+}
+
+/* Review slider arrows */
+.component-03,
+.component-04 {
+  /* ... existing styles ... */
+  color: #2A292B;
+}
+
+.component-03 .arrow svg path,
+.component-04 .arrow2 svg path {
+  fill: #2A292B;
+}
+.component-03:hover,
+.component-04:hover {
+  border-color: #249552;
+  color: #249552;
+}
+
+.component-03:hover .arrow svg path,
+.component-04:hover .arrow2 svg path {
+  fill: #249552;
 }

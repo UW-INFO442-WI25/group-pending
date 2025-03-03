@@ -1,50 +1,58 @@
 .navbar {
-  padding: 1rem 4rem;
+  padding: 16px 64px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 90rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
-  width: 12rem;
-  height: 4.5rem;
+  width: 192px;
+  height: 72px;
 }
 
 .categories {
   display: flex;
-  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 480px;
 }
 
-.categories div {
-  font-family: "NunitoSans-Medium", sans-serif;
-  font-size: 1.3125rem;
-  color: #2a292b;
-  cursor: pointer;
+.navLink {
+  color: #2A292B;
+  text-align: left;
+  font-family: 'NunitoSans-Medium', sans-serif;
+  font-size: 21px;
+  line-height: 106.33%;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .loginBtn {
+  border-radius: 75.53px;
+  border: 1.26px solid #249552;
+  padding: 15px;
   display: flex;
+  flex-direction: row;
+  gap: 24.49px;
   align-items: center;
   justify-content: center;
-  width: 12rem;
-  height: 3.5rem;
-  border-radius: 50px;
-  border: 2px solid #249552;
-  color: #249552;
-  font-size: 1rem;
-  font-family: "NunitoSans-Medium", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
+  width: 192px;
   background: transparent;
-  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.loginBtn:hover {
-  background: #249552;
-  color: white;
+.login {
+  color: #249552;
+  text-align: left;
+  font-family: 'NunitoSans-Medium', sans-serif;
+  font-size: 16px;
+  line-height: 111%;
+  letter-spacing: 0.27px;
+  font-weight: 500;
 }

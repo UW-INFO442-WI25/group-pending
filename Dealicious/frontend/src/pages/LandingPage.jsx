@@ -17,6 +17,16 @@ import Navbar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 const LandingPage = () => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 0 ? 2 : prevSlide - 1));
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 2 ? 0 : prevSlide + 1));
+  };
+
   return (
     <div className="landing">
       <Navbar />
@@ -134,6 +144,11 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="image-36" style={{ backgroundImage: `url(${image360})` }}>
+              <div className="card-container-03-title">
+                <div className="text-316">
+                  Grab Your Favorites Add to Cart Now Start Saving Today
+                </div>
+              </div>
               <div className="component-02">
                 <div className="text-317">Explore more</div>
                 <img className="vector4" src={vector3} alt="vector" />
@@ -142,18 +157,61 @@ const LandingPage = () => {
           </div>
           <div className="seperator2"></div>
           <div className="review-container">
-            <div className="component-03">
+            <div className="component-03" onClick={handlePrevSlide}>
               <img className="arrow" src={arrow0} alt="arrow left" />
             </div>
-            <div className="review-text-container">
-              <div className="text-318">Hear It From Our Users</div>
-              <div className="text-321">
-                "Super easy to use, saves me time and money,
-                <br />
-                and helps me eat healthier. Highly recommend!"
+            
+            <div className="review-slider">
+              {/* First Review */}
+              <div className={`review-slide ${currentSlide === 0 ? 'active' : 'hidden'}`}>
+                <div className="review-text-container">
+                  <div className="text-318">Hear It From Our Students</div>
+                  <div className="review-sub-title">
+                    <div className="text-319">Why Dealicious?</div>
+                    <div className="text-320">Budget-Friendly, Quick & Easy Meals</div>
+                  </div>
+                  <div className="text-321">
+                    "Perfect for my college budget! I can plan my meals for the week
+                    <br />
+                    and still have money left for other activities!"
+                  </div>
+                </div>
+              </div>
+
+              {/* Second Review */}
+              <div className={`review-slide ${currentSlide === 1 ? 'active' : 'hidden'}`}>
+                <div className="review-text-container">
+                  <div className="text-318">Great for Busy Students</div>
+                  <div className="review-sub-title">
+                    <div className="text-319">Why Dealicious?</div>
+                    <div className="text-320">Time-Saving & Affordable Options</div>
+                  </div>
+                  <div className="text-321">
+                    "Between classes and study sessions, I can quickly find deals
+                    <br />
+                    and plan healthy meals without breaking the bank!"
+                  </div>
+                </div>
+              </div>
+
+              {/* Third Review */}
+              <div className={`review-slide ${currentSlide === 2 ? 'active' : 'hidden'}`}>
+                <div className="review-text-container">
+                  <div className="text-318">Dorm-Friendly Solutions</div>
+                  <div className="review-sub-title">
+                    <div className="text-319">Why Dealicious?</div>
+                    <div className="text-320">Simple Recipes & Student Discounts</div>
+                  </div>
+                  <div className="text-321">
+                    "As a freshman, this app helped me eat well on a tight budget.
+                    <br />
+                    The student deals and easy recipes are a lifesaver!"
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="component-04">
+
+            <div className="component-04" onClick={handleNextSlide}>
               <img className="arrow2" src={arrow1} alt="arrow right" />
             </div>
           </div>
