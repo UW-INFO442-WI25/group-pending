@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 Dealicious\.env
+
+Dealicious\backend\.env

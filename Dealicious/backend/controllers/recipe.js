@@ -168,7 +168,8 @@ const getRecipes = asyncHandler(async (req) => {
 
 router.get("/update", async (req, res) => {
     try {
-        await getRecipes(req);
+        console.log(req.query)
+        // await getRecipes(req);
 
         const jsonData = fs.readFileSync(JSON_FILE_PATH, "utf8");
         res.json(JSON.parse(jsonData));

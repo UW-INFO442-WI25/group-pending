@@ -34,7 +34,7 @@ const Footer = () => {
           <div className={styles.quickLinks}>Quick Links</div>
           <div className={styles.footerLinksContainer}>
             <Link to="/" className={styles.footerLink}>Home</Link>
-            <Link to="/meal-plan" className={styles.footerLink}>Meal Planner</Link>
+            <Link to="/meal-planner" className={styles.footerLink}>Meal Planner</Link>
             <Link to="/grocery-deals" className={styles.footerLink}>Grocery Deal</Link>
           </div>
         </div>
