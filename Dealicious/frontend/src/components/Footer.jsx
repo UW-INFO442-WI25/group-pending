@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Footer.module.css";
-import logo from "../assets/WhiteLogo.svg";
-import facebookIcon from "../assets/facebook-icon0.svg";
-import twitterIcon from "../assets/twitter-icon0.svg";
-import youtubeIcon from "../assets/youtube-icon0.svg";
-import linkedinIcon from "../assets/linked-in-icon0.svg";
+import logo from "../assets/logo-white.svg";
+import facebookIcon from "../assets/facebook-icon.svg";
+import twitterIcon from "../assets/twitter-icon.svg";
+import youtubeIcon from "../assets/youtube-icon.svg";
+import linkedinIcon from "../assets/linked-in-icon.svg";
 
 const Footer = () => {
   return (

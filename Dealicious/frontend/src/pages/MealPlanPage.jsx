@@ -3,7 +3,7 @@ import axios from "axios";
 import "../styles/MealPlanPage.css";
 // 引入图片
 import png0 from "../assets/20250226155143.png";
-import s0 from "../assets/s0.svg";
+import s0 from "../assets/star.svg";
 
 import Layout from '../components/Layout';
 

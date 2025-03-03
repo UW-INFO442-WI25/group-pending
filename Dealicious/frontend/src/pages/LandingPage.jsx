@@ -1,17 +1,17 @@
 import React from 'react';
 import '../style.css';
 
-import heroBg from '../assets/hero-bg0.png';
-import vector0 from '../assets/vector0.svg';
-import vector1 from '../assets/vector1.svg';
-import vector2 from '../assets/vector2.svg';
-import vector3 from '../assets/vector3.svg';
-import image340 from '../assets/image-340.png';
-import image350 from '../assets/image-350.png';
-import image360 from '../assets/image-360.png';
-import rating from '../assets/raiting0.svg';
-import arrow0 from '../assets/arrow0.svg';
-import arrow1 from '../assets/arrow1.svg';
+import heroBg from '../assets/hero-background.png';
+import arrowRightDark from '../assets/arrow-right-dark.svg';
+import arrowRightWhite from '../assets/arrow-right-white.svg';
+import arrowRightDarkAlt from '../assets/arrow-right-dark-alt.svg';
+import arrowRightWhiteAlt from '../assets/arrow-right-white-alt.svg';
+import mealPlannerPreview from '../assets/meal-planner-preview.png';
+import steakDealPreview from '../assets/steak.png';
+import groceryPreview from '../assets/grocery-preview.png';
+import fiveStars from '../assets/five-stars.svg';
+import leftArrow from '../assets/left-arrow.svg';
+import rightArrow from '../assets/right-arrow.svg';
 
 import Layout from '../components/Layout';
 
@@ -31,7 +31,12 @@ const LandingPage = () => {
       <div className="landing">
         <div className="landing-main">
           <div className="landing-hero">
-            <img className="hero-bg" src={heroBg} alt="hero background" />
+            <div className="hero-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
+            <div className="hero-title">
+              ONLY THE BEST
+              <br />
+              FOR YOU
+            </div>
             <div className="sub-title">
               <div className="hero-sub-title">
                 Explore budget-friendly meal plans at Dealicious,
@@ -40,13 +45,8 @@ const LandingPage = () => {
               </div>
               <div className="component-05">
                 <div className="text-324">Get Started</div>
-                <img className="vector" src={vector0} alt="vector" />
+                <img className="vector" src={arrowRightDark} alt="arrow right" />
               </div>
-            </div>
-            <div className="hero-title">
-              ONLY THE BEST
-              <br />
-              FOR YOU
             </div>
           </div>
           <div className="landing-content">
@@ -84,10 +84,10 @@ const LandingPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="image-34" style={{ backgroundImage: `url(${image340})` }}>
+                <div className="image-34" style={{ backgroundImage: `url(${mealPlannerPreview})` }}>
                   <div className="component-01">
                     <div className="text-303">Explore more</div>
-                    <img className="vector2" src={vector1} alt="vector" />
+                    <img className="vector2" src={arrowRightWhite} alt="arrow right" />
                   </div>
                 </div>
               </div>
@@ -105,13 +105,13 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="card-container-02">
-                <img className="image-35" src={image350} alt="steak" />
+                <img className="image-35" src={steakDealPreview} alt="USDA Choice Ribeye Steak" />
                 <div className="steak-description">
                   <div className="steak-title-container-01">
                     <div className="steak-title-container-02">
                       <div className="text-307">USDA Choice Ribeye Steak</div>
                       <div className="rating-container">
-                        <img className="raiting" src={rating} alt="rating" />
+                        <img className="raiting" src={fiveStars} alt="5 star rating" />
                         <div className="text-308">5.0 (259)</div>
                       </div>
                     </div>
@@ -127,7 +127,7 @@ const LandingPage = () => {
                   </div>
                   <div className="property-1-default">
                     <div className="text-312">Clip the coupon</div>
-                    <img className="vector3" src={vector2} alt="vector" />
+                    <img className="vector3" src={arrowRightDarkAlt} alt="arrow right" />
                   </div>
                 </div>
               </div>
@@ -142,7 +142,7 @@ const LandingPage = () => {
                   Get the best deals on fresh groceries with special discounts and member-only pricing.
                 </div>
               </div>
-              <div className="image-36" style={{ backgroundImage: `url(${image360})` }}>
+              <div className="image-36" style={{ backgroundImage: `url(${groceryPreview})` }}>
                 <div className="card-container-03-title">
                   <div className="text-316">
                     Grab Your Favorites Add to Cart Now Start Saving Today
@@ -150,14 +150,14 @@ const LandingPage = () => {
                 </div>
                 <div className="component-02">
                   <div className="text-317">Explore more</div>
-                  <img className="vector4" src={vector3} alt="vector" />
+                  <img className="vector4" src={arrowRightWhiteAlt} alt="arrow right" />
                 </div>
               </div>
             </div>
             <div className="seperator2"></div>
             <div className="review-container">
               <div className="component-03" onClick={handlePrevSlide}>
-                <img className="arrow" src={arrow0} alt="arrow left" />
+                <img className="arrow" src={leftArrow} alt="previous slide" />
               </div>
               
               <div className="review-slider">
@@ -211,7 +211,7 @@ const LandingPage = () => {
               </div>
 
               <div className="component-04" onClick={handleNextSlide}>
-                <img className="arrow2" src={arrow1} alt="arrow right" />
+                <img className="arrow2" src={rightArrow} alt="next slide" />
               </div>
             </div>
           </div>
