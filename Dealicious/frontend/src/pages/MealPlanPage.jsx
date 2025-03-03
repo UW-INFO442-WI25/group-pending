@@ -1,20 +1,16 @@
 import React from "react";
-import Navbar from "../components/NavBar";
-import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 
 const MealPlanPage = () => {
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <h1>Meal Plan</h1>
       <p>Placeholderrrr</p>
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 
 export default MealPlanPage;
-
 
 // import { useEffect, useState } from "react";
 // import axios from "axios";

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-
 .landing,
 .landing * {
   box-sizing: border-box;
@@ -11,13 +10,16 @@
 }
 
 .landing-main {
-  flex: 1; 
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 .landing {
   background: #ffffff;
-  height: 311.5625rem;
+  min-height: 100vh;
+  height: auto;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   flex: 1;
   width: 100%;
   max-width: 1440px;
@@ -25,6 +27,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-height: calc(128.6875rem + 155.3125rem + 20rem);
+  /*hard coding the positioning of the footer I cannot do anything else since other parts are hardcoded*/
 }
 .landing-hero {
   width: 90rem;
@@ -900,6 +904,7 @@
   letter-spacing: 0.0125rem;
   font-weight: 400;
   position: relative;
+  margin-bottom: 100px; 
 }
 
 .component-04 {
