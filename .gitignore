@@ -28,3 +28,4 @@ Dealicious\.env
 Dealicious\backend\.env
 package-lock.json
 Dealicious/frontend/.vscode/
+Dealicious/backend/.env

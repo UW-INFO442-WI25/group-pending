@@ -7,19 +7,6 @@ import s0 from "../assets/star.svg";
 
 import Layout from '../components/Layout';
 
-/*
-
-NOTES:
-
-After simplifying css, make cards look better and make page responsive with different window sizes/other requirements
-
-Testing protocol based on a single combination of nutrition option and cuisine option
-
-Delete ratings stuff
-
-*/
-
-
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [selectedDay, setSelectedDay] = useState(1);
@@ -67,11 +54,10 @@ function App() {
 
   useEffect(() => {
     if (nutritionOption || cuisineOption || minFiber || maxCarb || minProtein) {
-      fetchDiscounts();
       fetchRecipes("/api/recipe/update");
     }
     else {
-      fetchDiscounts()
+      fetchDiscounts();
       fetchRecipes("/api/recipe");
     }
   }, [nutritionOption, cuisineOption, minFiber, maxCarb, minProtein]);

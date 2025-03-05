@@ -21,20 +21,20 @@ const defaultParams = {
 };
 
 // Uncomment when you want to get recipes on server start
-// getRecipes(defaultParams)
-//     .then(() => {
-//         console.log("Initial recipes fetched and saved to file");
-//         app.listen(port, () => {
-//             console.log(`Server is running on port ${port}`);
-//         });
-//     })
-//     .catch((error) => {
-//         console.error("Error during initial recipe fetch:", error.message);
-//         process.exit(1);
-//     });
+getRecipes(defaultParams)
+    .then(() => {
+        console.log("Initial recipes fetched and saved to file");
+        getIngredients()
+        app.listen(port, () => {
+            console.log(`Server is running on port ${port}`);
+        });
+    })
+    .catch((error) => {
+        console.error("Error during initial recipe fetch:", error.message);
+        process.exit(1);
+    });
 
-getIngredients()
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server is running on port ${port}`);
+// });
