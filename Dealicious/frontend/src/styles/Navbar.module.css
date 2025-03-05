@@ -32,6 +32,27 @@
   letter-spacing: 0.2px;
   font-weight: 500;
   text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #249552;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #249552;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
 }
 
 .loginBtn {
@@ -64,7 +85,6 @@
   gap: 48px;
 }
 
-/* Hamburger Menu Styles */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -85,7 +105,6 @@
   transition: all 0.3s ease;
 }
 
-/* Media Query for Mobile */
 @media (max-width: 1024px) {
   .navbar {
     padding: 16px 24px;
@@ -124,7 +143,6 @@
     margin-top: 32px;
   }
 
-  /* Hamburger Animation */
   .hamburger.active .hamburgerLine:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
@@ -138,7 +156,6 @@
   }
 }
 
-/* Additional Mobile Adjustments */
 @media (max-width: 767px) {
   .logo {
     width: 150px;

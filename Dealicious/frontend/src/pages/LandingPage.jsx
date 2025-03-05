@@ -192,9 +192,47 @@ const LandingPage = () => {
                   and helps me eat healthier. Highly recommend!"
                 </p>
               </div>
-              {/* Additional review slides can be added here following the same pattern */}
+              
+              <div className={`review-slide ${currentSlide === 1 ? 'active' : 'hidden'}`}>
+                <h2 className="h-1">Hear It From Our Users</h2>
+                <div className="review-sub-title">
+                  <h3 className="h-18">Why Dealicious?</h3>
+                  <p className="h-2">Budget-Friendly, Quick Meals, Dorm-Friendly</p>
+                </div>
+                <p className="h-2-regular">
+                  "As a broke college student, Dealicious has been a lifesaver for my wallet.
+                  <br />
+                  I can actually eat well between classes without blowing my budget!"
+                </p>
+              </div>
+              
+              <div className={`review-slide ${currentSlide === 2 ? 'active' : 'hidden'}`}>
+                <h2 className="h-1">Hear It From Our Users</h2>
+                <div className="review-sub-title">
+                  <h3 className="h-18">Why Dealicious?</h3>
+                  <p className="h-2">Meal Prep Friendly, Study Fuel, No Cooking Skills Required</p>
+                </div>
+                <p className="h-2-regular">
+                  "Between exams and projects, I never had time to plan meals properly.
+                  <br />
+                  Dealicious makes it so simple that even I can cook decent food in my tiny kitchen!"
+                </p>
+              </div>
+              
+              <div className={`review-slide ${currentSlide === 3 ? 'active' : 'hidden'}`}>
+                <h2 className="h-1">Hear It From Our Users</h2>
+                <div className="review-sub-title">
+                  <h3 className="h-18">Why Dealicious?</h3>
+                  <p className="h-2">Roommate Approved, Affordable Groceries, Simple Recipes</p>
+                </div>
+                <p className="h-2-regular">
+                  "My roommates and I split grocery costs using Dealicious meal plans.
+                  <br />
+                  We're eating better, spending less, and actually enjoying cooking together!"
+                </p>
+              </div>
             </div>
-            <img className="review-left-arrow2" src={arrowRight} alt="Next review" onClick={handleNextSlide} />
+            <img className="review-right-arrow" src={arrowRight} alt="Next review" onClick={handleNextSlide} />
           </section>
         </main>
       </div>
