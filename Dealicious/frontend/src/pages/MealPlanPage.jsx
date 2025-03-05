@@ -179,20 +179,6 @@ function App() {
   return (
     <Layout>
       <div className={"my-meal-plan "} role="main">
-        <div className="hero">
-          <div className="hero1">
-            <img src={png0} alt="Meal plan hero image" className="umv49RURnC" />
-          </div>
-          <div className="hero2">
-            <p className="gyfKLcTrZ4">Zaire Dokidis</p>
-            <div className="LgL57SFu6z"></div>
-            <div className="BkEOXo0iLd">
-              <p className="gyfKLcTrZ4">&quot;Super easy to use, saves me</p>
-              <p className="gyfKLcTrZ4">time and money, and helps me</p>
-              <p className="gyfKLcTrZ4">eat healthier. Highly recommend!&quot;</p>
-            </div>
-          </div>
-        </div>
         <h1 className="Cuu8Apn8Lg">YOUR WEEKLY MEAL PLAN</h1>
         <div className="content">
           <div className="status-nav">
@@ -215,7 +201,6 @@ function App() {
               <div className="all-categories">
                 <div className="OKfiBvftcs">
                   <div className="nutrition-option">Nutrition Option</div>
-                  <img className="vector" src="vector0.svg" alt="Nutrition option icon" />
                 </div>
                 {categories.map((category, index) => (
                   <label key={index} className="category-option">
