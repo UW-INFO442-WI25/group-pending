@@ -184,7 +184,6 @@ const LandingPage = () => {
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
                   <h3 className="h-18">Why Dealicious?</h3>
-                  <p className="h-2">Time-Saving, Money-Saving, Healthy Eating</p>
                 </div>
                 <p className="h-2-regular">
                   "Super easy to use, saves me time and money,
@@ -197,7 +196,6 @@ const LandingPage = () => {
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
                   <h3 className="h-18">Why Dealicious?</h3>
-                  <p className="h-2">Budget-Friendly, Quick Meals, Dorm-Friendly</p>
                 </div>
                 <p className="h-2-regular">
                   "As a broke college student, Dealicious has been a lifesaver for my wallet.
@@ -210,7 +208,6 @@ const LandingPage = () => {
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
                   <h3 className="h-18">Why Dealicious?</h3>
-                  <p className="h-2">Meal Prep Friendly, Study Fuel, No Cooking Skills Required</p>
                 </div>
                 <p className="h-2-regular">
                   "Between exams and projects, I never had time to plan meals properly.
@@ -223,7 +220,6 @@ const LandingPage = () => {
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
                   <h3 className="h-18">Why Dealicious?</h3>
-                  <p className="h-2">Roommate Approved, Affordable Groceries, Simple Recipes</p>
                 </div>
                 <p className="h-2-regular">
                   "My roommates and I split grocery costs using Dealicious meal plans.
