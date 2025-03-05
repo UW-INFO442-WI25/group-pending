@@ -13,7 +13,6 @@ const JSON_FILE_PATH = "./data/recipes.json";
 const getRecipes = asyncHandler(async (req) => {
     const {
         nutrition = "balanced",
-        rating = "4",
         cuisine = "any",
         minFiber = "0",
         maxCarb = "100",
