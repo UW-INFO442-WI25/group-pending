@@ -27,7 +27,8 @@ Eating healthily on a budget is a big challenge for many students. Our project w
 - Meet our two different users:
 
 # Testing Protocol
-- Our testing protocol document can be viewed here:
+- Our testing protocol document can be viewed here: [User Persona](persona.pdf)
+
 
 # Bugs
 - 
