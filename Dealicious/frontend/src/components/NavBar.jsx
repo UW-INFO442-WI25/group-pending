@@ -13,7 +13,7 @@ const Navbar = () => {
         <Link to="/grocery-deals" className={styles.navLink}>Grocery Deal</Link>
       </div>
       <div className={styles.loginBtn}>
-        <span className={styles.login}>Sign In / Sign Up</span>
+      <Link to="/sign-in" className={styles.login}>Sign In / Sign Up</Link>
       </div>
     </nav>
   );
