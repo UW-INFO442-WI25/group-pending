@@ -26,3 +26,5 @@ dist-ssr
 Dealicious\.env
 
 Dealicious\backend\.env
+package-lock.json
+Dealicious/frontend/.vscode/

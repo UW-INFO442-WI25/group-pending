@@ -4,7 +4,7 @@ import SignUp from "../components/SignUp";
 const SignUpPage = () => {
   return (
     <div className="K3Apo4chQD">
-      <div className="K3Apo4chQD1">
+      <div className="K3Apo4chQD1" style={{ overflow: "auto" }}>
         <SignUp />
       </div>
       <div className="K3Apo4chQD2">
