@@ -5,8 +5,8 @@ import appleLogo from "../assets/applelogo.png";
 
 const SignUp = () => {
   return (
-    <div className="IGrkypdOOu">
-      <div className="ss1D6AkttG">
+    <div className="sign_form">
+      <div className="sign_form0">
         <div
           style={{
             fontFamily: "SFProDisplay",
@@ -28,8 +28,8 @@ const SignUp = () => {
           Enter your credentials to create your account
         </div>
       </div>
-      <div className="XMKf4gMwmG">
-        <div className="ss1D6AkttG">
+      <div className="sign_form1">
+        <div className="sign_form0">
           <div
             style={{
               fontSize: "16px",
@@ -39,10 +39,10 @@ const SignUp = () => {
           >
             Name
           </div>
-          <input type="text" name="name" className="m0Zw1mYbzQ" />
+          <input type="text" name="name" className="sign_form2" />
         </div>
         {/* Email address */}
-        <div className="ss1D6AkttG">
+        <div className="sign_form0">
           <div
             style={{
               fontSize: "16px",
@@ -52,10 +52,10 @@ const SignUp = () => {
           >
             Email address
           </div>
-          <input type="email" name="email" className="m0Zw1mYbzQ" />
+          <input type="email" name="email" className="sign_form2" />
         </div>
         {/* Password */}
-        <div className="ss1D6AkttG">
+        <div className="sign_form0">
           <div
             style={{
               fontSize: "16px",
@@ -65,10 +65,10 @@ const SignUp = () => {
           >
             Password
           </div>
-          <input type="password" name="password" className="m0Zw1mYbzQ" />
+          <input type="password" name="password" className="sign_form2" />
         </div>
       </div>
-      <div className="LX0ja9IV4T">
+      <div className="sign_form3">
         {/* I agree to the terms & policy */}
         <input type="checkbox" name="agree" />
         <label>I agree to the terms & policy</label>
@@ -106,18 +106,18 @@ const SignUp = () => {
           Or sign up with
         </p>
       </div>
-      <div className="jRsgCfXkxQ">
-        <div className="oslgl2tBvI">
-          <div className="h66zTSQaMB">
+      <div className="sign_form4">
+        <div className="sign_form5">
+          <div className="sign_form6">
             <img src={googleLogo} alt="google" style={{ height: "100%" }} />
             Sign up with Google
           </div>
-          <div className="h66zTSQaMB">
+          <div className="sign_form6">
             <img src={appleLogo} alt="apple" style={{ height: "100%" }} />
             Sign up with Apple
           </div>
         </div>
-        <div className="fKUKncA48E">
+        <div className="sign_form7">
           Have an account?{" "}
           <Link to="/sign-in" style={{ color: "#2EA45E" }}>
             Sign In

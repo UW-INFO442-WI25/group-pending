@@ -1,29 +1,29 @@
-.IGrkypdOOu,
-.ss1D6AkttG,
-.XMKf4gMwmG,
-.jRsgCfXkxQ {
+.sign_form,
+.sign_form0,
+.sign_form1,
+.sign_form4 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
 }
 
-.IGrkypdOOu {
+.sign_form {
   width: 480px;
   gap: 45px;
 }
 
-.ss1D6AkttG {
+.sign_form0 {
   width: 100%;
   gap: 6px;
 }
 
-.XMKf4gMwmG {
+.sign_form1 {
   width: 100%;
   gap: 30px;
 }
 
-.m0Zw1mYbzQ {
+.sign_form2 {
   padding: 11.16px 0px 11.16px 11.16px;
   width: 100%;
   font-size: 16px;
@@ -33,7 +33,7 @@
   border: 1.12px solid #bcbbbe;
 }
 
-.LX0ja9IV4T {
+.sign_form3 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -41,12 +41,12 @@
   gap: 10px;
 }
 
-.jRsgCfXkxQ {
+.sign_form4 {
   width: 100%;
   gap: 28px;
 }
 
-.oslgl2tBvI {
+.sign_form5 {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -54,7 +54,7 @@
   align-items: center;
 }
 
-.h66zTSQaMB {
+.sign_form6 {
   padding: 4.46px 22.31px;
   height: 42px;
   border-radius: 11.16px;
@@ -68,7 +68,7 @@
   border: 1.12px solid #bcbbbe;
 }
 
-.fKUKncA48E {
+.sign_form7 {
   width: 100%;
   text-align: center;
   font-size: 16px;

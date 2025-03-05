@@ -1,4 +1,4 @@
-.K3Apo4chQD {
+.signpage {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.K3Apo4chQD1 {
+.signpage_left {
   padding: 24px;
   width: 100%;
   height: 100%;
@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
 }
-.K3Apo4chQD2 {
+.signpage_right {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -24,6 +24,6 @@
   height: 100%;
 }
 
-.qK9MXWUxSR {
+.sign_image {
   height: 100%;
 }
