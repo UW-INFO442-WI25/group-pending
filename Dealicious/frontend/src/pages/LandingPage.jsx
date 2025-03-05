@@ -3,9 +3,9 @@ import '../style.css';
 
 // Import assets
 import pepperImage from '../assets/pepper-drops-into-water-10.png';
-import mealPlanPreview from '../assets/meal-plan-preview0.png';
+import mealPreviewCard from '../assets/meal-preview-card.mp4';
 import steakPreview from '../assets/steak-preview0.png';
-import groceryPreview from '../assets/card-container-30.png';
+import groceryPreviewVideo from '../assets/grocery.mp4';
 import ratingIcon from '../assets/rating0.svg';
 import arrowLeft from '../assets/review-left-arrow0.svg';
 import arrowRight from '../assets/review-left-arrow1.svg';
@@ -88,12 +88,25 @@ const LandingPage = () => {
                   </p>
                 </div>
               </div>
-              <div
-                className="meal-plan-preview"
-                style={{
-                  background: `url(${mealPlanPreview}) center/cover no-repeat`
-                }}
-              >
+              <div className="meal-plan-preview">
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  className="meal-plan-video"
+                  style={{
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: '30px',
+                    top: 0,
+                    left: 0
+                  }}
+                >
+                  <source src={mealPreviewCard} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
                 <div className="card-container-01-title">
                   <h3 className="h-14">
                     Check Out Your First Perfect Meal Plan at Dealicious
@@ -158,12 +171,25 @@ const LandingPage = () => {
               Save more on everyday essentials while enjoying quality products at
               unbeatable prices.
             </p>
-            <div
-              className="card-container-3"
-              style={{
-                background: `url(${groceryPreview}) center/cover no-repeat`
-              }}
-            >
+            <div className="card-container-3">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                className="grocery-preview-video"
+                style={{
+                  position: 'absolute',
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: '30px',
+                  top: 0,
+                  left: 0
+                }}
+              >
+                <source src={groceryPreviewVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               <div className="card-container-03-title">
                 <h3 className="h-14">
                   Grab Your Favorites Add to Cart Now Start Saving Today
