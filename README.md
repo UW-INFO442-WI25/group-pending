@@ -3,10 +3,8 @@ Eating healthily on a budget is a big challenge for many students. Our project w
 
 # Features
 - Weekly meal plans catered to individual dietary requirements and budgets
-- Multiple suggestions and nutrition information for recipes
-- Individualized shopping lists with anticipated costs from local grocery stores
-- Local supermarket discounts/sales display based on user location (zip code)
-- Display of overall savings while using our web application (obtained by contrasting the initial projected expenses with the actual costs following the application of discounts)
+- An ideal meal plan featuring breakfast, lunch, and dinner, complete with recipes, step-by-step instructions, and detailed nutrition information.
+- A grocery page where users can filter and view specific on-sale items with ease.
 
 
 # Group Members
