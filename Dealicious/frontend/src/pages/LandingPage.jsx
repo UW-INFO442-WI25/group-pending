@@ -1,7 +1,6 @@
 import React from 'react';
 import '../style.css';
 
-// Import assets
 import pepperImage from '../assets/pepper-drops-into-water-10.png';
 import mealPreviewCard from '../assets/meal-preview-card.mp4';
 import steakPreview from '../assets/steak-preview0.png';

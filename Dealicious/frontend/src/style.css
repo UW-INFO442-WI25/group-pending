@@ -17,12 +17,12 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  --spacing-xs: 8px;
-  --spacing-sm: 15px;
-  --spacing-md: 20px;
-  --spacing-lg: 30px;
-  --spacing-xl: 50px;
-  --spacing-xxl: 60px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.9375rem;
+  --spacing-md: 1.25rem;
+  --spacing-lg: 1.875rem;
+  --spacing-xl: 3.125rem;
+  --spacing-xxl: 3.75rem;
 }
 
 * {
@@ -76,14 +76,14 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 204px;
+  top: 12.75rem;
 }
 
 .hero-title {
   color: var(--color-secondary);
   text-align: center;
   font-family: var(--font-title);
-  font-size: 90px;
+  font-size: 5.625rem;
   line-height: 120%;
 }
 
@@ -104,10 +104,10 @@
 }
 
 .content-section {
-  padding: 0 64px;
+  padding: 0 4rem;
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 7.5rem;
   align-items: center;
   width: 100%;
   max-width: 1440px;
@@ -115,16 +115,16 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 2075px;
+  top: 129.6875rem;
 }
 
 .seperator,
 .seperator2 {
   background: #DBDBDC;
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
   position: relative;
-  max-width: 1312px;
+  max-width: 82rem;
   margin: 0 auto;
 }
 
@@ -144,7 +144,7 @@
 .number {
   color: var(--color-primary);
   font-family: var(--font-regular);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
 }
 
@@ -152,16 +152,16 @@
   color: var(--color-secondary);
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 99.33%;
-  letter-spacing: -0.11px;
+  letter-spacing: -0.00688rem;
 }
 
 .card-container-1 {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 34px;
+  gap: 2.125rem;
 }
 
 .left-card-container {
@@ -172,13 +172,13 @@
 .card-1,
 .card-2,
 .card-3 {
-  border-radius: 30px;
+  border-radius: 1.875rem;
   padding: var(--spacing-lg) var(--spacing-md);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 191px;
-  height: 484px;
+  width: 11.9375rem;
+  height: 30.25rem;
 }
 
 .card-1 {
@@ -189,18 +189,18 @@
   color: var(--color-white);
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 103.33%;
-  letter-spacing: 0.11px;
+  letter-spacing: 0.00688rem;
 }
 
 .h-13 {
   color: var(--color-secondary);
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 103.33%;
-  letter-spacing: 0.11px;
+  letter-spacing: 0.00688rem;
 } 
 
 .card-2 {
@@ -217,14 +217,14 @@
 }
 
 .meal-plan-preview {
-  border-radius: 30px;
+  border-radius: 1.875rem;
   padding: var(--spacing-lg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 639px;
-  height: 484px;
+  width: 39.9375rem;
+  height: 30.25rem;
   position: relative;
 }
 
@@ -244,7 +244,7 @@
 .card-container-01-title {
   display: flex;
   flex-direction: column;
-  gap: 60px; 
+  gap: 3.75rem; 
   align-items: center;
   position: relative;
   z-index: 2;
@@ -254,9 +254,9 @@
   color: var(--color-white);
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 103.33%;
-  letter-spacing: 0.11px;
+  letter-spacing: 0.00688rem;
   text-align: center;
 }
 
@@ -274,27 +274,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 144px;
+  gap: 9rem;
 }
 
 .steak-preview {
-  border-radius: 30px;
-  width: 640px;
-  height: 270px;
+  border-radius: 1.875rem;
+  width: 40rem;
+  height: 16.875rem;
   object-fit: cover;
 }
 
 .steak-container {
-  width: 526px;
+  width: 32.875rem;
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 2.25rem;
 }
 
 .steak-title-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -305,7 +305,7 @@
 .rating-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -315,7 +315,7 @@
 .price-container {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 0.5rem;
    align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
@@ -327,19 +327,19 @@
   text-align: center;
   font-family: var(--font-primary);
   font-weight: var(--font-weight-medium);
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 101.67%;
-  letter-spacing: 0.03px;
+  letter-spacing: 0.00188rem;
   position: relative;
   }
 
 .sale-tag {
   background: #d72e2b;
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px;
+  border-radius: 0.625rem;
+  padding: 0.3125rem 0.625rem;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -350,9 +350,9 @@
   text-align: left;
   font-family: 'NunitoSans', sans-serif;
   font-weight: var(--font-weight-medium);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 111%;
-  letter-spacing: 0.27px;
+  letter-spacing: 0.0169rem;
   position: relative;
   }
 
@@ -368,9 +368,9 @@
 }
 
 .card-container-3 {
-  border-radius: 30px;
+  border-radius: 1.875rem;
   padding: var(--spacing-lg);
-  height: 285px;
+  height: 17.8125rem;
   position: relative;
   width: 100%;
   display: flex;
@@ -393,7 +393,7 @@
 .card-container-03-title {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 3.75rem;
   align-items: center;
   position: relative;
   z-index: 2;
@@ -419,8 +419,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   flex-shrink: 0;
-  width: 40px;
-  min-width: 20px;
+  width: 2.5rem;
+  min-width: 1.25rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -448,10 +448,10 @@
   text-align: center;
   gap: var(--spacing-xl);
   position: relative;
-  min-height: 300px;
+  min-height: 18.75rem;
   width: 100%;
   flex-shrink: 1;
-  padding: 0 40px;
+  padding: 0 2.5rem;
   margin: 0 auto;
 }
 
@@ -494,14 +494,14 @@
   color: var(--color-text);
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 
 .h-2-regular {
   color: var(--color-text);
   font-family: var(--font-primary);
   font-weight: var(--font-weight-regular);
-  font-size: 21px;
+  font-size: 1.3125rem;
   flex-shrink: 1;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -513,16 +513,16 @@
 .body-text {
   color: var(--color-text);
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 111%;
-  letter-spacing: 0.27px;
+  letter-spacing: 0.0169rem;
 }
 
 .cta-btn,
 .cta-btn2,
 .cta-btn3 {
-  border-radius: 75.53px;
-  padding: 15px;
+  border-radius: 4.7206rem;
+  padding: 0.9375rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -531,8 +531,8 @@
 }
 
 .cta-btn {
-  border: 1.26px solid var(--color-white);
-  width: 160px;
+  border: 0.0788rem solid var(--color-white);
+  width: 10rem;
 }
 
 .cta-btn:hover {
@@ -545,8 +545,8 @@
 }
 
 .cta-btn2 {
-  border: 1.26px solid var(--color-red);
-  width: 184px;
+  border: 0.0788rem solid var(--color-red);
+  width: 11.5rem;
 }
 
 .cta-btn2:hover {
@@ -559,8 +559,8 @@
 }
 
 .cta-btn3 {
-  border: 1.26px solid var(--color-secondary);
-  width: 160px;
+  border: 0.0788rem solid var(--color-secondary);
+  width: 10rem;
 }
 
 .cta-btn3:hover {
@@ -576,8 +576,8 @@
 .cta-btn2:hover,
 .cta-btn3:hover,
 .login-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1024px) {
@@ -590,16 +590,16 @@
 @media (max-width: 1023px) {
   .landing {
     height: auto;
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
     align-items: center;
   }
   
   .hero-section {
     position: relative;
-    top: 120px;
+    top: 7.5rem;
     left: 0;
     transform: none;
-    padding: 0 32px;
+    padding: 0 2rem;
     margin: 0 auto;
     width: 100%;
     align-items: center;
@@ -607,18 +607,18 @@
   }
   
   .hero-title {
-    font-size: 70px;
+    font-size: 4.375rem;
     text-align: center;
     flex-shrink: 0;
   }
   
   .content-section {
     position: relative;
-    top: 150px;
+    top: 9.375rem;
     left: 0;
     transform: none;
-    padding: 0 32px;
-    gap: 80px;
+    padding: 0 2rem;
+    gap: 5rem;
     margin: 0 auto;
     width: 100%;
     align-items: center;
@@ -627,7 +627,7 @@
   
   .card-container-1 {
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
     align-items: center;
     width: 100%;
     flex-shrink: 0;
@@ -636,25 +636,25 @@
   .left-card-container {
     width: 100%;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     flex-shrink: 0;
   }
   
   .card-1, .card-2, .card-3 {
     width: 30%;
-    height: 300px;
+    height: 18.75rem;
     flex-shrink: 0;
   }
   
   .meal-plan-preview {
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     flex-shrink: 0;
   }
   
   .card-container-2 {
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
     align-items: center;
     width: 100%;
     flex-shrink: 0;
@@ -662,8 +662,8 @@
   
   .steak-preview {
     width: 100%;
-    height: 240px;
-    max-width: 500px;
+    height: 15rem;
+    max-width: 31.25rem;
     flex-shrink: 0;
   }
   
@@ -681,7 +681,7 @@
   }
   
   .card-container-3 {
-    height: 240px;
+    height: 15rem;
     width: 100%;
     flex-shrink: 0;
   }
@@ -711,28 +711,28 @@
 /* Mobile Styles (up to 767px) */
 @media (max-width: 767px) {
   .hero-section {
-    padding: 0 16px;
-    top: 100px;
+    padding: 0 1rem;
+    top: 6.25rem;
     align-items: center;
     flex-shrink: 0;
   }
   
   .hero-title {
-    font-size: 50px;
+    font-size: 3.125rem;
     text-align: center;
     flex-shrink: 0;
   }
   
   .content-section {
-    padding: 0 16px;
-    gap: 60px;
+    padding: 0 1rem;
+    gap: 3.75rem;
     align-items: center;
     flex-shrink: 0;
   }
   
   .left-card-container {
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
     width: 100%;
     flex-shrink: 0;
@@ -740,69 +740,69 @@
   
   .card-1, .card-2, .card-3 {
     width: 100%;
-    height: 200px;
-    max-width: 400px;
+    height: 12.5rem;
+    max-width: 25rem;
     flex-shrink: 0;
   }
   
   .meal-plan-preview {
-    height: 250px;
-    max-width: 400px;
+    height: 15.625rem;
+    max-width: 25rem;
     flex-shrink: 0;
   }
   
   .h-14 {
-    font-size: 22px;
+    font-size: 1.375rem;
     text-align: center;
     flex-shrink: 0;
   }
   
   .steak-title-container .h-1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     flex-shrink: 0;
   }
   
   .price {
-    font-size: 24px;
+    font-size: 1.5rem;
     flex-shrink: 0;
   }
   
   .card-container-3 {
-    height: 200px;
-    max-width: 400px;
+    height: 12.5rem;
+    max-width: 25rem;
     flex-shrink: 0;
   }
   
   .review-content-container {
     padding: 0;
-    min-height: 350px;
+    min-height: 21.875rem;
     flex-shrink: 0;
   }
   
   .review-left-arrow, .review-right-arrow {
-    width: 25px;
+    width: 1.5625rem;
   }
   
   .review-left-arrow {
-    left: 5px;
+    left: 0.3125rem;
   }
   
   .review-right-arrow {
-    right: 5px;
+    right: 0.3125rem;
   }
   
   .review-container {
-    min-height: 350px;
+    min-height: 21.875rem;
     gap: var(--spacing-sm);
-    padding: 0 30px;
+    padding: 0 1.875rem;
     flex-shrink: 0;
   }
   
   .h-2-regular {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.3;
-    padding: 0 5px;
+    padding: 0 0.3125rem;
     flex-shrink: 0;
   }
   
@@ -826,8 +826,8 @@
   
   .steak-preview {
     width: 100%;
-    height: 200px;
-    max-width: 350px;
+    height: 12.5rem;
+    max-width: 21.875rem;
     flex-shrink: 0;
   }
 }
@@ -835,55 +835,55 @@
 /* Small Mobile Styles (up to 480px) */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 40px;
+    font-size: 2.5rem;
     flex-shrink: 0;
   }
   
   .card-container-01-title .h-14,
   .card-container-03-title .h-14 {
-    font-size: 18px;
+    font-size: 1.125rem;
     flex-shrink: 0;
   }
   
   .cta-btn, .cta-btn2, .cta-btn3 {
-    width: 140px;
-    padding: 12px;
+    width: 8.75rem;
+    padding: 0.75rem;
     flex-shrink: 0;
   }
   
   .h-1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     flex-shrink: 0;
   }
   
   .body-text {
-    font-size: 14px;
+    font-size: 0.875rem;
     flex-shrink: 0;
   }
 
   .h-2-regular {
-    font-size: 16px;
+    font-size: 1rem;
     flex-shrink: 0;
   }
   
   .steak-preview {
-    height: 180px;
-    max-width: 280px;
+    height: 11.25rem;
+    max-width: 17.5rem;
     flex-shrink: 0;
   }
   
   .review-content-container {
-    min-height: 400px;
+    min-height: 25rem;
     flex-shrink: 0;
   }
   
   .review-left-arrow, .review-right-arrow {
-    width: 20px;
+    width: 1.25rem;
   }
   
   .review-container {
-    min-height: 400px;
-    padding: 0 25px;
+    min-height: 25rem;
+    padding: 0 1.5625rem;
     flex-shrink: 0;
   }
 }
