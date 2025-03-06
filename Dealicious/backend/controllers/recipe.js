@@ -13,7 +13,6 @@ const JSON_FILE_PATH = "./data/recipes.json";
 const getRecipes = asyncHandler(async (req) => {
     const {
         nutrition = "balanced",
-        rating = "4",
         cuisine = "any",
         minFiber = "0",
         maxCarb = "100",
@@ -21,6 +20,9 @@ const getRecipes = asyncHandler(async (req) => {
     } = req.query || {};
 
     try {
+
+        throw new Error("Simulated error for testing");
+
         const days = 7;
         const recipes = [];
 
@@ -70,14 +72,14 @@ const getRecipes = asyncHandler(async (req) => {
         console.log("Recipes fetched and saved to file");
     } catch (error) {
         console.error("Error fetching recipes:", error.message);
-        throw new Error("Failed to fetch recipes");
+        // throw new Error("Failed to fetch recipes");
     }
 });
 
 router.get("/update", async (req, res) => {
     try {
         console.log(req.query)
-        // await getRecipes(req);
+        await getRecipes(req);
 
         const jsonData = fs.readFileSync(JSON_FILE_PATH, "utf8");
         res.json(JSON.parse(jsonData));

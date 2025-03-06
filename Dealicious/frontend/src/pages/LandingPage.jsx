@@ -1,19 +1,16 @@
 import React from 'react';
 import '../style.css';
 
-import heroBg from '../assets/hero-background.png';
-import arrowRightDark from '../assets/arrow-right-dark.svg';
-import arrowRightWhite from '../assets/arrow-right-white.svg';
-import arrowRightDarkAlt from '../assets/arrow-right-dark-alt.svg';
-import arrowRightWhiteAlt from '../assets/arrow-right-white-alt.svg';
-import mealPlannerPreview from '../assets/meal-planner-preview.png';
-import steakDealPreview from '../assets/steak.png';
-import groceryPreview from '../assets/grocery-preview.png';
-import fiveStars from '../assets/five-stars.svg';
-import leftArrow from '../assets/left-arrow.svg';
-import rightArrow from '../assets/right-arrow.svg';
+import pepperImage from '../assets/pepper-drops-into-water-10.png';
+import mealPreviewCard from '../assets/meal-preview-card.mp4';
+import steakPreview from '../assets/steak-preview0.png';
+import groceryPreviewVideo from '../assets/grocery.mp4';
+import ratingIcon from '../assets/rating0.svg';
+import arrowLeft from '../assets/review-left-arrow0.svg';
+import arrowRight from '../assets/review-left-arrow1.svg';
 
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -29,193 +26,237 @@ const LandingPage = () => {
   return (
     <Layout>
       <div className="landing">
-        <div className="landing-main">
-          <div className="landing-hero">
-            <div className="hero-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
-            <div className="hero-title">
-              ONLY THE BEST
+        <section className="hero-section">
+          <h1 className="hero-title">
+            ONLY THE BEST
+            <br />
+            FOR YOU
+          </h1>
+          <img
+            className="pepper-drops-into-water-1"
+            src={pepperImage}
+            alt="Pepper drops into water"
+          />
+          <div className="hero-subtitle">
+            <p className="body-text">
+              Explore budget-friendly meal plans at Dealicious,
               <br />
-              FOR YOU
-            </div>
-            <div className="sub-title">
-              <div className="hero-sub-title">
-                Explore budget-friendly meal plans at Dealicious,
-                <br />
-                designed to nourish your body while fitting your lifestyle and goals.
-              </div>
-              <div className="component-05">
-                <div className="text-324">Get Started</div>
-                <img className="vector" src={arrowRightDark} alt="arrow right" />
-              </div>
-            </div>
+              designed to nourish your body while fitting your lifestyle and goals.
+            </p>
+            <button className="cta-btn3">
+              <Link to="/onboarding" className="body-text">Get Started</Link>
+            </button>
           </div>
-          <div className="landing-content">
-            <div className="seperator"></div>
-            <div className="landing-container-01">
-              <div className="title-content-01">
-                <div className="title-container-01">
-                  <div className="_01">01</div>
-                  <div className="text-295">Weekly Meal Planner</div>
+        </section>
+
+        <main className="content-section">
+          <div className="seperator" />
+          
+          <section className="content-container-1">
+            <div className="title-container">
+              <span className="number">01</span>
+              <h2 className="h-1">Weekly Meal Planner</h2>
+            </div>
+            <p className="body-text">
+              Plan affordable meals, track nutritional balance, and explore diverse
+              cuisines effortlessly.
+              <br />
+              Stay organized while enjoying healthy, budget-friendly, and flavorful
+              dishes.
+            </p>
+            <div className="card-container-1">
+              <div className="left-card-container">
+                <div className="card-1">
+                  <h3 className="h-12">Budget</h3>
+                  <p className="body-text">
+                    Create cost-effective meal plans that minimize waste and make the
+                    most of your grocery budget.
+                  </p>
                 </div>
-                <div className="landing-container-body">
-                  Plan affordable meals, track nutritional balance, and explore diverse cuisines effortlessly.
-                  <br />
-                  Stay organized while enjoying healthy, budget-friendly, and flavorful dishes.
+                <div className="card-2">
+                  <h3 className="h-12">Nutrition</h3>
+                  <p className="body-text">
+                    Enjoy well-balanced meals packed with essential nutrients to
+                    support a healthy lifestyle.
+                  </p>
+                </div>
+                <div className="card-3">
+                  <h3 className="h-13">Cuisine</h3>
+                  <p className="body-text">
+                    Discover a variety of flavorful dishes inspired by different
+                    cuisines to keep your meals exciting.
+                  </p>
                 </div>
               </div>
-              <div className="card-container-01">
-                <div className="left-card-container">
-                  <div className="card-01">
-                    <div className="card-01-title">Budget</div>
-                    <div className="card-01-body">
-                      Create cost-effective meal plans that minimize waste and make the most of your grocery budget.
-                    </div>
-                  </div>
-                  <div className="card-02">
-                    <div className="card-02-title">Nutrition</div>
-                    <div className="card-02-body">
-                      Enjoy well-balanced meals packed with essential nutrients to support a healthy lifestyle.
-                    </div>
-                  </div>
-                  <div className="card-03">
-                    <div className="card-03-title">Cuisine</div>
-                    <div className="card-03-body">
-                      Discover a variety of flavorful dishes inspired by different cuisines to keep your meals exciting.
-                    </div>
-                  </div>
-                </div>
-                <div className="image-34" style={{ backgroundImage: `url(${mealPlannerPreview})` }}>
-                  <div className="component-01">
-                    <div className="text-303">Explore more</div>
-                    <img className="vector2" src={arrowRightWhite} alt="arrow right" />
-                  </div>
+              <div className="meal-plan-preview">
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  className="meal-plan-video"
+                  style={{
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: '30px',
+                    top: 0,
+                    left: 0
+                  }}
+                >
+                  <source src={mealPreviewCard} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="card-container-01-title">
+                  <h3 className="h-14">
+                    Check Out Your First Perfect Meal Plan at Dealicious
+                  </h3>
+                  <button className="cta-btn">
+                    <span className="body-text">Explore more</span>
+                  </button>
                 </div>
               </div>
             </div>
-            <div className="landing-container-02">
-              <div className="title-content-02">
-                <div className="landing-content-title-02">
-                  <div className="_02">02</div>
-                  <div className="text-305">Exclusive Deals</div>
-                </div>
-                <div className="text-306">
-                  Access special discounts and limited-time offers on a variety of products and services.
-                  <br />
-                  Save more on your favorite brands while enjoying premium deals tailored to your needs.
-                </div>
-              </div>
-              <div className="card-container-02">
-                <img className="image-35" src={steakDealPreview} alt="USDA Choice Ribeye Steak" />
-                <div className="steak-description">
-                  <div className="steak-title-container-01">
-                    <div className="steak-title-container-02">
-                      <div className="text-307">USDA Choice Ribeye Steak</div>
-                      <div className="rating-container">
-                        <img className="raiting" src={fiveStars} alt="5 star rating" />
-                        <div className="text-308">5.0 (259)</div>
-                      </div>
+          </section>
+
+          <section className="content-container-2">
+            <div className="title-container">
+              <span className="number">02</span>
+              <h2 className="h-1">Exclusive Deals</h2>
+            </div>
+            <p className="body-text">
+              Access special discounts and limited-time offers on a variety of
+              products and services.
+              <br />
+              Save more on your favorite brands while enjoying premium deals tailored
+              to your needs.
+            </p>
+            <div className="card-container-2">
+              <img className="steak-preview" src={steakPreview} alt="USDA Choice Ribeye Steak" />
+              <div className="steak-container">
+                <div className="steak-title-container">
+                  <h3 className="h-1">USDA Choice Ribeye Steak</h3>
+                  <div className="rating-container">
+                    <img className="rating" src={ratingIcon} alt="5.0 Rating" />
+                    <span className="body-text">5.0 (259)</span>
+                  </div>
+                  <div className="price-container">
+                    <span className="price">$12.49</span>
+                    <div className="sale-tag">
+                      <span className="sale-tag-text">40% off</span>
                     </div>
-                    <div className="price-container">
-                      <div className="text-309">$12.49</div>
-                      <div className="sale-tag">
-                        <div className="text-310">40% off</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="text-311">
-                    Enjoy premium, tender, and juicy USDA Choice ribeye steak at an unbeatable price. Perfect for grilling, pan-searing, or roasting.
-                  </div>
-                  <div className="property-1-default">
-                    <div className="text-312">Clip the coupon</div>
-                    <img className="vector3" src={arrowRightDarkAlt} alt="arrow right" />
                   </div>
                 </div>
+                <p className="body-text">
+                  Enjoy premium, tender, and juicy USDA Choice ribeye steak at an
+                  unbeatable price. Perfect for grilling, pan-searing, or roasting,
+                  this high-quality cut delivers rich flavor and exceptional marbling.
+                </p>
+                <button className="cta-btn2">
+                  <span className="body-text">Clip the coupon</span>
+                </button>
               </div>
             </div>
-            <div className="landing-container-03">
-              <div className="title-content-03">
-                <div className="landing-content-title-03">
-                  <div className="text-313">03</div>
-                  <div className="text-314">Grocery With Exclusive Price</div>
-                </div>
-                <div className="text-315">
-                  Get the best deals on fresh groceries with special discounts and member-only pricing.
-                </div>
-              </div>
-              <div className="image-36" style={{ backgroundImage: `url(${groceryPreview})` }}>
-                <div className="card-container-03-title">
-                  <div className="text-316">
-                    Grab Your Favorites Add to Cart Now Start Saving Today
-                  </div>
-                </div>
-                <div className="component-02">
-                  <div className="text-317">Explore more</div>
-                  <img className="vector4" src={arrowRightWhiteAlt} alt="arrow right" />
-                </div>
+          </section>
+
+          <section className="content-container-3">
+            <div className="title-container">
+              <span className="number">03</span>
+              <h2 className="h-1">Grocery With Exclusive Price</h2>
+            </div>
+            <p className="body-text">
+              Get the best deals on fresh groceries with special discounts and
+              member-only pricing.
+              <br />
+              Save more on everyday essentials while enjoying quality products at
+              unbeatable prices.
+            </p>
+            <div className="card-container-3">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                className="grocery-preview-video"
+                style={{
+                  position: 'absolute',
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: '30px',
+                  top: 0,
+                  left: 0
+                }}
+              >
+                <source src={groceryPreviewVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="card-container-03-title">
+                <h3 className="h-14">
+                  Grab Your Favorites Add to Cart Now Start Saving Today
+                </h3>
+                <button className="cta-btn">
+                  <span className="body-text">Explore more</span>
+                </button>
               </div>
             </div>
-            <div className="seperator2"></div>
+          </section>
+
+          <div className="seperator2" />
+
+          <section className="review-content-container">
+            <img className="review-left-arrow" src={arrowLeft} alt="Previous review" onClick={handlePrevSlide} />
             <div className="review-container">
-              <div className="component-03" onClick={handlePrevSlide}>
-                <img className="arrow" src={leftArrow} alt="previous slide" />
+              <div className={`review-slide ${currentSlide === 0 ? 'active' : 'hidden'}`}>
+                <h2 className="h-1">Hear It From Our Users</h2>
+                <div className="review-sub-title">
+                  <h3 className="h-18">Why Dealicious?</h3>
+                </div>
+                <p className="h-2-regular">
+                  "Super easy to use, saves me time and money,
+                  <br />
+                  and helps me eat healthier. Highly recommend!"
+                </p>
               </div>
               
-              <div className="review-slider">
-                {/* First Review */}
-                <div className={`review-slide ${currentSlide === 0 ? 'active' : 'hidden'}`}>
-                  <div className="review-text-container">
-                    <div className="text-318">Hear It From Our Students</div>
-                    <div className="review-sub-title">
-                      <div className="text-319">Why Dealicious?</div>
-                      <div className="text-320">Budget-Friendly, Quick & Easy Meals</div>
-                    </div>
-                    <div className="text-321">
-                      "Perfect for my college budget! I can plan my meals for the week
-                      <br />
-                      and still have money left for other activities!"
-                    </div>
-                  </div>
+              <div className={`review-slide ${currentSlide === 1 ? 'active' : 'hidden'}`}>
+                <h2 className="h-1">Hear It From Our Users</h2>
+                <div className="review-sub-title">
+                  <h3 className="h-18">Why Dealicious?</h3>
                 </div>
-
-                {/* Second Review */}
-                <div className={`review-slide ${currentSlide === 1 ? 'active' : 'hidden'}`}>
-                  <div className="review-text-container">
-                    <div className="text-318">Great for Busy Students</div>
-                    <div className="review-sub-title">
-                      <div className="text-319">Why Dealicious?</div>
-                      <div className="text-320">Time-Saving & Affordable Options</div>
-                    </div>
-                    <div className="text-321">
-                      "Between classes and study sessions, I can quickly find deals
-                      <br />
-                      and plan healthy meals without breaking the bank!"
-                    </div>
-                  </div>
-                </div>
-
-                {/* Third Review */}
-                <div className={`review-slide ${currentSlide === 2 ? 'active' : 'hidden'}`}>
-                  <div className="review-text-container">
-                    <div className="text-318">Dorm-Friendly Solutions</div>
-                    <div className="review-sub-title">
-                      <div className="text-319">Why Dealicious?</div>
-                      <div className="text-320">Simple Recipes & Student Discounts</div>
-                    </div>
-                    <div className="text-321">
-                      "As a freshman, this app helped me eat well on a tight budget.
-                      <br />
-                      The student deals and easy recipes are a lifesaver!"
-                    </div>
-                  </div>
-                </div>
+                <p className="h-2-regular">
+                  "As a broke college student, Dealicious has been a lifesaver for my wallet.
+                  <br />
+                  I can actually eat well between classes without blowing my budget!"
+                </p>
               </div>
-
-              <div className="component-04" onClick={handleNextSlide}>
-                <img className="arrow2" src={rightArrow} alt="next slide" />
+              
+              <div className={`review-slide ${currentSlide === 2 ? 'active' : 'hidden'}`}>
+                <h2 className="h-1">Hear It From Our Users</h2>
+                <div className="review-sub-title">
+                  <h3 className="h-18">Why Dealicious?</h3>
+                </div>
+                <p className="h-2-regular">
+                  "Between exams and projects, I never had time to plan meals properly.
+                  <br />
+                  Dealicious makes it so simple that even I can cook decent food in my tiny kitchen!"
+                </p>
+              </div>
+              
+              <div className={`review-slide ${currentSlide === 3 ? 'active' : 'hidden'}`}>
+                <h2 className="h-1">Hear It From Our Users</h2>
+                <div className="review-sub-title">
+                  <h3 className="h-18">Why Dealicious?</h3>
+                </div>
+                <p className="h-2-regular">
+                  "My roommates and I split grocery costs using Dealicious meal plans.
+                  <br />
+                  We're eating better, spending less, and actually enjoying cooking together!"
+                </p>
               </div>
             </div>
-          </div>
-        </div>
+            <img className="review-right-arrow" src={arrowRight} alt="Next review" onClick={handleNextSlide} />
+          </section>
+        </main>
       </div>
     </Layout>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Footer.module.css";
-import logo from "../assets/logo-white.svg";
+import logo from "../assets/logo0.svg";
 import facebookIcon from "../assets/facebook-icon.svg";
 import twitterIcon from "../assets/twitter-icon.svg";
 import youtubeIcon from "../assets/youtube-icon.svg";

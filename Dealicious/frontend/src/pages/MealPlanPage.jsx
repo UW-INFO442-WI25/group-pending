@@ -11,11 +11,11 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   const [selectedDay, setSelectedDay] = useState(1);
   const [nutritionOption, setNutritionOption] = useState("");
-  const [rating, setRating] = useState(false);
   const [cuisineOption, setCuisineOption] = useState("");
   const [minFiber, setMinFiber] = useState(null);
   const [maxCarb, setMaxCarb] = useState(null);
   const [minProtein, setMinProtein] = useState(null);
+  const [discountedIngredients, setDiscountedIngredients] = useState([]);
 
   const categories = [
     "Gluten Free",
@@ -53,19 +53,31 @@ function App() {
   };
 
   useEffect(() => {
-    if (nutritionOption || rating || cuisineOption || minFiber || maxCarb || minProtein) {
+    if (nutritionOption || cuisineOption || minFiber || maxCarb || minProtein) {
       fetchRecipes("/api/recipe/update");
     }
     else {
+      fetchDiscounts();
       fetchRecipes("/api/recipe");
     }
-  }, [nutritionOption, rating, cuisineOption, minFiber, maxCarb, minProtein]);
+  }, [nutritionOption, cuisineOption, minFiber, maxCarb, minProtein]);
+
+  const fetchDiscounts = () => {
+    axios
+      .get("/api/ingredients")
+      .then((response) => {
+        console.log(response.data);
+        setDiscountedIngredients(response.data);
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+
+    console.log(discountedIngredients);
+  }
 
   const fetchRecipes = (apiString) => {
     console.log(cuisineOption + "  " + nutritionOption);
     let params = {
       nutrition: nutritionOption,
-      rating: rating ? 4 : undefined,
       cuisine: cuisineOption,
       maxCarbs: maxCarb,
       minFiber: minFiber,
@@ -84,8 +96,23 @@ function App() {
   const RecipeCard = ({ recipe }) => {
     if (!recipe) return <p>Loading...</p>;
 
+    // Check if the recipe contains any discounted ingredients
+    const recipeIngredients = new Set(recipe.analyzedInstructions?.[0]?.steps?.flatMap((step) =>
+      step.ingredients.map((ingredient) => ingredient.name.toLowerCase())
+    ));
+    const discountedIngredientNames = discountedIngredients
+      .filter(discountedIngredient => recipeIngredients.has(discountedIngredient.name.toLowerCase()))
+      .map(discountedIngredient => discountedIngredient.name);
+
+    const isDiscounted = discountedIngredientNames.length > 0;
+
     return (
-      <div className="meal">
+      <div className={`meal ${isDiscounted ? "discounted" : ""}`} aria-label={`Recipe card for ${recipe.title} ${isDiscounted ? "with discounted ingredients" : ""}`}>
+        {isDiscounted && (
+          <div className="discount-badge">
+            Discounted: {discountedIngredientNames.join(", ")}
+          </div>
+        )}
         <div className="frame-427318924">
           <div className="group-2">
             <div className="_520-kcal">{recipe.nutrition?.nutrients[0]?.amount} kcal</div>
@@ -137,21 +164,7 @@ function App() {
 
   return (
     <Layout>
-      <div className={"my-meal-plan "}>
-        <div className="hero">
-          <div className="hero1">
-            <img src={png0} alt="png0" className="umv49RURnC" />
-          </div>
-          <div className="hero2">
-            <p className="gyfKLcTrZ4">Zaire Dokidis</p>
-            <div className="LgL57SFu6z"></div>
-            <div className="BkEOXo0iLd">
-              <p className="gyfKLcTrZ4">&quot;Super easy to use, saves me</p>
-              <p className="gyfKLcTrZ4">time and money, and helps me</p>
-              <p className="gyfKLcTrZ4">eat healthier. Highly recommend!&quot;</p>
-            </div>
-          </div>
-        </div>
+      <div className={"my-meal-plan "} role="main">
         <h1 className="Cuu8Apn8Lg">YOUR WEEKLY MEAL PLAN</h1>
         <div className="content">
           <div className="status-nav">
@@ -161,6 +174,8 @@ function App() {
                   key={index}
                   className={`frame-427319021 ${selectedDay === index + 1 ? "active" : ""}`}
                   onClick={() => setSelectedDay(index + 1)}
+                  aria-label={`Select day ${index + 1}`}
+                  onTouchStart={() => setSelectedDay(index + 1)}
                 >
                   <div className="day">Day {index + 1}</div>
                 </button>
@@ -172,7 +187,6 @@ function App() {
               <div className="all-categories">
                 <div className="OKfiBvftcs">
                   <div className="nutrition-option">Nutrition Option</div>
-                  <img className="vector" src="vector0.svg" />
                 </div>
                 {categories.map((category, index) => (
                   <label key={index} className="category-option">
@@ -187,37 +201,14 @@ function App() {
                         (minFiber && category === "High-Fiber")
                       }
                       onChange={() => handleSelection(category)}
+                      aria-label={`Select ${category} nutrition option`}
+                      onTouchStart={() => handleSelection(category)}
                     />
                     <div className="category-text">{category}</div>
                   </label>
                 ))}
               </div>
               <div className="line-47"></div>
-              <div className="all-categories">
-                <div className="OKfiBvftcs">
-                  <div className="nutrition-option">Rating </div>
-                  <img className="vector2" src="vector1.svg" />
-                </div>
-                <div className="categories3">
-                  <input type="checkbox" className="checkbox0" onChange={() => setRating(!rating)} />
-                  <div className="star-1">
-                    <img className="group" src={s0} />
-                  </div>
-                  <div className="star-1">
-                    <img className="group" src={s0} />
-                  </div>
-                  <div className="star-1">
-                    <img className="group" src={s0} />
-                  </div>
-                  <div className="star-1">
-                    <img className="group" src={s0} />
-                  </div>
-                  <div className="star-1">
-                    <img className="group" src={s0} />
-                  </div>
-                  <div className="_4-0-up">4.0 &amp; up </div>
-                </div>
-              </div>
               <div className="line-48"></div>
               <div className="popular-tag">
                 <div className="OKfiBvftcs">
@@ -241,6 +232,8 @@ function App() {
                       key={cuisine}
                       className="btn0"
                       onClick={() => handleCuisineOption(cuisine)}
+                      aria-label={`Select ${cuisine} cuisine option`}
+                      onTouchStart={() => handleCuisineOption(cuisine)}
                     >
                       {cuisine}
                     </button>

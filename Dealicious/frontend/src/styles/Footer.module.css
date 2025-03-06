@@ -17,6 +17,7 @@
   align-items: flex-start;
   gap: 80px;
   padding: 40px 40px;
+  flex-wrap: wrap;
 }
 
 .footerLeft {
@@ -56,12 +57,10 @@
   line-height: 103.33%;
   letter-spacing: 0.11px;
   font-weight: 700;
-  text-align: left; 
   width: 100%;
   margin-bottom: 10px;
   margin-left: 10px;
   margin-top: 20px;
-
 }
 
 .footerLink {
@@ -123,4 +122,65 @@
   font-size: 16px;
   line-height: 111%;
   letter-spacing: 0.27px;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 20px;
+  }
+
+  .footerLeft, .footerCenter, .footerRight {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerLeft {
+    gap: 30px;
+  }
+
+  .footerCenter {
+    gap: 20px;
+  }
+
+  .footerRight {
+    gap: 20px;
+  }
+
+  .emailInput {
+    width: 100%;
+  }
+
+  .contactButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer {
+    padding: 10px 10px;
+  }
+
+  .footerLeft {
+    gap: 20px;
+  }
+
+  .footerCenter {
+    gap: 15px;
+  }
+
+  .footerRight {
+    gap: 15px;
+  }
+
+  .quickLinks, .contactText {
+    font-size: 18px;
+  }
+
+  .footerLink, .emailInput, .contactButton {
+    font-size: 14px;
+  }
 }
