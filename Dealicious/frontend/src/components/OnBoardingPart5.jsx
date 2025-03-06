@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import OnBoardingPart4 from "./OnBoardingPart4";
 
 const OnBoardingPart5 = () => {
@@ -9,7 +10,7 @@ const OnBoardingPart5 = () => {
           title1={"We've tailored your weekly meal plan based on the information you provided."}
         />
       </div>
-      <button className="btn0">Check out your first meal plan</button>
+      <Link to="/meal-planner" className="btn0">Check out your first meal plan</Link>
     </>
   );
 };

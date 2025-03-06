@@ -10,6 +10,7 @@ import arrowLeft from '../assets/review-left-arrow0.svg';
 import arrowRight from '../assets/review-left-arrow1.svg';
 
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -43,7 +44,7 @@ const LandingPage = () => {
               designed to nourish your body while fitting your lifestyle and goals.
             </p>
             <button className="cta-btn3">
-              <span className="body-text">Get Started</span>
+              <Link to="/onboarding" className="body-text">Get Started</Link>
             </button>
           </div>
         </section>
