@@ -1,10 +1,14 @@
 const express = require("express");
+const cors = require("cors"); 
+const path = require("path"); 
 const { router, getRecipes } = require("./controllers/recipe");
 
 const app = express();
 const port = process.env.PORT || 5000;
 
+app.use(cors());
 app.use("/api/recipe", router);
+app.use('/data', express.static(path.join(__dirname, 'data')));
 
 const defaultParams = {
     query: {
