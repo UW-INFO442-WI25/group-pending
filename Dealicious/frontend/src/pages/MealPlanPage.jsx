@@ -63,15 +63,18 @@ function App() {
   }, [nutritionOption, cuisineOption, minFiber, maxCarb, minProtein]);
 
   const fetchDiscounts = () => {
+    let discounted = [];
     axios
-      .get("/api/ingredients")
+      .get('http://localhost:5000/data/data.json')
       .then((response) => {
-        console.log(response.data);
-        setDiscountedIngredients(response.data);
+        response.data.ingredients.forEach((ingredient) => {
+          if(ingredient.discount) {
+            discounted.push(ingredient);
+          }
+        })
+        setDiscountedIngredients(discounted);
       })
-      .catch((error) => console.error("Error fetching data:", error));
-
-    console.log(discountedIngredients);
+      .catch((error) => console.error('Error fetching produce:', error));
   }
 
   const fetchRecipes = (apiString) => {

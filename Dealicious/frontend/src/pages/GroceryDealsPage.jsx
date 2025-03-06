@@ -19,7 +19,7 @@ const stores = [
   { name: 'Fred Meyer', rating: 4.2, location: 'Seattle, WA', logo: fredMeyerLogo },
 ];
 
-//Creating temp catagories for MVP
+//Creating temp categories for MVP
 const categories = [
   'Fruit',
   'Vegetable',
@@ -115,7 +115,7 @@ const GroceryDeals = () => {
       result = result.filter((item) => item.name.toLowerCase().includes(term));
     }
 
-    // catagory filter
+    // category filter
     if (selectedCategories.length > 0) {
       result = result.filter((item) =>
         item.categories.some((cat) => selectedCategories.includes(cat))
@@ -284,6 +284,7 @@ const GroceryDeals = () => {
                     <div className="discount-badge">{discountPercent}% OFF</div>
                   )}
                   <h3 className="deal-title">{item.name}</h3>
+                  <img src={item.image} alt={item.name} className="deal-image" />
 
                   {hasDiscount ? (
                     <p className="deal-price">
