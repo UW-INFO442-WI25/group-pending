@@ -152,9 +152,10 @@ const LandingPage = () => {
                   unbeatable price. Perfect for grilling, pan-searing, or roasting,
                   this high-quality cut delivers rich flavor and exceptional marbling.
                 </p>
-                <button className="cta-btn2">
-                  <span className="body-text">Clip the coupon</span>
-                </button>
+                <Link to="/grocery-deals" className="cta-btn2">
+                  <span className="body-text">Get shopping</span>
+                </Link>
+
               </div>
             </div>
           </section>

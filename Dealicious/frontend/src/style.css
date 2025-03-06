@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000');
 
+html, body {
+  overflow-x: hidden;
+}
 :root {
   --color-primary: #249552;
   --color-secondary: #2A292B;
@@ -828,6 +831,356 @@
     max-width: 21.875rem;
     flex-shrink: 0;
   }
+}
+
+
+/* Grocery Deals Page */
+.grocery-hero,
+.store-selection,
+.grocery-container,
+.grocery-container *,
+.grocery-content,
+.search-sort,
+.pagination {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Hero Section */
+.grocery-hero {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.grocery-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.grocery-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.grocery-hero .hero-title {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  max-width: 700px;
+  line-height: 1.2;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Store Selection */
+.store-selection {
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.store-selection h2 {
+  font-size: 1.8rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #2a292b;
+}
+
+.store-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.store-button {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.store-button:hover {
+  border-color: #249552;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.store-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.store-info {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Main Layout */
+.grocery-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  margin: 2rem auto;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+  height: fit-content;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.sidebar h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.sidebar div {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar label {
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Checkbox & Radio */
+.sidebar input[type="checkbox"],
+.sidebar input[type="radio"] {
+  accent-color: #249552;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  margin: 0.3rem 0.3rem 0 0;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tag:hover {
+  background: #d3d3d3;
+}
+
+.tag-selected {
+  background: #249552;
+  color: white;
+  border-radius: 50px;
+  border: none;
+}
+
+/* Product Grid */
+.grocery-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.deals-container {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 576px) {
+  .deals-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .deals-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .deals-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .deals-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Product Cards */
+.deal-card {
+  position: relative;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Discount Badge */
+.discount-badge {
+  background: #d72e2b;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Product Info */
+.deal-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.deal-price {
+  font-size: 1.3rem;
+  color: #249552;
+  font-weight: 700;
+  margin: 0.3rem 0 0.6rem 0;
+}
+
+/* Rating */
+.deal-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.deal-rating img {
+  width: 80px;
+  height: auto;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s ease, border 0.3s ease;
+  border: none;
+  padding: 8px;
+}
+
+.add-to-cart .cart-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart .white-icon {
+  display: none;
+}
+
+.add-to-cart:hover {
+  background: #249552;
+  border: 2px solid #249552;
+  border-radius: 8px;
+}
+
+.add-to-cart:hover .black-icon {
+  display: none;
+}
+
+.add-to-cart:hover .white-icon {
+  display: block;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 5rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 10rem;
+}
+
+.pagination button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background: #249552;
+  color: #fff;
+  border-color: #249552;
 }
 
 @media (max-width: 480px) {
