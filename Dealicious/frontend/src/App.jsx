@@ -4,10 +4,7 @@ import "./style.css";
 import Landing from "./pages/LandingPage";
 import GroceryDeals from "./pages/GroceryDealsPage";
 import MealPlan from "./pages/MealPlanPage";
-import SignIn from "./pages/SignInPage";
-import SignUp from "./pages/SignUpPage";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import OnBoarding from "./pages/OnBoardingPage";
 
 export default function App() {
   return (
@@ -16,8 +13,7 @@ export default function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/grocery-deals" element={<GroceryDeals />} />
           <Route path="/meal-planner" element={<MealPlan />} />
-          <Route path="/sign-in" element={<SignIn />} />
-          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/onboarding" element={<OnBoarding />} />
         </Routes>
       </Router>
 
