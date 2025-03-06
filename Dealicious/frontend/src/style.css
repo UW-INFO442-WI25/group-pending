@@ -586,7 +586,6 @@
   }
 }
 
-/* Tablet Styles (768px to 1023px) */
 @media (max-width: 1023px) {
   .landing {
     height: auto;
@@ -708,7 +707,6 @@
   }
 }
 
-/* Mobile Styles (up to 767px) */
 @media (max-width: 767px) {
   .hero-section {
     padding: 0 1rem;
@@ -832,7 +830,6 @@
   }
 }
 
-/* Small Mobile Styles (up to 480px) */
 @media (max-width: 480px) {
   .hero-title {
     font-size: 2.5rem;
@@ -888,7 +885,6 @@
   }
 }
 
-/* Extra Small Mobile Styles */
 @media (max-width: 375px) {
   .review-content-container {
     min-height: 450px;
@@ -901,7 +897,6 @@
   }
 }
 
-/* Very Small Mobile Styles */
 @media (max-width: 320px) {
   .review-content-container {
     min-height: 500px;
