@@ -112,7 +112,7 @@ const LandingPage = () => {
                     Check Out Your First Perfect Meal Plan at Dealicious
                   </h3>
                   <button className="cta-btn">
-                    <span className="body-text">Explore more</span>
+                    <Link to="meal-planner" className="body-text">Explore more</Link>
                   </button>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const LandingPage = () => {
                   Grab Your Favorites Add to Cart Now Start Saving Today
                 </h3>
                 <button className="cta-btn">
-                  <span className="body-text">Explore more</span>
+                  <Link to="grocery-deals" className="body-text">Explore more</Link>
                 </button>
               </div>
             </div>
