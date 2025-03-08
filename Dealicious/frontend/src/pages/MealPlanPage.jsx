@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/MealPlanPage.css";
-// 引入图片
-import png0 from "../assets/20250226155143.png";
-import s0 from "../assets/star.svg";
 
 import Layout from '../components/Layout';
 
@@ -233,7 +230,7 @@ function App() {
                   ].map((cuisine) => (
                     <button
                       key={cuisine}
-                      className="btn0"
+                      className="cusine-button"
                       onClick={() => handleCuisineOption(cuisine)}
                       aria-label={`Select ${cuisine} cuisine option`}
                       onTouchStart={() => handleCuisineOption(cuisine)}

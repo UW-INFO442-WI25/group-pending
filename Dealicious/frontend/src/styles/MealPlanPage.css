@@ -240,9 +240,25 @@ body, .my-meal-plan {
   gap: 12px;
 }
 
-.btn0 {
-  padding: 4px;
-  font-size: 22px;
+.cusine-button {
+  display: inline-block;
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  margin: 0.3rem 0.3rem 0 0;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cusine-button:hover {
+  background: #d3d3d3;
+}
+
+.cusine-button-selected {
+  color: white;
+  border-radius: 50px;
+  border: none;
 }
 
 .displaying {
@@ -453,7 +469,7 @@ ol li,
     font-size: 20px;
   }
 
-  .category-text, ._4-0-up, .btn0 {
+  .category-text, ._4-0-up, .cusine-button {
     font-size: 18px;
   }
 
@@ -509,7 +525,7 @@ ol li,
     font-size: 16px;
   }
 
-  .category-text, ._4-0-up, .btn0 {
+  .category-text, ._4-0-up, .cusine-button {
     font-size: 16px;
   }
 
