@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Layout from '../components/Layout';
 import '../style.css';
@@ -53,11 +54,12 @@ const GroceryDeals = () => {
   const [produce, setProduce] = useState([]);
   const [filteredProduce, setFilteredProduce] = useState([]);
 
+  const [shoppingList, setShoppingList] = useState([]); 
+
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
 
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedStore, setSelectedStore] = useState(null);
 
   const [sortOption, setSortOption] = useState('');
 
@@ -99,12 +101,17 @@ const GroceryDeals = () => {
       })
       .catch((error) => console.error('Error fetching produce:', error));
   }, []);
-
+  
   // reset page
   useEffect(() => {
     setCurrentPage(1);
   }, [searchTerm, selectedCategories, selectedTags, ratingFilter, sortOption]);
 
+  
+  useEffect(() => {
+    localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
+  }, [shoppingList]);
+  
   // Filter
   useEffect(() => {
     let result = [...produce];
@@ -173,13 +180,27 @@ const GroceryDeals = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredProduce.slice(indexOfFirstItem, indexOfLastItem);
 
+  const handleAddToShoppingList = (item) => {
+    setShoppingList((prevList) => {
+      // Check for duplicates
+      const alreadyAdded = prevList.find((prevItem) => prevItem.name === item.name);
+      if (alreadyAdded) {
+        return prevList; 
+      }
+      const uniqueItem = { ...item, id: Date.now() + Math.random() };
+      return [...prevList, uniqueItem];
+    });
+    setShowShoppingList(true);
+  };
+
   return (
     <Layout>
       <div className="grocery-hero" style={{ backgroundImage: `url(${groceryHero})` }}>
         <h1 className="hero-title">Grab your favorites, start saving today</h1>
       </div>
-
+      
       <div className="store-selection">
+        
         <h2>Select Your Store</h2>
         <div className="store-list">
           {stores.map((store, idx) => (
@@ -248,20 +269,30 @@ const GroceryDeals = () => {
         </div>
 
         <div className="grocery-content">
-          <div className="search-sort">
-            <input
-              type="text"
-              placeholder="Search produce..."
-              value={searchTerm}
-              onChange={handleSearch}
-              className="search-bar"
-            />
 
-            <select onChange={(e) => setSortOption(e.target.value)}>
-              <option value="">-- No Sorting --</option>
-              <option value="discountDesc">Most Discount</option>
-              <option value="priceAsc">Least Price</option>
-            </select>
+          <div className="search-sort-container">
+            <div className="search-sort">
+              <input
+                type="text"
+                placeholder="Search produce..."
+                value={searchTerm}
+                onChange={handleSearch}
+                className="search-bar"
+              />
+
+              <select onChange={(e) => setSortOption(e.target.value)}>
+                <option value="">-- No Sorting --</option>
+                <option value="discountDesc">Most Discount</option>
+                <option value="priceAsc">Least Price</option>
+              </select>
+            </div>
+
+            <div className="shopping-list-icon">
+              <Link to="/shopping-list" className="shopping-list-link">
+                <img src={shopBlack} alt="Shopping Bag" className="shopping-bag-icon" />
+                My Coupons ({shoppingList.length})
+              </Link>
+            </div>
           </div>
 
           <div
@@ -309,10 +340,13 @@ const GroceryDeals = () => {
                     <img src={fiveStars} alt="5 star rating" />
                   </div>
 
-                  <button className="add-to-cart">
-                    <img src={shopBlack} alt="Add to Cart" className="cart-icon black-icon" />
-                    <img src={shopWhite} alt="Add to Cart" className="cart-icon white-icon" />
-                  </button>
+                  <button 
+                  className="add-to-cart" 
+                  onClick={() => handleAddToShoppingList(item)}
+                >
+                  <img src={shopBlack} alt="Add to Shopping List" className="cart-icon black-icon" />
+                  <img src={shopWhite} alt="Add to Shopping List" className="cart-icon white-icon" />
+                </button>
                 </div>
               );
             })}

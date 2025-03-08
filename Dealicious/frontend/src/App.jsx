@@ -5,6 +5,8 @@ import Landing from "./pages/LandingPage";
 import GroceryDeals from "./pages/GroceryDealsPage";
 import MealPlan from "./pages/MealPlanPage";
 import OnBoarding from "./pages/OnBoardingPage";
+import ShoppingList from './pages/ShoppingListPage';
+
 
 export default function App() {
   return (
@@ -12,6 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/grocery-deals" element={<GroceryDeals />} />
+          <Route path="/shopping-list" element={<ShoppingList />} />
           <Route path="/meal-planner" element={<MealPlan />} />
           <Route path="/onboarding" element={<OnBoarding />} />
         </Routes>

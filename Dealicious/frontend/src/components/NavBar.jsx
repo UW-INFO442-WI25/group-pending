@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className={styles.categories}>
           <Link to="/" className={styles.navLink} onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/meal-planner" className={styles.navLink} onClick={() => setMenuOpen(false)}>Meal Planner</Link>
-          <Link to="/grocery-deals" className={styles.navLink} onClick={() => setMenuOpen(false)}>Grocery Deal</Link>
+          <Link to="/grocery-deals" className={styles.navLink} onClick={() => setMenuOpen(false)}>Grocery Deals</Link>
         </div>
         
         <div className={styles.loginBtn}>

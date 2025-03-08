@@ -892,7 +892,7 @@ html, body {
 .store-selection {
   width: 90%;
   margin: 2rem auto;
-  text-align: center;
+  text-align: left;
 }
 
 .store-selection h2 {
@@ -907,7 +907,7 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: left;
   padding: 2rem 0;
 }
 
@@ -943,7 +943,47 @@ html, body {
   line-height: 1.3;
 }
 
-/* Main Layout */
+.search-sort-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding: 0 2rem; 
+}
+
+.search-sort {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shopping-list-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shopping-bag-icon {
+  width: 24px;
+  height: auto;
+}
+
+.shopping-list-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.shopping-list-link:hover {
+  transform: scale(1.1);
+}
+
 .grocery-container {
   display: flex;
   gap: 2rem;
@@ -1191,6 +1231,125 @@ html, body {
   color: #fff;
   border-color: #249552;
 }
+
+.shopping-list-container {
+  width: 80%;
+  margin: 2rem auto;
+  /* setting footer position */
+  min-height: calc(100vh - 800px); 
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.coupon-table {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed; 
+}
+.coupon-table thead {
+  background-color: #f9f9f9;
+}
+
+.coupon-table thead th {
+  text-align: left;
+  width: 45%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2a292b;
+}
+
+.coupon-table td {
+  padding: 1rem;
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+/* Product column with image + name */
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Price styling (old/new) */
+.old-price {
+  text-decoration: line-through;
+  margin-right: 8px;
+  color: #999;
+}
+
+.new-price {
+  font-weight: bold;
+  color: #249552;
+}
+
+/* Availability labels */
+.status {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.available {
+  background-color: #c1f1d4;
+  color: #249552;
+}
+
+.unavailable {
+  background-color: #f8d7da;
+  color: #d72e2b;
+}
+
+.clip-coupon-btn {
+  background-color: #249552;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.clip-coupon-btn:hover {
+  background-color: #1f8146;
+}
+
+.clip-coupon-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.remove-btn:hover {
+  transform: scale(1.2);
+  color: #d72e2b;
+}
+
 
 @media (max-width: 480px) {
   .hero-title {
