@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/MealPlanPage.css";
+import recipeHero from '../assets/recipe.jpg';
 
 import Layout from '../components/Layout';
 
@@ -113,14 +114,10 @@ function App() {
             Discounted: {discountedIngredientNames.join(", ")}
           </div>
         )}
-        <div className="frame-427318924">
-          <div className="group-2">
-            <div className="_520-kcal">{recipe.nutrition?.nutrients[0]?.amount} kcal</div>
-          </div>
-        </div>
 
-        <div className="product-image">
+        <div className="meal-image">
           <img className="image" src={recipe.image} alt={recipe.title} />
+          <div className="_520-kcal">{recipe.nutrition?.nutrients[0]?.amount} kcal</div>
         </div>
         <div className="frame-427319020">
           <div className="info">
@@ -165,7 +162,9 @@ function App() {
   return (
     <Layout>
       <div className={"my-meal-plan "} role="main">
-        <h1 className="Cuu8Apn8Lg">YOUR WEEKLY MEAL PLAN</h1>
+        <div className="grocery-hero" style={{ backgroundImage: `url(${recipeHero})` }}>
+          <h1 className="hero-title">Grab your favorites, start saving today</h1>
+        </div>
         <div className="content">
           <div className="status-nav">
             <div className="frame-427319028">
@@ -184,10 +183,9 @@ function App() {
           </div>
           <div className="main">
             <div className="filter">
-              <div className="all-categories">
-                <div className="OKfiBvftcs">
-                  <div className="nutrition-option">Nutrition Option</div>
-                </div>
+
+            <div className="sidebar">
+                <h3>Nutrition Option</h3>
                 {categories.map((category, index) => (
                   <label key={index} className="category-option">
                     <input
@@ -207,13 +205,7 @@ function App() {
                     <div className="category-text">{category}</div>
                   </label>
                 ))}
-              </div>
-              <div className="line-47"></div>
-              <div className="line-48"></div>
-              <div className="popular-tag">
-                <div className="OKfiBvftcs">
-                  <div className="nutrition-option">Cuisine Option</div>
-                </div>
+                <h3>Cuisine Option</h3>
                 <div className="cuisine-options">
                   {[
                     "Korean",
@@ -240,6 +232,8 @@ function App() {
                   ))}
                 </div>
               </div>
+
+
             </div>
             <div className="displaying">
               <div>

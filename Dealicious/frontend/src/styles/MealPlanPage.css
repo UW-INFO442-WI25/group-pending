@@ -77,7 +77,7 @@ body, .my-meal-plan {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-shrink: 0;
 }
 
@@ -119,6 +119,7 @@ body, .my-meal-plan {
   gap: 51px;
   width: 100%;
   overflow-x: auto;
+  padding-bottom: 30px;
 }
 
 .filter {
@@ -161,7 +162,8 @@ body, .my-meal-plan {
 }
 
 .category-text {
-  font-size: 22px;
+  font-size: 14px;
+  vertical-align: middle;
 }
 
 .nutrition-option {
@@ -262,6 +264,7 @@ body, .my-meal-plan {
 }
 
 .displaying {
+  padding-left: 100px;
   width: 100%;
   flex-shrink: 1;
 }
@@ -285,7 +288,7 @@ body, .my-meal-plan {
   border-style: solid;
   border-color: var(--gray-scale-gray-100, #e6e6e6);
   border-width: 1.01px;
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   gap: 20px;
   justify-content: flex-start;
@@ -302,14 +305,14 @@ body, .my-meal-plan {
   gap: 10px;
 }
 
-.product-image {
+.meal-image {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .image {
-  width: 100%;
+  width: 300px;
   height: auto;
   border-radius: 8px;
 }
@@ -348,7 +351,7 @@ body, .my-meal-plan {
   justify-content: flex-start;
   flex-shrink: 1;
   flex-grow: 1;
-  width: 136.42px;
+  width: 700px;
   box-sizing: border-box;
   max-width: 100%;
 }
