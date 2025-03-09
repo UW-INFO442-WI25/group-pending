@@ -11,9 +11,11 @@ const OnBoardingPart1 = ({ changePart }) => {
         />
       </div>
       <div className="FhfQ5">
-        <p className="uQe9Z">What is your weekly food budget?</p>
+        <label htmlFor="weekly-budget" className="uQe9Z">What is your weekly food budget?</label>
         <input
+          id="weekly-budget"
           type="text"
+          aria-label="Enter your weekly food budget"
           style={{
             borderRadius: "12.15px",
             width: "100%",
@@ -33,10 +35,20 @@ const OnBoardingPart1 = ({ changePart }) => {
           gap: "24px",
         }}
       >
-        <button className="btn0" onClick={() => changePart(0)}>
+        <button
+          className="btn0"
+          onClick={() => changePart(0)}
+          onTouchStart={() => changePart(0)}
+          aria-label="Go back to previous step"
+        >
           Back
         </button>
-        <button className="btn0" onClick={() => changePart(2)}>
+        <button
+          className="btn0"
+          onClick={() => changePart(2)}
+          onTouchStart={() => changePart(2)}
+          aria-label="Go to next step"
+        >
           Next
         </button>
       </div>

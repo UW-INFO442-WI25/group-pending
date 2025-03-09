@@ -10,7 +10,16 @@ const OnBoardingPart5 = () => {
           title1={"We've tailored your weekly meal plan based on the information you provided."}
         />
       </div>
-      <Link to="/meal-planner" className="btn0">Check out your first meal plan</Link>
+      <div className="button-container">
+        <Link 
+          to="/meal-planner" 
+          className="btn0" 
+          aria-label="Check out your first meal plan"
+          onTouchStart={() => {}}
+        >
+          Check out your first meal plan
+        </Link>
+      </div>
     </>
   );
 };

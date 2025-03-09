@@ -11,9 +11,11 @@ const OnBoardingPart0 = ({ changePart }) => {
         />
       </div>
       <div className="FhfQ5">
-        <p className="uQe9Z">What is your zip code?</p>
+        <label htmlFor="zip-code" className="uQe9Z">What is your zip code?</label>
         <input
+          id="zip-code"
           type="text"
+          aria-label="Enter your zip code"
           style={{
             borderRadius: "12.15px",
             width: "100%",
@@ -24,9 +26,16 @@ const OnBoardingPart0 = ({ changePart }) => {
           }}
         />
       </div>
-      <button className="btn0" onClick={() => changePart(1)}>
-        Next
-      </button>
+      <div className="button-container">
+        <button
+          className="btn0"
+          onClick={() => changePart(1)}
+          onTouchStart={() => changePart(1)}
+          aria-label="Next step"
+        >
+          Next
+        </button>
+      </div>
     </>
   );
 };

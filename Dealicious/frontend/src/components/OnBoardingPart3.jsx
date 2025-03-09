@@ -11,9 +11,11 @@ const OnBoardingPart3 = ({ changePart }) => {
         />
       </div>
       <div className="FhfQ5">
-        <p className="uQe9Z">What are your primary nutrition goals?</p>
+        <label htmlFor="nutrition-goals" className="uQe9Z">What are your primary nutrition goals?</label>
         <input
+          id="nutrition-goals"
           type="text"
+          aria-label="Enter your primary nutrition goals"
           style={{
             borderRadius: "12.15px",
             width: "100%",
@@ -33,10 +35,20 @@ const OnBoardingPart3 = ({ changePart }) => {
           gap: "24px",
         }}
       >
-        <button className="btn0" onClick={() => changePart(2)}>
+        <button
+          className="btn0"
+          onClick={() => changePart(2)}
+          onTouchStart={() => changePart(2)}
+          aria-label="Go back to previous step"
+        >
           Back
         </button>
-        <button className="btn0" onClick={() => changePart(4)}>
+        <button
+          className="btn0"
+          onClick={() => changePart(4)}
+          onTouchStart={() => changePart(4)}
+          aria-label="Go to next step"
+        >
           Next
         </button>
       </div>
@@ -49,5 +61,3 @@ OnBoardingPart3.propTypes = {
 };
 
 export default OnBoardingPart3;
-
-

@@ -23,17 +23,34 @@ const OnBoardingPage = () => {
   return (
     <div className="page0" style={{ backgroundImage: `url(${png0})` }}>
       <div className="part0">
-        <div className="pPVp6">
+        <div className="pPVp6" role="tablist" aria-label="Onboarding Steps">
           {currentPartIndex !== 4 &&
             parts.slice(0, parts.length - 1).map((_, index) => (
               <div
                 className={currentPartIndex === index ? "A3j1o" : "ugqZD"}
                 key={index}
+                role="tab"
+                aria-selected={currentPartIndex === index}
+                aria-controls={`part-${index}`}
+                id={`tab-${index}`}
+                tabIndex={currentPartIndex === index ? 0 : -1}
                 onClick={() => handlePartChange(index)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    handlePartChange(index);
+                  }
+                }}
+                onTouchStart={() => handlePartChange(index)}
               ></div>
             ))}
         </div>
-        {parts[currentPartIndex]}
+        <div
+          id={`part-${currentPartIndex}`}
+          role="tabpanel"
+          aria-labelledby={`tab-${currentPartIndex}`}
+        >
+          {parts[currentPartIndex]}
+        </div>
       </div>
     </div>
   );
