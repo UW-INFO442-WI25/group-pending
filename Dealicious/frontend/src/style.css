@@ -1430,3 +1430,110 @@ html, body {
     flex-shrink: 0;
   }
 }
+
+/* Responsive improvements for grocery container */
+@media (max-width: 992px) {
+  .grocery-container {
+    flex-direction: column;
+    width: 95%;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-sort-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .search-sort {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+  .grocery-hero {
+    height: 250px;
+    padding: 1rem;
+  }
+  
+  .grocery-hero .hero-title {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+  
+  .store-selection h2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .store-list {
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .store-button {
+    width: 140px;
+  }
+}
+
+/* Responsive table for shopping list */
+@media (max-width: 768px) {
+  .shopping-list-container {
+    width: 95%;
+  }
+  
+  .coupon-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .coupon-table thead th {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .coupon-table td {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .product-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+  .deal-card {
+    padding: 0.75rem;
+  }
+  
+  .deal-image {
+    max-width: 120px;
+  }
+  
+  .deal-title {
+    font-size: 1rem;
+  }
+  
+  .deal-price {
+    font-size: 1.1rem;
+  }
+  
+  .pagination {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  
+  .tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
