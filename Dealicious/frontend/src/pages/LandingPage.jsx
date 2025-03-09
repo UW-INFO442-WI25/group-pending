@@ -63,7 +63,6 @@ const LandingPage = () => {
 
   return (
     <Layout>
-      <a href="#main-content" className="skip-link">Skip to main content</a>
       <div className="landing">
         <section className="hero-section" aria-labelledby="hero-title">
           <h1 className="hero-title" id="hero-title">

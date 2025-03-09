@@ -61,7 +61,7 @@
   width: 100%;
 }
 
-.loginBtn {
+.shoppingListBtn {
   border-radius: 75.53px;
   border: 1.26px solid #249552;
   padding: 15px;
@@ -73,16 +73,19 @@
   width: 192px;
   background: transparent;
   cursor: pointer;
-}
-
-.login {
   color: #249552;
-  text-align: left;
+  text-align: center;
   font-family: 'NunitoSans-Medium', sans-serif;
   font-size: 16px;
   line-height: 111%;
   letter-spacing: 0.27px;
   font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.shoppingListBtn:hover {
+  background-color: #249552;
+  color: white;
 }
 
 .hamburger {
@@ -142,7 +145,7 @@
     margin: 0;
   }
   
-  .loginBtn {
+  .shoppingListBtn {
     width: 100%;
     margin-top: 32px;
   }
