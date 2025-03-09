@@ -254,7 +254,6 @@ const LandingPage = () => {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            <h2 id="testimonials-title" className="visually-hidden">User Testimonials</h2>
             <button 
               className="review-nav-button"
               aria-label="Previous review" 
