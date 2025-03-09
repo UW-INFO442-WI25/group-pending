@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 const OnBoardingPart3 = ({ changePart }) => {
   return (
     <>
-      <div className="goFqH">
+      <div className="topic">
         <OnBoardingPart4
           title0={"Tell Us More About You"}
           title1={"Before we get started, we just need a few details from you."}
         />
       </div>
-      <div className="FhfQ5">
-        <label htmlFor="nutrition-goals" className="uQe9Z">What are your primary nutrition goals?</label>
+      <div className="info">
+        <label htmlFor="nutrition-goals" className="part7">What are your primary nutrition goals?</label>
         <input
           id="nutrition-goals"
           type="text"
@@ -36,7 +36,7 @@ const OnBoardingPart3 = ({ changePart }) => {
         }}
       >
         <button
-          className="btn0"
+          className="nextstep"
           onClick={() => changePart(2)}
           onTouchStart={() => changePart(2)}
           aria-label="Go back to previous step"
@@ -44,7 +44,7 @@ const OnBoardingPart3 = ({ changePart }) => {
           Back
         </button>
         <button
-          className="btn0"
+          className="nextstep"
           onClick={() => changePart(4)}
           onTouchStart={() => changePart(4)}
           aria-label="Go to next step"

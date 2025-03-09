@@ -8,7 +8,6 @@ Eating healthily on a budget is a big challenge for many students. Our project w
 - Weekly meal plans catered to individual dietary requirements and budgets
 - An ideal meal plan featuring breakfast, lunch, and dinner, complete with recipes, step-by-step instructions, and detailed nutrition information.
 - A grocery page where users can filter and view specific on-sale items with ease.
-- Shopping list where users can see their saved deal items. 
 
 
 # Group Members
@@ -35,7 +34,6 @@ Eating healthily on a budget is a big challenge for many students. Our project w
 | Meal Plan Filtering | User is on the meal plan page | 1. Click on the Nutrition Option for Gluten Free<br>2. Click on the Cuisine Option for American | The recipes should update to Gluten Free and American recipes | Cards may not load if API credits are used up, using filters may not work if API credits are used up |
 | Meal Plan Deals | User is on the meal plan page | 1. Click through the days buttons  | User should see a highlight for discounted ingredients | |
 | Grocery Deal Page | User is on the grocery deals page  | 1. Navigate to the grocery deals page                  | User should see grocery deals for 30 ingredients with discount amounts, images, and discount time frames. These ingredients should match with discounted ingredients on the meal plan page     |  |
-| Adding to Shopping List | User is on the grocery deals page  | 1. Navigate to the grocery deals page 2. Add any grocery item to bag                  | After navigating to the shopping list page, the user should see the list of grocery items that they have added to their bag     |  |
 
 
 

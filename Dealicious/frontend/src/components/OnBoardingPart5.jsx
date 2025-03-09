@@ -4,7 +4,7 @@ import OnBoardingPart4 from "./OnBoardingPart4";
 const OnBoardingPart5 = () => {
   return (
     <>
-      <div className="goFqH">
+      <div className="topic">
         <OnBoardingPart4
           title0={"You’re all set!"}
           title1={"We've tailored your weekly meal plan based on the information you provided."}
@@ -13,7 +13,7 @@ const OnBoardingPart5 = () => {
       <div className="button-container">
         <Link 
           to="/meal-planner" 
-          className="btn0" 
+          className="nextstep" 
           aria-label="Check out your first meal plan"
           onTouchStart={() => {}}
         >

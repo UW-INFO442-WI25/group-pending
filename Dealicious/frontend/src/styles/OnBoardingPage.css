@@ -29,7 +29,7 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.pPVp6 {
+.part1 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -37,21 +37,21 @@
   gap: 10px;
 }
 
-.A3j1o,
-.ugqZD {
+.part2,
+.part3 {
   width: 68px;
   height: 10px;
   z-index: 0;
   border-radius: 15px;
 }
-.A3j1o {
+.part2 {
   background: #2ea45e;
 }
-.ugqZD {
+.part3 {
   background: #e7e7e7;
 }
 
-.sQZ4S {
+.part4 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -59,7 +59,7 @@
   gap: 7px;
 }
 
-.DUKUN {
+.part5 {
   font-family: SFProDisplay;
   font-size: 36px;
   font-weight: normal;
@@ -68,7 +68,7 @@
   color: #ffffff;
 }
 
-.M6ZdE {
+.part6 {
   font-family: SFProDisplay;
   font-size: 21px;
   font-weight: normal;
@@ -76,7 +76,7 @@
   color: #ffffff;
 }
 
-.goFqH {
+.topic {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -84,7 +84,7 @@
   gap: 45px;
 }
 
-.btn0 {
+.nextstep {
   padding: 10px 55px;
   border-radius: 12.15px;
   background: #2ea45e;
@@ -102,7 +102,7 @@
   align-items: center;
 }
 
-.FhfQ5 {
+.info {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -111,7 +111,7 @@
   gap: 7px;
 }
 
-.uQe9Z {
+.part7 {
   font-family: SFProDisplay;
   font-size: 16px;
   font-weight: normal;

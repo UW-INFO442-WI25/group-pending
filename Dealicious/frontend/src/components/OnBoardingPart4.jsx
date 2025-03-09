@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 
 const OnBoardingPart4 = ({ title0, title1 }) => {
   return (
-    <div className="sQZ4S" role="region" aria-labelledby="onboarding-title">
-      <div className="DUKUN" id="onboarding-title">{title0}</div>
-      <p className="M6ZdE">{title1}</p>
+    <div className="part4" role="region" aria-labelledby="onboarding-title">
+      <div className="part5" id="onboarding-title">{title0}</div>
+      <p className="part6">{title1}</p>
     </div>
   );
 };

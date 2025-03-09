@@ -4,14 +4,14 @@ import OnBoardingPart4 from "./OnBoardingPart4";
 const OnBoardingPart0 = ({ changePart }) => {
   return (
     <>
-      <div className="goFqH">
+      <div className="topic">
         <OnBoardingPart4
           title0={"Tell Us More About You"}
           title1={"Before we get started, we just need a few details from you."}
         />
       </div>
-      <div className="FhfQ5">
-        <label htmlFor="zip-code" className="uQe9Z">What is your zip code?</label>
+      <div className="info">
+        <label htmlFor="zip-code" className="part7">What is your zip code?</label>
         <input
           id="zip-code"
           type="text"
@@ -28,7 +28,7 @@ const OnBoardingPart0 = ({ changePart }) => {
       </div>
       <div className="button-container">
         <button
-          className="btn0"
+          className="nextstep"
           onClick={() => changePart(1)}
           onTouchStart={() => changePart(1)}
           aria-label="Next step"

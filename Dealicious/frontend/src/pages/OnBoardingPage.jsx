@@ -23,11 +23,11 @@ const OnBoardingPage = () => {
   return (
     <div className="page0" style={{ backgroundImage: `url(${png0})` }}>
       <div className="part0">
-        <div className="pPVp6" role="tablist" aria-label="Onboarding Steps">
+        <div className="part1" role="tablist" aria-label="Onboarding Steps">
           {currentPartIndex !== 4 &&
             parts.slice(0, parts.length - 1).map((_, index) => (
               <div
-                className={currentPartIndex === index ? "A3j1o" : "ugqZD"}
+                className={currentPartIndex === index ? "part2" : "part3"}
                 key={index}
                 role="tab"
                 aria-selected={currentPartIndex === index}
