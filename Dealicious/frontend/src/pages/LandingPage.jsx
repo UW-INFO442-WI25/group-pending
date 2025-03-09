@@ -44,7 +44,7 @@ const LandingPage = () => {
           <img
             className="pepper-drops-into-water-1"
             src={pepperImage}
-            alt="Pepper drops into water"
+            alt="background image of pepper drops into water"
           />
           <div className="hero-subtitle">
             <p className="body-text">
