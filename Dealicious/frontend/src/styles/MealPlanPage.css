@@ -1,3 +1,4 @@
+/* General Styles */
 .my-meal-plan {
   background: #f8f8f8;
 }
@@ -6,6 +7,7 @@ body, .my-meal-plan {
   overflow-x: hidden;
 }
 
+/* Hero Section */
 .hero {
   margin: 30px 30px 0 30px;
   display: grid;
@@ -61,6 +63,7 @@ body, .my-meal-plan {
   color: #292929;
 }
 
+/* Content Section */
 .content {
   padding-left: 56px;
   display: flex;
@@ -111,6 +114,7 @@ body, .my-meal-plan {
   font-weight: 600;
 }
 
+/* Main Section */
 .main {
   display: flex;
   flex-flow: row nowrap;
@@ -281,6 +285,7 @@ body, .my-meal-plan {
   font-weight: bold;
 }
 
+/* Meal Section */
 .meal {
   position: relative;
   background: var(--gray-scale-white, #ffffff);
@@ -425,6 +430,7 @@ ol li,
   word-break: break-word;
 }
 
+/* Media Queries */
 @media (max-width: 1200px) {
   .hero {
     grid-template-columns: 1fr;

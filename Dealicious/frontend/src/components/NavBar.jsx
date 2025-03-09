@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
         
         <div className={styles.loginBtn}>
-          <Link to="/onboarding" className={styles.login} onClick={() => setMenuOpen(false)}>Sign In / Sign Up</Link>
+          <Link to="/shopping-list" className={styles.login} onClick={() => setMenuOpen(false)}>Shopping List</Link>
         </div>
       </div>
     </nav>
