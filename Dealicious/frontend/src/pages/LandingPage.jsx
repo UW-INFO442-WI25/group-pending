@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../style.css';
 
 import pepperImage from '../assets/pepper-drops-into-water-10.png';
@@ -15,6 +15,9 @@ import { Link } from 'react-router-dom';
 const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const totalSlides = 4;
+  const [touchStart, setTouchStart] = React.useState(0);
+  const [touchEnd, setTouchEnd] = React.useState(0);
+  const activeSlideRef = useRef(null);
 
   const handlePrevSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? totalSlides - 1 : prevSlide - 1));
@@ -32,8 +35,35 @@ const LandingPage = () => {
     }
   };
 
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 50) {
+      handleNextSlide();
+    }
+    if (touchStart - touchEnd < -50) {
+      handlePrevSlide();
+    }
+    setTouchStart(0);
+    setTouchEnd(0);
+  };
+
+  useEffect(() => {
+    const activeSlide = document.querySelector(`.review-slide.active`);
+    if (activeSlide && activeSlideRef.current) {
+      activeSlideRef.current.focus({ preventScroll: true });
+    }
+  }, [currentSlide]);
+
   return (
     <Layout>
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <div className="landing">
         <section className="hero-section" aria-labelledby="hero-title">
           <h1 className="hero-title" id="hero-title">
@@ -44,7 +74,7 @@ const LandingPage = () => {
           <img
             className="pepper-drops-into-water-1"
             src={pepperImage}
-            alt="background image of pepper drops into water"
+            alt="Decorative background image of pepper drops into water"
           />
           <div className="hero-subtitle">
             <p className="body-text">
@@ -58,8 +88,8 @@ const LandingPage = () => {
           </div>
         </section>
 
-        <main className="content-section">
-          <div className="seperator" role="separator" />
+        <main id="main-content" className="content-section">
+          <div className="seperator" role="separator" aria-hidden="true" />
           
           <section className="content-container-1" aria-labelledby="meal-planner-title">
             <div className="title-container">
@@ -102,6 +132,7 @@ const LandingPage = () => {
                   autoPlay 
                   loop 
                   muted 
+                  controls
                   className="meal-plan-video"
                   style={{
                     position: 'absolute',
@@ -112,8 +143,10 @@ const LandingPage = () => {
                     top: 0,
                     left: 0
                   }}
+                  aria-label="Video preview of meal planning features"
                 >
                   <source src={mealPreviewCard} type="video/mp4" />
+                  <track kind="captions" src="../assets/captions/meal-preview-captions.vtt" label="English" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="card-container-01-title">
@@ -141,17 +174,17 @@ const LandingPage = () => {
               to your needs.
             </p>
             <div className="card-container-2">
-              <img className="steak-preview" src={steakPreview} alt="USDA Choice Ribeye Steak" />
+              <img className="steak-preview" src={steakPreview} alt="USDA Choice Ribeye Steak with marbling" />
               <div className="steak-container">
                 <div className="steak-title-container">
                   <h3 className="h-1">USDA Choice Ribeye Steak</h3>
                   <div className="rating-container">
-                    <img className="rating" src={ratingIcon} alt="5.0 Rating" />
-                    <span className="body-text">5.0 (259)</span>
+                    <img className="rating" src={ratingIcon} alt="5 star rating" />
+                    <span className="body-text">5.0 (259 reviews)</span>
                   </div>
                   <div className="price-container">
                     <span className="price">$12.49</span>
-                    <div className="sale-tag">
+                    <div className="sale-tag" role="text" aria-label="Sale price with 40 percent off">
                       <span className="sale-tag-text">40% off</span>
                     </div>
                   </div>
@@ -164,7 +197,6 @@ const LandingPage = () => {
                 <Link to="/grocery-deals" className="cta-btn2">
                   <span className="body-text">Get shopping</span>
                 </Link>
-
               </div>
             </div>
           </section>
@@ -186,6 +218,7 @@ const LandingPage = () => {
                 autoPlay 
                 loop 
                 muted 
+                controls
                 className="grocery-preview-video"
                 style={{
                   position: 'absolute',
@@ -196,8 +229,10 @@ const LandingPage = () => {
                   top: 0,
                   left: 0
                 }}
+                aria-label="Video preview of grocery shopping deals"
               >
                 <source src={groceryPreviewVideo} type="video/mp4" />
+                <track kind="captions" src="../assets/captions/grocery-preview-captions.vtt" label="English" />
                 Your browser does not support the video tag.
               </video>
               <div className="card-container-03-title">
@@ -211,9 +246,15 @@ const LandingPage = () => {
             </div>
           </section>
 
-          <div className="seperator2" role="separator" />
+          <div className="seperator2" role="separator" aria-hidden="true" />
 
-          <section className="review-content-container" aria-labelledby="testimonials-title">
+          <section 
+            className="review-content-container" 
+            aria-labelledby="testimonials-title"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <h2 id="testimonials-title" className="visually-hidden">User Testimonials</h2>
             <button 
               className="review-nav-button"
@@ -221,16 +262,24 @@ const LandingPage = () => {
               onClick={handlePrevSlide}
               onKeyDown={handleKeyDown}
             >
-              <img className="review-left-arrow" src={arrowLeft} alt="" aria-hidden="true" />
+              <img className="review-left-arrow" src={arrowLeft} alt="left arrow" aria-hidden="true" />
             </button>
             
-            <div className="review-container" role="region" aria-roledescription="carousel" aria-label="User testimonials">
+            <div 
+              className="review-container" 
+              role="region" 
+              aria-roledescription="carousel" 
+              aria-label="User testimonials"
+              aria-live="polite"
+            >
               <div 
                 className={`review-slide ${currentSlide === 0 ? 'active' : 'hidden'}`}
                 role="group" 
                 aria-roledescription="slide" 
                 aria-label="Testimonial 1 of 4"
                 aria-hidden={currentSlide !== 0}
+                tabIndex={currentSlide === 0 ? 0 : -1}
+                ref={currentSlide === 0 ? activeSlideRef : null}
               >
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
@@ -249,6 +298,8 @@ const LandingPage = () => {
                 aria-roledescription="slide" 
                 aria-label="Testimonial 2 of 4"
                 aria-hidden={currentSlide !== 1}
+                tabIndex={currentSlide === 1 ? 0 : -1}
+                ref={currentSlide === 1 ? activeSlideRef : null}
               >
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
@@ -267,6 +318,8 @@ const LandingPage = () => {
                 aria-roledescription="slide" 
                 aria-label="Testimonial 3 of 4"
                 aria-hidden={currentSlide !== 2}
+                tabIndex={currentSlide === 2 ? 0 : -1}
+                ref={currentSlide === 2 ? activeSlideRef : null}
               >
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
@@ -285,6 +338,8 @@ const LandingPage = () => {
                 aria-roledescription="slide" 
                 aria-label="Testimonial 4 of 4"
                 aria-hidden={currentSlide !== 3}
+                tabIndex={currentSlide === 3 ? 0 : -1}
+                ref={currentSlide === 3 ? activeSlideRef : null}
               >
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
@@ -315,7 +370,7 @@ const LandingPage = () => {
               onClick={handleNextSlide}
               onKeyDown={handleKeyDown}
             >
-              <img className="review-right-arrow" src={arrowRight} alt="" aria-hidden="true" />
+              <img className="review-right-arrow" src={arrowRight} alt="right arrow" aria-hidden="true" />
             </button>
           </section>
         </main>
