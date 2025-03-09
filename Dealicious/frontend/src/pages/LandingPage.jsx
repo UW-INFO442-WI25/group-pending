@@ -14,20 +14,29 @@ import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
+  const totalSlides = 4;
 
   const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? 2 : prevSlide - 1));
+    setCurrentSlide((prevSlide) => (prevSlide === 0 ? totalSlides - 1 : prevSlide - 1));
   };
 
   const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 2 ? 0 : prevSlide + 1));
+    setCurrentSlide((prevSlide) => (prevSlide === totalSlides - 1 ? 0 : prevSlide + 1));
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'ArrowLeft') {
+      handlePrevSlide();
+    } else if (e.key === 'ArrowRight') {
+      handleNextSlide();
+    }
   };
 
   return (
     <Layout>
       <div className="landing">
-        <section className="hero-section">
-          <h1 className="hero-title">
+        <section className="hero-section" aria-labelledby="hero-title">
+          <h1 className="hero-title" id="hero-title">
             ONLY THE BEST
             <br />
             FOR YOU
@@ -50,12 +59,12 @@ const LandingPage = () => {
         </section>
 
         <main className="content-section">
-          <div className="seperator" />
+          <div className="seperator" role="separator" />
           
-          <section className="content-container-1">
+          <section className="content-container-1" aria-labelledby="meal-planner-title">
             <div className="title-container">
-              <span className="number">01</span>
-              <h2 className="h-1">Weekly Meal Planner</h2>
+              <span className="number" aria-hidden="true">01</span>
+              <h2 className="h-1" id="meal-planner-title">Weekly Meal Planner</h2>
             </div>
             <p className="body-text">
               Plan affordable meals, track nutritional balance, and explore diverse
@@ -119,10 +128,10 @@ const LandingPage = () => {
             </div>
           </section>
 
-          <section className="content-container-2">
+          <section className="content-container-2" aria-labelledby="exclusive-deals-title">
             <div className="title-container">
-              <span className="number">02</span>
-              <h2 className="h-1">Exclusive Deals</h2>
+              <span className="number" aria-hidden="true">02</span>
+              <h2 className="h-1" id="exclusive-deals-title">Exclusive Deals</h2>
             </div>
             <p className="body-text">
               Access special discounts and limited-time offers on a variety of
@@ -160,10 +169,10 @@ const LandingPage = () => {
             </div>
           </section>
 
-          <section className="content-container-3">
+          <section className="content-container-3" aria-labelledby="grocery-title">
             <div className="title-container">
-              <span className="number">03</span>
-              <h2 className="h-1">Grocery With Exclusive Price</h2>
+              <span className="number" aria-hidden="true">03</span>
+              <h2 className="h-1" id="grocery-title">Grocery With Exclusive Price</h2>
             </div>
             <p className="body-text">
               Get the best deals on fresh groceries with special discounts and
@@ -202,12 +211,27 @@ const LandingPage = () => {
             </div>
           </section>
 
-          <div className="seperator2" />
+          <div className="seperator2" role="separator" />
 
-          <section className="review-content-container">
-            <img className="review-left-arrow" src={arrowLeft} alt="Previous review" onClick={handlePrevSlide} />
-            <div className="review-container">
-              <div className={`review-slide ${currentSlide === 0 ? 'active' : 'hidden'}`}>
+          <section className="review-content-container" aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title" className="visually-hidden">User Testimonials</h2>
+            <button 
+              className="review-nav-button"
+              aria-label="Previous review" 
+              onClick={handlePrevSlide}
+              onKeyDown={handleKeyDown}
+            >
+              <img className="review-left-arrow" src={arrowLeft} alt="" aria-hidden="true" />
+            </button>
+            
+            <div className="review-container" role="region" aria-roledescription="carousel" aria-label="User testimonials">
+              <div 
+                className={`review-slide ${currentSlide === 0 ? 'active' : 'hidden'}`}
+                role="group" 
+                aria-roledescription="slide" 
+                aria-label="Testimonial 1 of 4"
+                aria-hidden={currentSlide !== 0}
+              >
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
                   <h3 className="h-18">Why Dealicious?</h3>
@@ -219,7 +243,13 @@ const LandingPage = () => {
                 </p>
               </div>
               
-              <div className={`review-slide ${currentSlide === 1 ? 'active' : 'hidden'}`}>
+              <div 
+                className={`review-slide ${currentSlide === 1 ? 'active' : 'hidden'}`}
+                role="group" 
+                aria-roledescription="slide" 
+                aria-label="Testimonial 2 of 4"
+                aria-hidden={currentSlide !== 1}
+              >
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
                   <h3 className="h-18">Why Dealicious?</h3>
@@ -231,7 +261,13 @@ const LandingPage = () => {
                 </p>
               </div>
               
-              <div className={`review-slide ${currentSlide === 2 ? 'active' : 'hidden'}`}>
+              <div 
+                className={`review-slide ${currentSlide === 2 ? 'active' : 'hidden'}`}
+                role="group" 
+                aria-roledescription="slide" 
+                aria-label="Testimonial 3 of 4"
+                aria-hidden={currentSlide !== 2}
+              >
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
                   <h3 className="h-18">Why Dealicious?</h3>
@@ -243,7 +279,13 @@ const LandingPage = () => {
                 </p>
               </div>
               
-              <div className={`review-slide ${currentSlide === 3 ? 'active' : 'hidden'}`}>
+              <div 
+                className={`review-slide ${currentSlide === 3 ? 'active' : 'hidden'}`}
+                role="group" 
+                aria-roledescription="slide" 
+                aria-label="Testimonial 4 of 4"
+                aria-hidden={currentSlide !== 3}
+              >
                 <h2 className="h-1">Hear It From Our Users</h2>
                 <div className="review-sub-title">
                   <h3 className="h-18">Why Dealicious?</h3>
@@ -254,8 +296,27 @@ const LandingPage = () => {
                   We're eating better, spending less, and actually enjoying cooking together!"
                 </p>
               </div>
+              
+              <div className="carousel-indicators" aria-hidden="true">
+                {[...Array(totalSlides)].map((_, index) => (
+                  <button 
+                    key={index}
+                    className={`indicator ${currentSlide === index ? 'active' : ''}`}
+                    onClick={() => setCurrentSlide(index)}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
-            <img className="review-right-arrow" src={arrowRight} alt="Next review" onClick={handleNextSlide} />
+            
+            <button 
+              className="review-nav-button"
+              aria-label="Next review" 
+              onClick={handleNextSlide}
+              onKeyDown={handleKeyDown}
+            >
+              <img className="review-right-arrow" src={arrowRight} alt="" aria-hidden="true" />
+            </button>
           </section>
         </main>
       </div>
