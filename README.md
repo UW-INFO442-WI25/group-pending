@@ -8,6 +8,7 @@ Eating healthily on a budget is a big challenge for many students. Our project w
 - Weekly meal plans catered to individual dietary requirements and budgets
 - An ideal meal plan featuring breakfast, lunch, and dinner, complete with recipes, step-by-step instructions, and detailed nutrition information.
 - A grocery page where users can filter and view specific on-sale items with ease.
+- Shopping list where users can see their saved deal items. 
 
 
 # Group Members
