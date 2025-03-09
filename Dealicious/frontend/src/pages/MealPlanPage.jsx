@@ -163,7 +163,7 @@ function App() {
     <Layout>
       <div className={"my-meal-plan "} role="main">
         <div className="grocery-hero" style={{ backgroundImage: `url(${recipeHero})` }}>
-          <h1 className="hero-title">Grab your favorites, start saving today</h1>
+          <h1 className="hero-title">Delicious, healthy meals ready for you</h1>
         </div>
         <div className="content">
           <div className="status-nav">
