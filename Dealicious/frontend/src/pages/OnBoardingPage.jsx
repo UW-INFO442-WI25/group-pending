@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import png0 from "../assets/png0.jpg";
 import "../styles/OnBoardingPage.css";
 import OnBoardingPart0 from "../components/OnBoardingPart0";
@@ -8,10 +8,16 @@ import OnBoardingPart3 from "../components/OnBoardingPart3";
 import OnBoardingPart5 from "../components/OnBoardingPart5";
 
 const OnBoardingPage = () => {
+  const [currentPartIndex, setCurrentPartIndex] = useState(0);
+
+  useEffect(() => {
+    document.title = "Dealicious - Onboarding";
+  }, []);
+
   const handlePartChange = (index) => {
     setCurrentPartIndex(index);
   };
-  const [currentPartIndex, setCurrentPartIndex] = useState(0);
+
   const parts = [
     <OnBoardingPart0 key={0} changePart={handlePartChange} />,
     <OnBoardingPart1 key={1} changePart={handlePartChange} />,
@@ -21,9 +27,14 @@ const OnBoardingPage = () => {
   ];
 
   return (
-    <div className="page0" style={{ backgroundImage: `url(${png0})` }}>
+    <div 
+      className="page0" 
+      style={{ backgroundImage: `url(${png0})` }} 
+      role="img"
+      aria-label="Dark gray background image"
+    >
       <div className="part0">
-        <div className="part1" role="tablist" aria-label="Onboarding Steps">
+        <div className="part1" role="tablist" aria-label="Onboarding Steps Progress Bar">
           {currentPartIndex !== 4 &&
             parts.slice(0, parts.length - 1).map((_, index) => (
               <div
@@ -36,11 +47,12 @@ const OnBoardingPage = () => {
                 tabIndex={currentPartIndex === index ? 0 : -1}
                 onClick={() => handlePartChange(index)}
                 onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
+                  if (e.key === "Enter" || e.key === " ") {
                     handlePartChange(index);
                   }
                 }}
                 onTouchStart={() => handlePartChange(index)}
+                aria-label={`Go to onboarding step ${index + 1}`}
               ></div>
             ))}
         </div>
@@ -48,9 +60,13 @@ const OnBoardingPage = () => {
           id={`part-${currentPartIndex}`}
           role="tabpanel"
           aria-labelledby={`tab-${currentPartIndex}`}
+          aria-describedby={`desc-${currentPartIndex}`}
         >
           {parts[currentPartIndex]}
         </div>
+        <p id={`desc-${currentPartIndex}`} className="sr-only">
+          {`Onboarding step ${currentPartIndex + 1} of ${parts.length}`}
+        </p>
       </div>
     </div>
   );

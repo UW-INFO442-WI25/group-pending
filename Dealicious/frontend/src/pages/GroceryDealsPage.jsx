@@ -70,6 +70,10 @@ const GroceryDeals = () => {
   const [itemsPerPage, setItemsPerPage] = useState(12);
 
   const visibleTags = popularTags.slice(0, 6);
+
+  useEffect(() => {
+    document.title = "Dealicious - Grocery Deals";
+  }, []);
   
   // setting specific amount of visible product in one page
   useEffect(() => {
@@ -195,12 +199,16 @@ const GroceryDeals = () => {
 
   return (
     <Layout>
-      <div className="grocery-hero" style={{ backgroundImage: `url(${groceryHero})` }}>
+      <div
+        className="grocery-hero"
+        style={{ backgroundImage: `url(${groceryHero})` }}
+        role="banner"
+        aria-label="Fresh produce display background image"
+      >
         <h1 className="hero-title">Grab your favorites, start saving today</h1>
       </div>
       
       <div className="store-selection">
-        
         <h2>Select Your Store</h2>
         <div className="store-list">
           {stores.map((store, idx) => (
@@ -208,9 +216,10 @@ const GroceryDeals = () => {
               key={idx}
               onClick={() => setSelectedStore(store.name)}
               className="store-button"
+              aria-label={`Select ${store.name} store`}
             >
               <div className="store-content">
-                <img src={store.logo} alt={store.name} className="store-logo" />
+                <img src={store.logo} alt={`${store.name} logo`} className="store-logo" />
                 <div className="store-info">
                   <p>Open • Closes 11PM</p>
                   <p>⭐ {store.rating}</p>
@@ -276,8 +285,9 @@ const GroceryDeals = () => {
                 type="text"
                 placeholder="Search produce..."
                 value={searchTerm}
-                onChange={handleSearch}
+                onChange={(e) => setSearchTerm(e.target.value)}
                 className="search-bar"
+                aria-label="Search for produce"
               />
 
               <select onChange={(e) => setSortOption(e.target.value)}>
@@ -312,10 +322,12 @@ const GroceryDeals = () => {
               return (
                 <div className="deal-card" key={idx}>
                   {hasDiscount && (
-                    <div className="discount-badge">{discountPercent}% OFF</div>
+                    <div className="discount-badge" aria-label={`${discountPercent}% off`}>
+                      {discountPercent}% OFF
+                    </div>
                   )}
                   <h3 className="deal-title">{item.name}</h3>
-                  <img src={item.image} alt={item.name} className="deal-image" />
+                  <img src={item.image} alt={`Image of ${item.name}`} className="deal-image" />
 
                   {hasDiscount ? (
                     <p className="deal-price">
@@ -341,8 +353,10 @@ const GroceryDeals = () => {
                   </div>
 
                   <button 
-                  className="add-to-cart" 
+                  className="add-to-cart"
                   onClick={() => handleAddToShoppingList(item)}
+                  onTouchStart={() => handleAddToShoppingList(item)}
+                  aria-label={`Add ${item.name} to shopping list`}
                 >
                   <img src={shopBlack} alt="Add to Shopping List" className="cart-icon black-icon" />
                   <img src={shopWhite} alt="Add to Shopping List" className="cart-icon white-icon" />

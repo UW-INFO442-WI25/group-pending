@@ -6,13 +6,17 @@ import groceryHero from '../assets/freshProduce.png';
 const ShoppingListPage = () => {
   const [shoppingList, setShoppingList] = useState([]);
 
-  // load product list
+  useEffect(() => {
+    document.title = "Dealicious - Shopping List";
+  }, []);
+  
+  // Load product list from localStorage
   useEffect(() => {
     const savedList = JSON.parse(localStorage.getItem('shoppingList')) || [];
     setShoppingList(savedList);
   }, []);
 
-  // handle removing
+  // Handle removing items from shopping list
   const handleRemoveFromShoppingList = (itemId) => {
     const updatedList = shoppingList.filter((item) => item.id !== itemId);
     setShoppingList(updatedList);
@@ -21,21 +25,26 @@ const ShoppingListPage = () => {
 
   return (
     <Layout>
-      <div className="grocery-hero" style={{ backgroundImage: `url(${groceryHero})` }}>
+      <div
+        className="grocery-hero"
+        style={{ backgroundImage: `url(${groceryHero})` }}
+        role="banner"
+        aria-label="Fresh produce display background image"
+      >
         <h1 className="hero-title">Grab your favorites, start saving today</h1>
       </div>
 
       <div className="shopping-list-container">
         {shoppingList.length === 0 ? (
-          <p className="empty-list">No items added yet.</p>
+          <p className="empty-list" role="alert">No items added yet.</p>
         ) : (
           <table className="coupon-table">
             <thead>
               <tr>
-                <th>PRODUCT</th>
-                <th>PRICE</th>
-                <th>AVAILABILITY</th>
-                <th />
+                <th scope="col">PRODUCT</th>
+                <th scope="col">PRICE</th>
+                <th scope="col">AVAILABILITY</th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
@@ -55,7 +64,7 @@ const ShoppingListPage = () => {
                         {item.image && (
                           <img
                             src={item.image}
-                            alt={item.name}
+                            alt={`Image of ${item.name}`}
                             className="product-image"
                           />
                         )}
@@ -74,28 +83,32 @@ const ShoppingListPage = () => {
 
                     <td>
                       {isAvailable ? (
-                        <span className="status available">available</span>
+                        <span className="status available">Available</span>
                       ) : (
-                        <span className="status unavailable">unavailable</span>
+                        <span className="status unavailable">Unavailable</span>
                       )}
                     </td>
 
                     <td>
-                      <button
-                        className={`clip-coupon-btn ${
-                          isAvailable ? '' : 'disabled'
-                        }`}
-                        disabled={!isAvailable}
-                      >
-                        Clip the coupon
-                      </button>
+                    <button
+                      className={`clip-coupon-btn ${isAvailable ? '' : 'disabled'}`}
+                      disabled={!isAvailable}
+                      onClick={() => handleAddToShoppingList(item)}
+                      onTouchStart={() => handleAddToShoppingList(item)}
+                      aria-label={`Clip coupon for ${item.name} at ${newPrice}`}
+                    >
+                      Clip the coupon
+                    </button>
 
                       <button
                         className="remove-btn"
                         onClick={() => handleRemoveFromShoppingList(item.id)}
+                        onTouchStart={() => handleRemoveFromShoppingList(item.id)}
+                        aria-label={`Remove ${item.name} from shopping list`}
                       >
                         X
                       </button>
+
                     </td>
                   </tr>
                 );

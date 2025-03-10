@@ -51,6 +51,10 @@ function App() {
   };
 
   useEffect(() => {
+    document.title = "Dealicious - Meal Plans";
+  }, []);
+  
+  useEffect(() => {
     if (nutritionOption || cuisineOption || minFiber || maxCarb || minProtein) {
       fetchRecipes("/api/recipe/update");
     }

@@ -55,6 +55,10 @@ const LandingPage = () => {
   };
 
   useEffect(() => {
+    document.title = "Dealicious - Home";
+  }, []);
+  
+  useEffect(() => {
     const activeSlide = document.querySelector(`.review-slide.active`);
     if (activeSlide && activeSlideRef.current) {
       activeSlideRef.current.focus({ preventScroll: true });
@@ -82,7 +86,9 @@ const LandingPage = () => {
               designed to nourish your body while fitting your lifestyle and goals.
             </p>
             <button className="cta-btn3">
-              <Link to="/onboarding" className="body-text">Get Started</Link>
+              <Link to="/onboarding" className="body-text" aria-label="Get started with personalized meal planning">
+                Get Started
+              </Link>
             </button>
           </div>
         </section>
@@ -153,7 +159,9 @@ const LandingPage = () => {
                     Check Out Your First Perfect Meal Plan at Dealicious
                   </h3>
                   <button className="cta-btn">
-                    <Link to="meal-planner" className="body-text">Explore more</Link>
+                    <Link to="meal-planner" className="body-text" aria-label="Explore meal planner">
+                      Explore more
+                    </Link>
                   </button>
                 </div>
               </div>
