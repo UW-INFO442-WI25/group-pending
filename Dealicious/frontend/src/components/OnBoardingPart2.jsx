@@ -1,5 +1,6 @@
 import OnBoardingPart4 from "./OnBoardingPart4";
 import PropTypes from "prop-types";
+import "../styles/OnBoardingPart.css";
 
 const OnBoardingPart2 = ({ changePart }) => {
   return (
@@ -16,14 +17,7 @@ const OnBoardingPart2 = ({ changePart }) => {
           id="dietary-restrictions"
           type="text"
           aria-label="Enter your dietary restrictions or preferences"
-          style={{
-            borderRadius: "12.15px",
-            width: "100%",
-            fontSize: "18px",
-            boxSizing: "border-box",
-            border: "1.21px solid #FFFFFF",
-            padding: "12.15px 0px 12.15px 12.15px",
-          }}
+          className="input0"
         />
       </div>
       <div
