@@ -257,7 +257,7 @@ const LandingPage = () => {
 
           <section 
             className="review-content-container" 
-            aria-labelledby="testimonials-title"
+            aria-labelledby="review-title"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}

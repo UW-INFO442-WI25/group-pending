@@ -415,6 +415,9 @@ html, body {
   padding: 0 var(--spacing-lg);
   position: relative;
   min-height: 300px;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .review-left-arrow,
@@ -469,6 +472,9 @@ html, body {
   width: 100%;
   pointer-events: none;
   flex-shrink: 1;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .review-slide.active {
