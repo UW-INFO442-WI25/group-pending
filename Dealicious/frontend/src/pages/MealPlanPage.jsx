@@ -67,7 +67,7 @@ function App() {
   const fetchDiscounts = () => {
     let discounted = [];
     axios
-      .get('http://localhost:5000/data/data.json')
+      .get('https://dealicious-backend.onrender.com/data/data.json')
       .then((response) => {
         response.data.ingredients.forEach((ingredient) => {
           if(ingredient.discount) {
@@ -90,7 +90,7 @@ function App() {
     };
 
     axios
-      .get(apiString, { params })
+      .get("https://dealicious-backend.onrender.com"+apiString, { params })
       .then((response) => {
         console.log(response.data);
         setRecipes(response.data);

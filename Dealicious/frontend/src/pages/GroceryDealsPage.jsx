@@ -98,7 +98,7 @@ const GroceryDeals = () => {
   // get produce data
   useEffect(() => {
     axios
-      .get('http://localhost:5000/data/data.json')
+      .get('https://dealicious-backend.onrender.com/data/data.json')
       .then((response) => {
         setProduce(response.data.ingredients || []);
         setFilteredProduce(response.data.ingredients || []);
