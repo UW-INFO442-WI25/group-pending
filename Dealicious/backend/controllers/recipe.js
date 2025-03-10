@@ -21,7 +21,7 @@ const getRecipes = asyncHandler(async (req) => {
 
     try {
 
-        throw new Error("Simulated error for testing");
+        //throw new Error("Simulated error for testing");
 
         const days = 7;
         const recipes = [];
