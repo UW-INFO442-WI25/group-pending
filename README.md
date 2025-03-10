@@ -39,3 +39,4 @@ Eating healthily on a budget is a big challenge for many students. Our project w
 
 # Bugs
 - Since we're using Render for hosting the backend and the frontend, the backend will spin down after inactivity. When opening the website it might not show grocery items in the grocery deal page or recipes in the meal plan page while the backend is redeploying.
+- Some recipes may not have instructions or ingredients, due to limitations in the Spoonacular API.
